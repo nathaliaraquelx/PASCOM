@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PASCOM &middot; Paróquia de São João Baptista | Diocese de Bragança-Miranda</title>
+<meta name="description" content="Site oficial da PASCOM da Paróquia de São João Baptista, Diocese de Bragança-Miranda. Missas, confissões, adoração, catequese, notícias, galeria e velas virtuais.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================= TOPBAR ================= -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <div class="topbar-info">
+      <span><i class="fa-solid fa-location-dot"></i> Rua da Igreja, [nº] &middot; [Localidade], Bragança-Miranda</span>
+      <span><i class="fa-solid fa-phone"></i> [+351 XXX XXX XXX]</span>
+    </div>
+    <div class="topbar-social">
+      <a href="#" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" aria-label="Facebook" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#" aria-label="Comunidade de WhatsApp" title="Comunidade de WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="#" aria-label="TikTok" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= HEADER / NAV ================= -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#inicio" class="brand">
+      <span class="brand-badge"><i class="fa-solid fa-cross"></i></span>
+      <span class="brand-text">
+        <strong>PASCOM</strong>
+        <small>São João Baptista</small>
+      </span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="#inicio" class="nav-link">Início</a></li>
+        <li><a href="#historia" class="nav-link">História</a></li>
+        <li><a href="#paroco" class="nav-link">Pároco</a></li>
+        <li class="has-dropdown">
+          <a href="#liturgia" class="nav-link">Vida Litúrgica <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="#liturgia">Liturgia</a></li>
+            <li><a href="#evangelho">Evangelho do Dia</a></li>
+            <li><a href="#santo">Santo do Dia</a></li>
+            <li><a href="#missas">Horário das Missas</a></li>
+            <li><a href="#confissoes">Confissões</a></li>
+            <li><a href="#adoracao">Dias de Adoração</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="#comunidade" class="nav-link">Comunidade <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="#catequese">Catequese</a></li>
+            <li><a href="#grupos">Grupos e Ordens</a></li>
+            <li><a href="#agenda">Agenda Paroquial</a></li>
+            <li><a href="#noticias">Notícias</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+          </ul>
+        </li>
+        <li><a href="#velas" class="nav-link">Velas Virtuais</a></li>
+        <li><a href="#contactos" class="nav-link nav-cta">Contactos</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= HERO / INÍCIO ================= -->
+<section id="inicio" class="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="container hero-inner">
+    <p class="hero-kicker"><i class="fa-solid fa-place-of-worship"></i> Diocese de Bragança-Miranda</p>
+    <h1>Paróquia de São João Baptista</h1>
+    <p class="hero-sub">Uma comunidade a caminho, iluminada pela fé, animada pela PASCOM &mdash; Pastoral da Comunicação.</p>
+    <div class="hero-actions">
+      <a href="#missas" class="btn btn-yellow"><i class="fa-solid fa-clock"></i> Horário das Missas</a>
+      <a href="#contactos" class="btn btn-outline"><i class="fa-solid fa-envelope"></i> Contactos</a>
+    </div>
+
+    <div class="quick-grid" aria-label="Acessos rápidos">
+      <a href="#missas" class="quick-item">
+        <span class="quick-icon"><i class="fa-solid fa-church"></i></span>
+        <span>Missas</span>
+      </a>
+      <a href="#confissoes" class="quick-item">
+        <span class="quick-icon"><i class="fa-solid fa-hands-praying"></i></span>
+        <span>Confissões</span>
+      </a>
+      <a href="#adoracao" class="quick-item">
+        <span class="quick-icon"><i class="fa-solid fa-monument"></i></span>
+        <span>Adoração</span>
+      </a>
+      <a href="#evangelho" class="quick-item">
+        <span class="quick-icon"><i class="fa-solid fa-book-bible"></i></span>
+        <span>Evangelho</span>
+      </a>
+      <a href="#santo" class="quick-item">
+        <span class="quick-icon"><i class="fa-solid fa-star"></i></span>
+        <span>Santo do Dia</span>
+      </a>
+      <a href="#velas" class="quick-item">
+        <span class="quick-icon"><i class="fa-solid fa-fire"></i></span>
+        <span>Velas Virtuais</span>
+      </a>
+      <a href="#agenda" class="quick-item">
+        <span class="quick-icon"><i class="fa-solid fa-calendar-days"></i></span>
+        <span>Agenda</span>
+      </a>
+      <a href="#catequese" class="quick-item">
+        <span class="quick-icon"><i class="fa-solid fa-child"></i></span>
+        <span>Catequese</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PATRONO: SÃO CARLO ACUTIS ================= -->
+<section class="patrono">
+  <div class="container patrono-inner">
+    <div class="patrono-media" aria-hidden="true">
+      <div class="patrono-frame">
+        <i class="fa-solid fa-laptop-code"></i>
+      </div>
+    </div>
+    <div class="patrono-text">
+      <p class="section-kicker">Patrono da PASCOM</p>
+      <h2>São Carlo Acutis</h2>
+      <p class="patrono-dates">1991 &ndash; 2006 &middot; "O Influencer de Deus"</p>
+      <p>Carlo Acutis foi um jovem italiano apaixonado por informática e pela Eucaristia, que utilizou a sua capacidade de programação para evangelizar, criando um website com o catálogo dos milagres eucarísticos reconhecidos pela Igreja. Faleceu aos 15 anos, vítima de leucemia, oferecendo o seu sofrimento pela Igreja e pelo Papa.</p>
+      <blockquote>&ldquo;A Eucaristia é a minha autoestrada para o Céu.&rdquo;</blockquote>
+      <p class="patrono-note">É o padroeiro escolhido pela nossa equipa de Pastoral da Comunicação (PASCOM), por nos inspirar a usar as tecnologias e as redes sociais para levar Cristo a todos.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HISTÓRIA ================= -->
+<section id="historia" class="section">
+  <div class="container">
+    <p class="section-kicker">Conhecer a nossa comunidade</p>
+    <h2 class="section-title"><i class="fa-solid fa-scroll icon-title"></i> História da Paróquia</h2>
+    <div class="two-col">
+      <div>
+        <p>A Paróquia de São João Baptista tem as suas raízes na fé e na tradição da região transmontana, integrada na Diocese de Bragança-Miranda. Ao longo dos séculos, a comunidade cristã reuniu-se em torno da sua igreja matriz, celebrando os sacramentos, transmitindo a fé de geração em geração e mantendo viva a devoção a São João Baptista, o Precursor.</p>
+        <p><em>[Texto histórico a completar pela equipa paroquial: ano de fundação, factos marcantes, párocos que passaram pela paróquia, obras de restauro, etc.]</em></p>
+      </div>
+      <ol class="timeline">
+        <li><span class="timeline-year">[Ano]</span><p>Fundação da paróquia / construção da primitiva igreja.</p></li>
+        <li><span class="timeline-year">[Ano]</span><p>Obras de ampliação e restauro do templo paroquial.</p></li>
+        <li><span class="timeline-year">[Ano]</span><p>Criação dos principais grupos e movimentos pastorais.</p></li>
+        <li><span class="timeline-year">Hoje</span><p>Uma comunidade viva, a caminho, animada pela PASCOM.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PÁROCO ================= -->
+<section id="paroco" class="section section-alt">
+  <div class="container">
+    <p class="section-kicker">Quem nos guia</p>
+    <h2 class="section-title"><i class="fa-solid fa-user-tie icon-title"></i> O Pároco</h2>
+    <div class="priest-card">
+      <div class="priest-photo" aria-hidden="true"><i class="fa-solid fa-user"></i></div>
+      <div class="priest-info">
+        <h3>Rev. Padre [Nome do Pároco]</h3>
+        <p class="priest-role">Pároco de São João Baptista</p>
+        <p>[Breve nota biográfica do pároco: percurso vocacional, ano de ordenação, paróquias anteriores e uma palavra de boas-vindas à comunidade.]</p>
+        <ul class="priest-contacts">
+          <li><i class="fa-solid fa-envelope"></i> [email@paroquia.pt]</li>
+          <li><i class="fa-solid fa-phone"></i> [+351 XXX XXX XXX]</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LITURGIA ================= -->
+<section id="liturgia" class="section">
+  <div class="container">
+    <p class="section-kicker">Vida litúrgica</p>
+    <h2 class="section-title"><i class="fa-solid fa-book-open-reader icon-title"></i> Liturgia</h2>
+    <p>Acompanhe connosco o ano litúrgico, tempo forte da vida da Igreja, marcado por tempos, cores e celebrações próprias.</p>
+    <div class="liturgy-colors">
+      <div class="color-chip"><span class="chip verde"></span> Tempo Comum</div>
+      <div class="color-chip"><span class="chip roxo"></span> Advento &amp; Quaresma</div>
+      <div class="color-chip"><span class="chip branco"></span> Páscoa &amp; Natal</div>
+      <div class="color-chip"><span class="chip vermelho"></span> Paixão, Mártires &amp; Pentecostes</div>
+    </div>
+    <p class="muted"><i class="fa-solid fa-circle-info"></i> Tempo litúrgico atual e leituras da Missa: <em>[a atualizar semanalmente pela equipa da PASCOM]</em>.</p>
+  </div>
+</section>
+
+<!-- ================= EVANGELHO DO DIA ================= -->
+<section id="evangelho" class="section section-alt">
+  <div class="container narrow">
+    <p class="section-kicker">Alimentar a fé todos os dias</p>
+    <h2 class="section-title"><i class="fa-solid fa-book-bible icon-title"></i> Evangelho do Dia</h2>
+    <div class="daily-card">
+      <div class="daily-date" id="gospelDate">&mdash;</div>
+      <p class="daily-placeholder">O texto do Evangelho do dia é atualizado diariamente pela equipa da PASCOM.</p>
+      <p class="muted"><i class="fa-solid fa-pen"></i> Espaço reservado para a leitura, salmo responsorial e uma breve reflexão do dia.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SANTO DO DIA ================= -->
+<section id="santo" class="section">
+  <div class="container narrow">
+    <p class="section-kicker">Exemplos de vida cristã</p>
+    <h2 class="section-title"><i class="fa-solid fa-star icon-title"></i> Santo do Dia</h2>
+    <div class="daily-card">
+      <div class="daily-date" id="saintDate">&mdash;</div>
+      <p class="daily-placeholder">Biografia e devoção ao santo ou santa celebrado(a) hoje pela Igreja &mdash; atualizado diariamente.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HORÁRIO DAS MISSAS ================= -->
+<section id="missas" class="section section-alt">
+  <div class="container">
+    <p class="section-kicker">Celebrações</p>
+    <h2 class="section-title"><i class="fa-solid fa-church icon-title"></i> Horário das Missas</h2>
+    <div class="tabs" data-tabs="missas">
+      <div class="tab-buttons">
+        <button class="tab-btn active" data-tab="semana">Dias de Semana</button>
+        <button class="tab-btn" data-tab="sabado">Sábado</button>
+        <button class="tab-btn" data-tab="domingo">Domingo e Dias Santos</button>
+      </div>
+      <div class="tab-panel active" data-panel="semana">
+        <ul class="schedule-list">
+          <li><i class="fa-solid fa-clock"></i> Segunda a Sexta-feira &mdash; <strong>[19:00]</strong></li>
+        </ul>
+      </div>
+      <div class="tab-panel" data-panel="sabado">
+        <ul class="schedule-list">
+          <li><i class="fa-solid fa-clock"></i> Sábado (Missa vespertina) &mdash; <strong>[19:00]</strong></li>
+        </ul>
+      </div>
+      <div class="tab-panel" data-panel="domingo">
+        <ul class="schedule-list">
+          <li><i class="fa-solid fa-clock"></i> Domingo &mdash; <strong>[10:00]</strong> e <strong>[19:00]</strong></li>
+          <li><i class="fa-solid fa-clock"></i> Dias Santos de guarda &mdash; <strong>[a anunciar]</strong></li>
+        </ul>
+      </div>
+    </div>
+    <p class="muted"><i class="fa-solid fa-circle-info"></i> Horários de exemplo &mdash; substitua pelos horários reais da paróquia.</p>
+  </div>
+</section>
+
+<!-- ================= CONFISSÕES ================= -->
+<section id="confissoes" class="section">
+  <div class="container">
+    <p class="section-kicker">Sacramento da Reconciliação</p>
+    <h2 class="section-title"><i class="fa-solid fa-hands-praying icon-title"></i> Horário das Confissões</h2>
+    <div class="card-row">
+      <div class="info-card">
+        <i class="fa-solid fa-calendar-day"></i>
+        <h3>Antes das Missas</h3>
+        <p>[30 minutos] antes de cada celebração eucarística.</p>
+      </div>
+      <div class="info-card">
+        <i class="fa-solid fa-calendar-week"></i>
+        <h3>Sábados</h3>
+        <p>Das <strong>[18:00]</strong> às <strong>[19:00]</strong>, ou por marcação.</p>
+      </div>
+      <div class="info-card">
+        <i class="fa-solid fa-phone"></i>
+        <h3>Marcação Pessoal</h3>
+        <p>Contacte a secretaria paroquial para outro horário.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ADORAÇÃO ================= -->
+<section id="adoracao" class="section section-alt">
+  <div class="container">
+    <p class="section-kicker">Diante do Santíssimo</p>
+    <h2 class="section-title"><i class="fa-solid fa-monument icon-title"></i> Dias de Adoração</h2>
+    <div class="card-row">
+      <div class="info-card">
+        <i class="fa-solid fa-calendar"></i>
+        <h3>Adoração Semanal</h3>
+        <p>Todas as <strong>[quintas-feiras]</strong>, das <strong>[18:00]</strong> às <strong>[19:00]</strong>.</p>
+      </div>
+      <div class="info-card">
+        <i class="fa-solid fa-star-of-life"></i>
+        <h3>Primeira Sexta-feira do Mês</h3>
+        <p>Adoração e Hora Santa dedicada ao Sagrado Coração de Jesus.</p>
+      </div>
+      <div class="info-card">
+        <i class="fa-solid fa-cross"></i>
+        <h3>Tempos Fortes</h3>
+        <p>Adoração especial durante o Advento e a Quaresma &mdash; [datas a anunciar].</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CATEQUESE ================= -->
+<section id="catequese" class="section">
+  <div class="container">
+    <p class="section-kicker">Formação na fé</p>
+    <h2 class="section-title"><i class="fa-solid fa-child icon-title"></i> Catequese</h2>
+    <p>A catequese paroquial acompanha as crianças e jovens desde a iniciação cristã até à Crisma, preparando também para a Primeira Comunhão.</p>
+    <div class="accordion" id="catequeseAccordion">
+      <div class="accordion-item">
+        <button class="accordion-header">1º ao 4º Ano &mdash; Iniciação Cristã <i class="fa-solid fa-chevron-down"></i></button>
+        <div class="accordion-body"><p>Descoberta da fé, oração e primeiros passos na vida da comunidade cristã. [Horário: sábados, 14:00].</p></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">5º Ano &mdash; Preparação para a Primeira Comunhão <i class="fa-solid fa-chevron-down"></i></button>
+        <div class="accordion-body"><p>Preparação próxima para os sacramentos da Eucaristia e da Reconciliação. [Horário: sábados, 14:00].</p></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">6º ao 9º Ano &mdash; Caminho para a Crisma <i class="fa-solid fa-chevron-down"></i></button>
+        <div class="accordion-body"><p>Aprofundamento da fé e preparação para o Sacramento da Confirmação. [Horário: sábados, 15:30].</p></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">Inscrições <i class="fa-solid fa-chevron-down"></i></button>
+        <div class="accordion-body"><p>As inscrições realizam-se no início do ano pastoral, junto da secretaria paroquial ou dos catequistas responsáveis.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AGENDA PAROQUIAL ================= -->
+<section id="agenda" class="section section-alt">
+  <div class="container">
+    <p class="section-kicker">Não perca nada</p>
+    <h2 class="section-title"><i class="fa-solid fa-calendar-days icon-title"></i> Agenda Paroquial</h2>
+    <div class="agenda-list">
+      <div class="agenda-item">
+        <div class="agenda-date"><span class="day">24</span><span class="month">Jun</span></div>
+        <div class="agenda-body">
+          <h3>Festa de São João Baptista</h3>
+          <p>Solenidade do Padroeiro da paróquia, com Missa e procissão. [Local e hora a anunciar].</p>
+        </div>
+      </div>
+      <div class="agenda-item">
+        <div class="agenda-date"><span class="day">12</span><span class="month">Out</span></div>
+        <div class="agenda-body">
+          <h3>Festa de São Carlo Acutis</h3>
+          <p>Celebração dedicada ao patrono da PASCOM, com momento de oração para jovens.</p>
+        </div>
+      </div>
+      <div class="agenda-item">
+        <div class="agenda-date"><span class="day">--</span><span class="month">---</span></div>
+        <div class="agenda-body">
+          <h3>[Título do Evento]</h3>
+          <p>[Descrição breve do evento a preencher pela equipa da PASCOM].</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NOTÍCIAS ================= -->
+<section id="noticias" class="section">
+  <div class="container">
+    <p class="section-kicker">Fique a par</p>
+    <h2 class="section-title"><i class="fa-solid fa-newspaper icon-title"></i> Notícias</h2>
+    <div class="news-grid">
+      <article class="news-card">
+        <div class="news-thumb"><i class="fa-solid fa-image"></i></div>
+        <div class="news-body">
+          <span class="news-date">[Data]</span>
+          <h3>[Título da notícia]</h3>
+          <p>[Breve resumo da notícia paroquial a publicar pela equipa da PASCOM.]</p>
+          <a href="#" class="news-link">Ler mais <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="news-card">
+        <div class="news-thumb"><i class="fa-solid fa-image"></i></div>
+        <div class="news-body">
+          <span class="news-date">[Data]</span>
+          <h3>[Título da notícia]</h3>
+          <p>[Breve resumo da notícia paroquial a publicar pela equipa da PASCOM.]</p>
+          <a href="#" class="news-link">Ler mais <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="news-card">
+        <div class="news-thumb"><i class="fa-solid fa-image"></i></div>
+        <div class="news-body">
+          <span class="news-date">[Data]</span>
+          <h3>[Título da notícia]</h3>
+          <p>[Breve resumo da notícia paroquial a publicar pela equipa da PASCOM.]</p>
+          <a href="#" class="news-link">Ler mais <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GRUPOS E ORDENS RELIGIOSAS ================= -->
+<section id="grupos" class="section section-alt">
+  <div class="container">
+    <p class="section-kicker">Caminhar em comunidade</p>
+    <h2 class="section-title"><i class="fa-solid fa-people-group icon-title"></i> Grupos e Ordens Religiosas</h2>
+    <div class="groups-grid">
+      <div class="group-card"><i class="fa-solid fa-cross"></i><h3>Catequistas</h3><p>Equipa dedicada à transmissão da fé às crianças e jovens.</p></div>
+      <div class="group-card"><i class="fa-solid fa-music"></i><h3>Coro Paroquial</h3><p>Anima os cantos nas celebrações litúrgicas.</p></div>
+      <div class="group-card"><i class="fa-solid fa-hands-praying"></i><h3>Acólitos</h3><p>Serviço ao altar durante as celebrações.</p></div>
+      <div class="group-card"><i class="fa-solid fa-video"></i><h3>PASCOM</h3><p>Pastoral da Comunicação: redes sociais, transmissões e este site.</p></div>
+      <div class="group-card"><i class="fa-solid fa-child-reaching"></i><h3>Grupo de Jovens</h3><p>Espaço de encontro, formação e convívio para os mais jovens.</p></div>
+      <div class="group-card"><i class="fa-solid fa-hand-holding-heart"></i><h3>Cáritas Paroquial</h3><p>Ação social e apoio aos mais necessitados da comunidade.</p></div>
+      <div class="group-card"><i class="fa-solid fa-dove"></i><h3>Legião de Maria</h3><p>Movimento de apostolado e devoção mariana.</p></div>
+      <div class="group-card"><i class="fa-solid fa-heart"></i><h3>Equipas de Nossa Senhora</h3><p>Espiritualidade conjugal para casais.</p></div>
+      <div class="group-card"><i class="fa-solid fa-users-viewfinder"></i><h3>[Ordem/Instituto Religioso]</h3><p>[Descrição da ordem ou instituto presente na paróquia, se aplicável.]</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALERIA ================= -->
+<section id="galeria" class="section">
+  <div class="container">
+    <p class="section-kicker">Momentos da nossa fé</p>
+    <h2 class="section-title"><i class="fa-solid fa-images icon-title"></i> Galeria de Imagens</h2>
+    <div class="gallery-grid" id="galleryGrid">
+      <!-- Placeholder tiles - substituir por <img src="..." alt="..."> reais -->
+    </div>
+    <p class="muted"><i class="fa-solid fa-circle-info"></i> Substitua estes espaços por fotografias reais da vida paroquial.</p>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Fechar"><i class="fa-solid fa-xmark"></i></button>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+    <div class="lightbox-content" id="lightboxContent"></div>
+    <button class="lightbox-next" id="lightboxNext" aria-label="Seguinte"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+</section>
+
+<!-- ================= VELAS VIRTUAIS ================= -->
+<section id="velas" class="section section-alt">
+  <div class="container narrow">
+    <p class="section-kicker">Um gesto de oração</p>
+    <h2 class="section-title"><i class="fa-solid fa-fire icon-title"></i> Velas Virtuais</h2>
+    <p>Acenda uma vela virtual e deixe a sua intenção em oração, em comunhão com toda a paróquia.</p>
+
+    <form id="candleForm" class="candle-form">
+      <div class="form-row">
+        <input type="text" id="candleName" placeholder="O seu nome (ou 'Anónimo')" maxlength="40" required>
+      </div>
+      <div class="form-row">
+        <textarea id="candleIntention" placeholder="A sua intenção de oração" maxlength="140" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-yellow"><i class="fa-solid fa-fire"></i> Acender Vela</button>
+    </form>
+
+    <p class="muted small"><i class="fa-solid fa-circle-info"></i> As velas ficam guardadas apenas neste dispositivo/navegador.</p>
+
+    <div class="candles-grid" id="candlesGrid" aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- ================= CONTACTOS ================= -->
+<section id="contactos" class="section">
+  <div class="container">
+    <p class="section-kicker">Fale connosco</p>
+    <h2 class="section-title"><i class="fa-solid fa-address-book icon-title"></i> Contactos</h2>
+    <div class="contact-wrap">
+      <div class="contact-info">
+        <ul class="contact-list">
+          <li><i class="fa-solid fa-location-dot"></i> Rua da Igreja, [nº] &mdash; [Localidade], Diocese de Bragança-Miranda</li>
+          <li><i class="fa-solid fa-phone"></i> [+351 XXX XXX XXX]</li>
+          <li><i class="fa-solid fa-envelope"></i> [geral@paroquiasaojoaobaptista.pt]</li>
+          <li><i class="fa-solid fa-clock"></i> Secretaria: [dias e horas de atendimento]</li>
+        </ul>
+        <div class="social-block">
+          <p>Siga a PASCOM nas redes sociais:</p>
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" aria-label="Comunidade de WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <input type="text" placeholder="Nome" required>
+        </div>
+        <div class="form-row">
+          <input type="email" placeholder="Email" required>
+        </div>
+        <div class="form-row">
+          <textarea placeholder="Mensagem" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-blue"><i class="fa-solid fa-paper-plane"></i> Enviar Mensagem</button>
+        <p class="form-note muted small">Formulário de demonstração &mdash; ligue a um serviço de envio de email para o ativar.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="brand-badge"><i class="fa-solid fa-cross"></i></span>
+      <div>
+        <strong>PASCOM</strong>
+        <p>Paróquia de São João Baptista &middot; Diocese de Bragança-Miranda</p>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a href="#historia">História</a>
+      <a href="#missas">Missas</a>
+      <a href="#catequese">Catequese</a>
+      <a href="#noticias">Notícias</a>
+      <a href="#contactos">Contactos</a>
+    </div>
+    <div class="footer-social">
+      <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#" aria-label="Comunidade de WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> PASCOM &middot; Paróquia de São João Baptista. Sob a proteção de São Carlo Acutis.</p>
+  </div>
+</footer>
+
+<button id="backToTop" class="back-to-top" aria-label="Voltar ao topo"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
