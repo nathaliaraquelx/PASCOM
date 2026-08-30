@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Gestão da Agenda · PASCOM (uso interno)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+  :root {
+    --azul: #1c3a5e;
+    --azul-claro: #2f6fb0;
+    --borda: #e3e7ee;
+    --bg: #f5f7fa;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: #1f2937;
+    padding: 32px 20px 80px;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; }
+  h1 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--azul);
+    font-size: 1.6rem;
+    margin-bottom: 4px;
+  }
+  .aviso {
+    background: #fff7e6;
+    border: 1px solid #f0d59a;
+    color: #7a5b12;
+    padding: 12px 16px;
+    border-radius: 10px;
+    font-size: 0.88rem;
+    margin-bottom: 28px;
+  }
+  .card {
+    background: #fff;
+    border: 1px solid var(--borda);
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 16px rgba(28,58,94,0.06);
+  }
+  .card h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.05rem;
+    color: var(--azul);
+    margin: 0 0 16px;
+  }
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+  .form-grid .full { grid-column: 1 / -1; }
+  label {
+    display: block;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #4b5563;
+    margin-bottom: 4px;
+  }
+  input, select, textarea {
+    width: 100%;
+    padding: 9px 11px;
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 0.92rem;
+  }
+  textarea { resize: vertical; min-height: 60px; }
+  .btn {
+    border: none;
+    border-radius: 999px;
+    padding: 10px 22px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  .btn-azul { background: var(--azul); color: #fff; }
+  .btn-azul:hover { background: #163050; }
+  .btn-outline { background: #fff; border: 1px solid var(--borda); color: var(--azul); }
+  .btn-outline:hover { background: #f1f4f9; }
+  .btn-linha { display: flex; gap: 10px; margin-top: 16px; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+  th, td { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--borda); }
+  th { color: #6b7280; font-weight: 600; font-size: 0.78rem; text-transform: uppercase; }
+  .cat-chip {
+    display: inline-block;
+    padding: 2px 9px;
+    border-radius: 999px;
+    color: #fff;
+    font-size: 0.72rem;
+  }
+  .remover-btn {
+    background: none;
+    border: none;
+    color: #b3261e;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  textarea#codigoGerado {
+    width: 100%;
+    min-height: 260px;
+    font-family: 'SFMono-Regular', Consolas, monospace;
+    font-size: 0.8rem;
+    background: #10233b;
+    color: #d5e2f0;
+    border-radius: 10px;
+    padding: 16px;
+    border: none;
+  }
+  .copiado { color: #2f8f5f; font-size: 0.85rem; margin-left: 10px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1><i class="fa-solid fa-calendar-plus"></i> Gestão da Agenda Paroquial</h1>
+  <div class="aviso">
+    <i class="fa-solid fa-triangle-exclamation"></i>
+    Página de uso interno da PASCOM — não está ligada no menu do site. Os eventos só ficam
+    visíveis no site depois de colar o código gerado em <code>js/eventos.js</code> e fazer
+    <strong>commit + push</strong> para o GitHub.
+  </div>
+
+  <div class="card">
+    <h2>Adicionar evento</h2>
+    <form id="formEvento">
+      <div class="form-grid">
+        <div class="full">
+          <label for="titulo">Título</label>
+          <input type="text" id="titulo" required placeholder="Ex: Missa Dominical">
+        </div>
+        <div>
+          <label for="data">Data</label>
+          <input type="date" id="data" required>
+        </div>
+        <div>
+          <label for="categoria">Categoria</label>
+          <select id="categoria">
+            <option value="liturgico">Vida Litúrgica</option>
+            <option value="catequese">Catequese</option>
+            <option value="comunidade">Comunidade</option>
+            <option value="festa">Festas</option>
+          </select>
+        </div>
+        <div>
+          <label for="horaInicio">Hora de início</label>
+          <input type="time" id="horaInicio" required>
+        </div>
+        <div>
+          <label for="horaFim">Hora de fim</label>
+          <input type="time" id="horaFim">
+        </div>
+        <div class="full">
+          <label for="local">Local</label>
+          <input type="text" id="local" placeholder="Ex: Igreja Paroquial">
+        </div>
+        <div class="full">
+          <label for="descricao">Descrição (opcional)</label>
+          <textarea id="descricao" placeholder="Breve nota sobre o evento"></textarea>
+        </div>
+      </div>
+      <div class="btn-linha">
+        <button type="submit" class="btn btn-azul"><i class="fa-solid fa-plus"></i> Adicionar à lista</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="card">
+    <h2>Eventos atuais (<span id="contagem">0</span>)</h2>
+    <table>
+      <thead>
+        <tr><th>Data</th><th>Hora</th><th>Título</th><th>Categoria</th><th></th></tr>
+      </thead>
+      <tbody id="tabelaEventos"></tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>Código para o ficheiro <code>js/eventos.js</code></h2>
+    <p style="font-size:0.85rem;color:#6b7280;margin-top:-8px;">
+      Clique em "Gerar código", copie tudo e substitua o conteúdo do array
+      <code>PASCOM_EVENTOS</code> em <code>js/eventos.js</code>.
+    </p>
+    <div class="btn-linha">
+      <button type="button" class="btn btn-outline" id="gerarBtn"><i class="fa-solid fa-code"></i> Gerar código</button>
+      <button type="button" class="btn btn-outline" id="copiarBtn"><i class="fa-solid fa-copy"></i> Copiar</button>
+      <span class="copiado" id="copiadoMsg" style="display:none;">Copiado!</span>
+    </div>
+    <br>
+    <textarea id="codigoGerado" readonly placeholder="O código aparece aqui depois de clicar em 'Gerar código'."></textarea>
+  </div>
+</div>
+
+<script src="js/eventos.js"></script>
+<script>
+  const CATEGORIAS = {
+    liturgico: { nome: 'Vida Litúrgica', cor: '#6d4aa8' },
+    catequese: { nome: 'Catequese', cor: '#3f8f5f' },
+    comunidade: { nome: 'Comunidade', cor: '#2f6fb0' },
+    festa: { nome: 'Festas', cor: '#c9962c' },
+  };
+
+  // Cópia local editável, a partir dos eventos já existentes em eventos.js
+  let eventos = (typeof PASCOM_EVENTOS !== 'undefined') ? JSON.parse(JSON.stringify(PASCOM_EVENTOS)) : [];
+  let proximoId = eventos.reduce((max, ev) => Math.max(max, ev.id), 0) + 1;
+
+  const tabela = document.getElementById('tabelaEventos');
+  const contagem = document.getElementById('contagem');
+
+  function renderTabela() {
+    eventos.sort((a, b) => (a.data + a.horaInicio).localeCompare(b.data + b.horaInicio));
+    contagem.textContent = eventos.length;
+    tabela.innerHTML = eventos.map(ev => `
+      <tr>
+        <td>${ev.data}</td>
+        <td>${ev.horaInicio}${ev.horaFim ? '–' + ev.horaFim : ''}</td>
+        <td>${ev.titulo}</td>
+        <td><span class="cat-chip" style="background:${CATEGORIAS[ev.categoria]?.cor || '#888'}">${CATEGORIAS[ev.categoria]?.nome || ev.categoria}</span></td>
+        <td><button class="remover-btn" data-id="${ev.id}" title="Remover"><i class="fa-solid fa-trash"></i></button></td>
+      </tr>
+    `).join('');
+
+    tabela.querySelectorAll('.remover-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        eventos = eventos.filter(ev => ev.id !== Number(btn.dataset.id));
+        renderTabela();
+      });
+    });
+  }
+
+  document.getElementById('formEvento').addEventListener('submit', (e) => {
+    e.preventDefault();
+    eventos.push({
+      id: proximoId++,
+      titulo: document.getElementById('titulo').value.trim(),
+      data: document.getElementById('data').value,
+      horaInicio: document.getElementById('horaInicio').value,
+      horaFim: document.getElementById('horaFim').value,
+      categoria: document.getElementById('categoria').value,
+      local: document.getElementById('local').value.trim(),
+      descricao: document.getElementById('descricao').value.trim(),
+    });
+    renderTabela();
+    e.target.reset();
+  });
+
+  document.getElementById('gerarBtn').addEventListener('click', () => {
+    const linhas = eventos
+      .sort((a, b) => (a.data + a.horaInicio).localeCompare(b.data + b.horaInicio))
+      .map(ev => `  {
+    id: ${ev.id},
+    titulo: ${JSON.stringify(ev.titulo)},
+    data: ${JSON.stringify(ev.data)},
+    horaInicio: ${JSON.stringify(ev.horaInicio)},
+    horaFim: ${JSON.stringify(ev.horaFim || '')},
+    categoria: ${JSON.stringify(ev.categoria)},
+    local: ${JSON.stringify(ev.local || '')},
+    descricao: ${JSON.stringify(ev.descricao || '')}
+  }`);
+    document.getElementById('codigoGerado').value =
+`const PASCOM_EVENTOS = [
+${linhas.join(',\n')}
+];`;
+  });
+
+  document.getElementById('copiarBtn').addEventListener('click', () => {
+    const campo = document.getElementById('codigoGerado');
+    if (!campo.value) return;
+    navigator.clipboard.writeText(campo.value).then(() => {
+      const msg = document.getElementById('copiadoMsg');
+      msg.style.display = 'inline';
+      setTimeout(() => (msg.style.display = 'none'), 1800);
+    });
+  });
+
+  renderTabela();
+</script>
+</body>
+</html>

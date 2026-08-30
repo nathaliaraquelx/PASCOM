@@ -10,6 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/calendario.css">
 </head>
 <body>
 
@@ -342,29 +343,7 @@
   <div class="container">
     <p class="section-kicker">Não perca nada</p>
     <h2 class="section-title"><i class="fa-solid fa-calendar-days icon-title"></i> Agenda Paroquial</h2>
-    <div class="agenda-list">
-      <div class="agenda-item">
-        <div class="agenda-date"><span class="day">24</span><span class="month">Jun</span></div>
-        <div class="agenda-body">
-          <h3>Festa de São João Baptista</h3>
-          <p>Solenidade do Padroeiro da paróquia, com Missa e procissão. [Local e hora a anunciar].</p>
-        </div>
-      </div>
-      <div class="agenda-item">
-        <div class="agenda-date"><span class="day">12</span><span class="month">Out</span></div>
-        <div class="agenda-body">
-          <h3>Festa de São Carlo Acutis</h3>
-          <p>Celebração dedicada ao patrono da PASCOM, com momento de oração para jovens.</p>
-        </div>
-      </div>
-      <div class="agenda-item">
-        <div class="agenda-date"><span class="day">--</span><span class="month">---</span></div>
-        <div class="agenda-body">
-          <h3>[Título do Evento]</h3>
-          <p>[Descrição breve do evento a preencher pela equipa da PASCOM].</p>
-        </div>
-      </div>
-    </div>
+    <div id="calendarioPascom"></div>
   </div>
 </section>
 
@@ -540,6 +519,9 @@
 
 <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo"><i class="fa-solid fa-arrow-up"></i></button>
 
+<script src="js/eventos.js"></script>
+<script src="js/calendario.js"></script>
+<script src="js/script.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

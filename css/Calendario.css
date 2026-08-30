@@ -1,0 +1,287 @@
+/* =========================================================
+   PASCOM · Agenda / Calendário — estilos
+   Namespace .cal-* para não colidir com o style.css existente
+   ========================================================= */
+
+.cal-wrap {
+  --cal-azul: #1c3a5e;
+  --cal-azul-claro: #2f6fb0;
+  --cal-dourado: #c9962c;
+  --cal-verde: #3f8f5f;
+  --cal-roxo: #6d4aa8;
+  --cal-bg-card: #ffffff;
+  --cal-borda: #e3e7ee;
+  --cal-texto-muted: #6b7280;
+
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .cal-wrap { grid-template-columns: 1fr; }
+}
+
+/* ---------- Painel lateral ---------- */
+.cal-side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cal-card {
+  background: var(--cal-bg-card);
+  border: 1px solid var(--cal-borda);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 16px rgba(28, 58, 94, 0.06);
+}
+
+.cal-card h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: var(--cal-azul);
+  margin: 0 0 14px;
+}
+
+/* Mini calendário */
+.cal-mini-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.cal-mini-header strong {
+  font-family: 'Poppins', sans-serif;
+  color: var(--cal-azul);
+  text-transform: capitalize;
+}
+.cal-mini-nav {
+  display: flex;
+  gap: 6px;
+}
+.cal-mini-nav button {
+  border: none;
+  background: #f1f4f9;
+  color: var(--cal-azul);
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.cal-mini-nav button:hover { background: #e3e9f3; }
+
+.cal-mini-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  text-align: center;
+  font-size: 0.78rem;
+}
+.cal-mini-grid .cal-dow {
+  color: var(--cal-texto-muted);
+  font-weight: 600;
+  padding-bottom: 4px;
+}
+.cal-mini-grid button {
+  border: none;
+  background: transparent;
+  padding: 6px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #1f2937;
+  position: relative;
+}
+.cal-mini-grid button.cal-outro-mes { color: #c7ccd6; }
+.cal-mini-grid button.cal-hoje { font-weight: 700; color: var(--cal-azul-claro); }
+.cal-mini-grid button.cal-selecionado { background: var(--cal-azul); color: #fff; }
+.cal-mini-grid button:hover:not(.cal-selecionado) { background: #eef2f8; }
+.cal-mini-dot {
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+}
+
+/* Categorias */
+.cal-legenda-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 0;
+  font-size: 0.92rem;
+  color: #374151;
+  cursor: pointer;
+  user-select: none;
+}
+.cal-legenda-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+.cal-legenda-item input { accent-color: var(--cal-azul); }
+.cal-legenda-item.cal-off { opacity: 0.4; }
+
+/* ---------- Área principal ---------- */
+.cal-main {
+  background: var(--cal-bg-card);
+  border: 1px solid var(--cal-borda);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 16px rgba(28, 58, 94, 0.06);
+}
+
+.cal-main-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.cal-main-header h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  color: var(--cal-azul);
+  margin: 0;
+  text-transform: capitalize;
+}
+.cal-main-nav {
+  display: flex;
+  gap: 6px;
+}
+.cal-main-nav button {
+  border: none;
+  background: #f1f4f9;
+  color: var(--cal-azul);
+  width: 32px;
+  height: 32px;
+  border-radius: 9px;
+  cursor: pointer;
+}
+.cal-main-nav button:hover { background: #e3e9f3; }
+.cal-hoje-btn {
+  margin-left: auto;
+  border: 1px solid var(--cal-borda);
+  background: #fff;
+  color: var(--cal-azul);
+  border-radius: 999px;
+  padding: 6px 16px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+.cal-hoje-btn:hover { background: #f1f4f9; }
+
+/* Grelha do mês */
+.cal-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+.cal-grid .cal-dow {
+  text-align: center;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--cal-texto-muted);
+  padding-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.cal-dia {
+  min-height: 88px;
+  border: 1px solid var(--cal-borda);
+  border-radius: 10px;
+  padding: 6px;
+  cursor: pointer;
+  transition: background 0.15s;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.cal-dia:hover { background: #f7f9fc; }
+.cal-dia.cal-outro-mes { opacity: 0.35; }
+.cal-dia.cal-hoje { border-color: var(--cal-azul-claro); }
+.cal-dia.cal-selecionado { background: #eef3fb; border-color: var(--cal-azul); }
+.cal-dia-num {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #374151;
+}
+.cal-dia-evento {
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  border-radius: 5px;
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.cal-dia-mais {
+  font-size: 0.68rem;
+  color: var(--cal-texto-muted);
+  padding-left: 6px;
+}
+
+@media (max-width: 640px) {
+  .cal-dia { min-height: 56px; }
+  .cal-dia-evento { display: none; }
+  .cal-dia.cal-tem-eventos .cal-dia-num::after {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--cal-azul-claro);
+    margin-left: 4px;
+    vertical-align: middle;
+  }
+}
+
+/* Lista de eventos do dia selecionado */
+.cal-lista {
+  margin-top: 24px;
+  border-top: 1px solid var(--cal-borda);
+  padding-top: 18px;
+}
+.cal-lista h4 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--cal-azul);
+  margin: 0 0 12px;
+  text-transform: capitalize;
+}
+.cal-evento-item {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 10px;
+  background: #f9fafc;
+  margin-bottom: 8px;
+  border-left: 4px solid var(--cal-azul-claro);
+}
+.cal-evento-hora {
+  font-weight: 700;
+  color: var(--cal-azul);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+.cal-evento-corpo h5 {
+  margin: 0 0 2px;
+  font-size: 0.95rem;
+  color: #1f2937;
+}
+.cal-evento-corpo p {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--cal-texto-muted);
+}
+.cal-vazio {
+  color: var(--cal-texto-muted);
+  font-size: 0.9rem;
+  font-style: italic;
+}
