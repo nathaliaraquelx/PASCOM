@@ -97,6 +97,42 @@ document.addEventListener('DOMContentLoaded', () => {
   if (gospelDate) gospelDate.textContent = formatted;
   if (saintDate) saintDate.textContent = formatted;
 
+  /* ---------- Evangelho / Santo do dia: conteúdo automático ----------
+     Lido de data/liturgia-hoje.json, gerado todos os dias por um GitHub
+     Action (.github/workflows/liturgia-diaria.yml) a partir do feed da
+     Evangelizo. Se o ficheiro não existir ou o pedido falhar, mantém-se
+     a mensagem placeholder que já está no HTML. */
+  fetch('data/liturgia-hoje.json', { cache: 'no-store' })
+    .then(res => (res.ok ? res.json() : Promise.reject(new Error('liturgia indisponível'))))
+    .then(liturgia => {
+      const liturgicalTimeEl = document.getElementById('gospelLiturgicalTime');
+      const citationEl = document.getElementById('gospelCitation');
+      const textEl = document.getElementById('gospelText');
+      const saintNameEl = document.getElementById('saintName');
+
+      if (liturgicalTimeEl && liturgia.tempoLiturgico) {
+        liturgicalTimeEl.textContent = liturgia.tempoLiturgico;
+      }
+      if (citationEl && liturgia.evangelho && liturgia.evangelho.titulo) {
+        citationEl.textContent = liturgia.evangelho.titulo;
+      }
+      if (textEl && liturgia.evangelho && liturgia.evangelho.texto) {
+        textEl.innerHTML = '';
+        liturgia.evangelho.texto.split('\n').forEach(paragrafo => {
+          if (!paragrafo.trim()) return;
+          const p = document.createElement('p');
+          p.textContent = paragrafo.trim();
+          textEl.appendChild(p);
+        });
+      }
+      if (saintNameEl && liturgia.santo) {
+        saintNameEl.textContent = liturgia.santo;
+      }
+    })
+    .catch(() => {
+      /* Mantém o texto placeholder já presente no HTML. */
+    });
+
   /* ---------- Galeria de imagens (placeholders + lightbox) ---------- */
   const galleryGrid = document.getElementById('galleryGrid');
   const galleryData = [

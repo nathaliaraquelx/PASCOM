@@ -212,8 +212,11 @@
     <h2 class="section-title"><i class="fa-solid fa-book-bible icon-title"></i> Evangelho do Dia</h2>
     <div class="daily-card">
       <div class="daily-date" id="gospelDate">&mdash;</div>
-      <p class="daily-placeholder">O texto do Evangelho do dia é atualizado diariamente pela equipa da PASCOM.</p>
-      <p class="muted"><i class="fa-solid fa-pen"></i> Espaço reservado para a leitura, salmo responsorial e uma breve reflexão do dia.</p>
+      <p class="daily-liturgical-time" id="gospelLiturgicalTime"></p>
+      <p class="daily-citation" id="gospelCitation"></p>
+      <div class="daily-text" id="gospelText">
+        <p class="daily-placeholder">O texto do Evangelho do dia é atualizado automaticamente todas as manhãs. Se não aparecer, volte a tentar mais tarde.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -225,7 +228,9 @@
     <h2 class="section-title"><i class="fa-solid fa-star icon-title"></i> Santo do Dia</h2>
     <div class="daily-card">
       <div class="daily-date" id="saintDate">&mdash;</div>
-      <p class="daily-placeholder">Biografia e devoção ao santo ou santa celebrado(a) hoje pela Igreja &mdash; atualizado diariamente.</p>
+      <p class="daily-saint-name" id="saintName">
+        <span class="daily-placeholder">O santo do dia é atualizado automaticamente todas as manhãs. Se não aparecer, volte a tentar mais tarde.</span>
+      </p>
     </div>
   </div>
 </section>

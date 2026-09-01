@@ -478,6 +478,30 @@ section#inicio.hero { padding-top: 0; }
   text-transform: capitalize;
 }
 .daily-placeholder { font-size: 1.05rem; }
+.daily-liturgical-time {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-bottom: 4px;
+}
+.daily-citation {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--gold-800);
+  margin-bottom: 16px;
+}
+.daily-text {
+  text-align: left;
+  font-size: 1.02rem;
+}
+.daily-text p { margin-bottom: 0.9em; }
+.daily-text p:last-child { margin-bottom: 0; }
+.daily-saint-name {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--gold-800);
+}
 
 /* Tabs (Missas) */
 .tab-buttons {
