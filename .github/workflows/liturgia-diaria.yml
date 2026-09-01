@@ -1,0 +1,38 @@
+name: Atualizar liturgia diária
+
+on:
+  schedule:
+    # 05:00 UTC todos os dias (~05:00-06:00 em Portugal, consoante hora de verão/inverno)
+    - cron: "0 5 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  atualizar-liturgia:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Obter liturgia do dia (Evangelizo, PT)
+        run: |
+          curl -sS --fail --max-time 20 \
+            "http://feed.evangelizo.org/v2/reader.php?type=xml&lang=PT&content=GSP" \
+            -o /tmp/liturgia.xml
+
+      - name: Gerar data/liturgia-hoje.json
+        run: python3 scripts/gerar-liturgia.py /tmp/liturgia.xml
+
+      - name: Commit e push (se houver alterações)
+        run: |
+          git config user.name "PASCOM Bot"
+          git config user.email "actions@github.com"
+          git add data/liturgia-hoje.json
+          if git diff --staged --quiet; then
+            echo "Sem alterações — nada a comitar."
+          else
+            git commit -m "Atualizar liturgia diária"
+            git push
+          fi
