@@ -147,18 +147,19 @@ section#inicio.hero { padding-top: 0; }
 .main-nav ul {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 2px;
 }
 .main-nav > ul > li { position: relative; }
 .nav-link {
   display: flex;
   align-items: center;
   gap: 6px;
-  padding: 10px 14px;
+  padding: 10px 11px;
   font-weight: 600;
-  font-size: 0.92rem;
+  font-size: 0.88rem;
   color: var(--gold-900);
   border-radius: 8px;
+  white-space: nowrap;
   transition: background .2s, color .2s;
 }
 .nav-link:hover, .nav-link.active { background: var(--gold-100); color: var(--gold-600); }
