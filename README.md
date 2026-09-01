@@ -21,13 +21,9 @@ Grupos e Ordens Religiosas · Galeria de Imagens · Velas Virtuais · Contactos.
 
 ## Por preencher antes de publicar
 
-O site está pronto a usar, mas contém texto de exemplo entre parênteses retos `[ ]` que deve ser
-substituído por informação real da paróquia:
+Grande parte do conteúdo (contactos, pároco, horários de Missas/Confissões/Adoração, catequese,
+grupos e história) já foi preenchida com dados reais a partir do Plano Pastoral 2025. Ainda falta:
 
-- **Contactos**: morada, telefone, email da secretaria (`index.html`, topo e secção *Contactos*).
-- **Pároco**: nome, foto e nota biográfica (secção `#paroco`).
-- **História**: datas e factos reais da paróquia (secção `#historia`).
-- **Horários**: Missas, Confissões e Adoração (secções `#missas`, `#confissoes`, `#adoracao`).
 - **Redes sociais**: os ícones de Instagram, Facebook, Comunidade de WhatsApp e TikTok apontam para
   `#` — substitua pelos links reais em **todas** as ocorrências (cabeçalho, secção *Contactos* e rodapé).
 - **Evangelho do Dia / Santo do Dia**: mostram apenas a data atual; o texto deve ser atualizado
@@ -36,6 +32,8 @@ substituído por informação real da paróquia:
   `js/script.js` (array `galleryData`) por imagens reais (`<img src="assets/img/...">`).
 - **Formulário de contacto**: é apenas uma demonstração no browser; ligue-o a um serviço de envio de
   email (ex.: Formspree, EmailJS) ou a um backend próprio para funcionar de facto.
+- **História**: falta ainda o ano exato de fundação da paróquia (secção `#historia`, marcado `[Ano]`).
+- **Notícias / Agenda**: só têm alguns exemplos reais; adicione mais conforme forem surgindo.
 
 ## Velas Virtuais
 
