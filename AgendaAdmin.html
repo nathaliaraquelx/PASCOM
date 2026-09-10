@@ -125,9 +125,12 @@
   <h1><i class="fa-solid fa-calendar-plus"></i> Gestão da Agenda Paroquial</h1>
   <div class="aviso">
     <i class="fa-solid fa-triangle-exclamation"></i>
-    Página de uso interno da PASCOM — não está ligada no menu do site. Os eventos só ficam
-    visíveis no site depois de colar o código gerado em <code>js/eventos.js</code> e fazer
-    <strong>commit + push</strong> para o GitHub.
+    Página de uso interno da PASCOM — não está ligada no menu do site.
+    <strong>A agenda oficial do site é agora o Google Calendar da paróquia</strong> — é lá que
+    deve adicionar, editar ou remover eventos; um sincronismo automático atualiza o site todos
+    os dias sozinho. Esta página serve apenas para testar rapidamente como um evento vai ficar,
+    em computador local — o código gerado aqui, se for colado em <code>js/eventos.js</code>,
+    é substituído no sincronismo seguinte.
   </div>
 
   <div class="card">
@@ -185,10 +188,10 @@
   </div>
 
   <div class="card">
-    <h2>Código para o ficheiro <code>js/eventos.js</code></h2>
+    <h2>Código para pré-visualização local</h2>
     <p style="font-size:0.85rem;color:#6b7280;margin-top:-8px;">
-      Clique em "Gerar código", copie tudo e substitua o conteúdo do array
-      <code>PASCOM_EVENTOS</code> em <code>js/eventos.js</code>.
+      Útil apenas para testar no seu computador antes de criar o evento a sério no Google
+      Calendar da paróquia — que é de onde o site tira os eventos automaticamente todos os dias.
     </p>
     <div class="btn-linha">
       <button type="button" class="btn btn-outline" id="gerarBtn"><i class="fa-solid fa-code"></i> Gerar código</button>

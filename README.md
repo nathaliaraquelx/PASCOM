@@ -53,6 +53,36 @@ essa, mude-a em **Settings → General → Default branch**, ou o Evangelho/Sant
 atualizar sozinhos (pode sempre correr o workflow manualmente em **Actions → Atualizar liturgia
 diária → Run workflow**, seja qual for a branch principal).
 
+## Agenda Paroquial (sincronizada com o Google Calendar)
+
+A Agenda Paroquial já não é editada diretamente no código: os eventos vivem no **Google
+Calendar público da paróquia**, e um GitHub Action (`.github/workflows/agenda-google-calendar.yml`)
+sincroniza-os com o site todos os dias:
+
+1. Descarrega o feed público (`.ics`) desse calendário.
+2. Corre `scripts/gerar-eventos.py`, que expande eventos recorrentes e gera `js/eventos.js`.
+3. Faz *commit* e *push* — o widget do calendário (`js/calendario.js`) lê esse ficheiro.
+
+**Para adicionar/editar/remover eventos**, edite-os diretamente no Google Calendar da paróquia —
+não em `js/eventos.js` (esse ficheiro é reescrito todos os dias e qualquer edição manual é
+perdida no sincronismo seguinte).
+
+**Categoria do evento** — defina começando o título do evento no Google Calendar com uma destas
+etiquetas entre parênteses retos (a etiqueta não aparece no site, só a categoria e a cor):
+
+| Etiqueta no título   | Categoria no site |
+|-----------------------|-------------------|
+| `[Liturgico]`          | Vida Litúrgica (roxo) |
+| `[Catequese]`          | Catequese (verde) |
+| `[Comunidade]`         | Comunidade (azul) |
+| `[Festa]`              | Festas (dourado) |
+| *(sem etiqueta)*       | Comunidade (azul) |
+
+`AgendaAdmin.html` continua disponível só para pré-visualizar rapidamente como um evento vai
+ficar, em computador local — não é mais o sítio para publicar eventos a sério.
+
+Está sujeita à mesma limitação de *branch* principal descrita acima para o Evangelho/Santo do dia.
+
 ## Velas Virtuais
 
 A funcionalidade de velas guarda os pedidos de oração no `localStorage` do navegador de quem visita o

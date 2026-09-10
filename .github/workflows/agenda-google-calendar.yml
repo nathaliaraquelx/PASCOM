@@ -1,0 +1,41 @@
+name: Sincronizar agenda com o Google Calendar
+
+on:
+  schedule:
+    # 05:15 UTC todos os dias — a seguir à liturgia diária (05:00 UTC)
+    - cron: "15 5 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  sincronizar-agenda:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Instalar dependências
+        run: pip install --quiet icalendar recurring-ical-events
+
+      - name: Obter o calendário público da paróquia (Google Calendar)
+        run: |
+          curl -sS --fail --max-time 20 \
+            "https://calendar.google.com/calendar/ical/f1bf9b76d436ecd19c75729ea360c28fffc7678d101b80125d129486ec61035d%40group.calendar.google.com/public/basic.ics" \
+            -o /tmp/agenda.ics
+
+      - name: Gerar js/eventos.js
+        run: python3 scripts/gerar-eventos.py /tmp/agenda.ics
+
+      - name: Commit e push (se houver alterações)
+        run: |
+          git config user.name "PASCOM Bot"
+          git config user.email "actions@github.com"
+          git add js/eventos.js
+          if git diff --staged --quiet; then
+            echo "Sem alterações — nada a comitar."
+          else
+            git commit -m "Sincronizar agenda com o Google Calendar"
+            git push
+          fi
