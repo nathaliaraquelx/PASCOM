@@ -15,7 +15,7 @@ O site usa a Google Fonts (Poppins/Inter) e o Font Awesome via CDN para os tipos
 
 ## Secções incluídas
 
-Início · Patrono (São Carlo Acutis) · História · Pároco · Liturgia · Evangelho do Dia · Santo do Dia ·
+Início · Patrono (São Carlo Acutis) · História · Pároco · Evangelho do Dia · Santo do Dia ·
 Horário das Missas · Confissões · Dias de Adoração · Catequese · Agenda Paroquial · Notícias ·
 Grupos e Ordens Religiosas · Galeria de Imagens · Velas Virtuais · Contactos.
 
