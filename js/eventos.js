@@ -21,4 +21,15 @@
    sincronismo automático.)
    ========================================================= */
 
-const PASCOM_EVENTOS = [];
+const PASCOM_EVENTOS = [
+  {
+    "id": 1,
+    "titulo": "Busy",
+    "data": "2026-10-03",
+    "horaInicio": "09:00",
+    "horaFim": "12:30",
+    "categoria": "comunidade",
+    "local": "Paróquia de São João Baptista",
+    "descricao": ""
+  }
+];
