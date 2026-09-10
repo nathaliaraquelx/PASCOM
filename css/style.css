@@ -821,7 +821,9 @@ ul { list-style: none; margin: 0; padding: 0; }
   flex-direction: column;
   gap: 14px;
 }
-.form-note { margin-top: 4px; }
+.form-status { margin-top: 4px; min-height: 1.2em; }
+.form-status-success { color: #2f8f5f; font-weight: 600; }
+.form-status-error { color: #b3261e; font-weight: 600; }
 
 /* Footer */
 .site-footer { background: var(--gold-900); color: rgba(255,255,255,0.85); padding-top: 50px; }

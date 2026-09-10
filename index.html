@@ -515,18 +515,24 @@
           </div>
         </div>
       </div>
-      <form class="contact-form" id="contactForm">
+      <!--
+        Formulário ligado ao Formspree (serviço gratuito de envio de email para sites estáticos).
+        Antes de publicar, substitua "SEU_FORM_ID" abaixo pelo ID do seu formulário Formspree
+        — ver instruções em README.md, secção "Formulário de contacto".
+      -->
+      <form class="contact-form" id="contactForm" action="https://formspree.io/f/SEU_FORM_ID" method="POST">
         <div class="form-row">
-          <input type="text" placeholder="Nome" required>
+          <input type="text" name="nome" placeholder="Nome" required>
         </div>
         <div class="form-row">
-          <input type="email" placeholder="Email" required>
+          <input type="email" name="email" placeholder="Email" required>
         </div>
         <div class="form-row">
-          <textarea placeholder="Mensagem" required></textarea>
+          <textarea name="mensagem" placeholder="Mensagem" required></textarea>
         </div>
+        <input type="hidden" name="_subject" value="Nova mensagem do site — Contactos PASCOM">
         <button type="submit" class="btn btn-blue"><i class="fa-solid fa-paper-plane"></i> Enviar Mensagem</button>
-        <p class="form-note muted small">Formulário de demonstração &mdash; ligue a um serviço de envio de email para o ativar.</p>
+        <p class="form-status muted small" id="contactFormStatus" role="status" aria-live="polite"></p>
       </form>
     </div>
   </div>
