@@ -24,7 +24,7 @@
 const PASCOM_EVENTOS = [
   {
     "id": 1,
-    "titulo": "Busy",
+    "titulo": "E-vangelizar",
     "data": "2026-10-03",
     "horaInicio": "09:00",
     "horaFim": "12:30",
