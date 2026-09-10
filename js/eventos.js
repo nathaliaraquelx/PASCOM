@@ -28,7 +28,7 @@ const PASCOM_EVENTOS = [
     "data": "2026-10-03",
     "horaInicio": "09:00",
     "horaFim": "12:30",
-    "categoria": "comunidade",
+    "categoria": "catequese",
     "local": "Paróquia de São João Baptista",
     "descricao": ""
   }
