@@ -28,6 +28,9 @@ grupos e história) já foi preenchida com dados reais a partir do Plano Pastora
   `#` — substitua pelos links reais em **todas** as ocorrências (cabeçalho, secção *Contactos* e rodapé).
 - **Galeria**: as fotos são placeholders com ícones; substitua os elementos `.gallery-tile` em
   `js/script.js` (array `galleryData`) por imagens reais (`<img src="assets/img/...">`).
+- **Slideshow do topo**: as duas fotos em `assets/img/hero/` (Sé Catedral e Catedral Nova) são fotos
+  de Bragança com licença aberta (Wikimedia Commons), usadas só como ponto de partida — substitua por
+  fotos próprias da paróquia assim que possível (ver secção abaixo).
 - **Formulário de contacto**: é apenas uma demonstração no browser; ligue-o a um serviço de envio de
   email (ex.: Formspree, EmailJS) ou a um backend próprio para funcionar de facto.
 - **História**: falta ainda o ano exato de fundação da paróquia (secção `#historia`, marcado `[Ano]`).
@@ -82,6 +85,36 @@ etiquetas entre parênteses retos (a etiqueta não aparece no site, só a catego
 ficar, em computador local — não é mais o sítio para publicar eventos a sério.
 
 Está sujeita à mesma limitação de *branch* principal descrita acima para o Evangelho/Santo do dia.
+
+## Slideshow do topo (fotos das igrejas)
+
+A secção inicial (`#inicio`) mostra um slideshow de fotos em fundo, com transição suave (*crossfade*)
+a cada ~6,5 segundos — respeita a preferência do sistema "reduzir movimento" (`prefers-reduced-motion`),
+caso em que fica só a primeira foto, sem animação.
+
+As imagens estão em `assets/img/hero/` e são listadas em `index.html`, dentro de
+`.hero-slideshow` — cada foto é um `<div class="hero-slide">` com `background-image`:
+
+```html
+<div class="hero-slideshow" aria-hidden="true">
+  <div class="hero-slide active" style="background-image:url('assets/img/hero/se-catedral.jpg')"></div>
+  <div class="hero-slide" style="background-image:url('assets/img/hero/catedral-nova.jpg')"></div>
+</div>
+```
+
+**Para adicionar, remover ou substituir fotos:**
+
+1. Coloque o ficheiro de imagem em `assets/img/hero/` (fotos horizontais, boa luz, idealmente
+   ≥1280px de largura para ficarem nítidas em ecrãs grandes).
+2. Adicione/edite um `<div class="hero-slide" style="background-image:url('assets/img/hero/NOME.jpg')"></div>`
+   dentro de `.hero-slideshow` (mantenha `class="hero-slide active"` só no primeiro).
+3. Se a foto não for própria da paróquia, adicione o crédito em `.hero-photo-credit` (mesmo bloco,
+   logo a seguir) e confirme a licença antes de usar.
+
+As duas fotos atuais (Sé Catedral de Bragança e Catedral Nova/Nossa Senhora Rainha) são do Wikimedia
+Commons, com licença Creative Commons que exige atribuição (CC BY-SA 2.0 e CC BY 2.0, créditos no
+rodapé do slideshow) — servem só como ponto de partida até a paróquia ter fotos próprias das suas
+igrejas para colocar no lugar.
 
 ## Velas Virtuais
 
