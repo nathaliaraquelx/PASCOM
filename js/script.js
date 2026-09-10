@@ -9,6 +9,30 @@ document.addEventListener('DOMContentLoaded', () => {
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+  /* ---------- Slideshow do topo (fotos das igrejas) ---------- */
+  const heroSlides = document.querySelectorAll('.hero-slide');
+  if (heroSlides.length > 1) {
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!reduceMotion) {
+      let heroSlideIndex = 0;
+      let heroTimer = setInterval(avancarHeroSlide, 6500);
+
+      function avancarHeroSlide() {
+        heroSlides[heroSlideIndex].classList.remove('active');
+        heroSlideIndex = (heroSlideIndex + 1) % heroSlides.length;
+        heroSlides[heroSlideIndex].classList.add('active');
+      }
+
+      document.addEventListener('visibilitychange', () => {
+        if (document.hidden) {
+          clearInterval(heroTimer);
+        } else {
+          heroTimer = setInterval(avancarHeroSlide, 6500);
+        }
+      });
+    }
+  }
+
   /* ---------- Menu mobile ---------- */
   const navToggle = document.getElementById('navToggle');
   const mainNav = document.getElementById('mainNav');
