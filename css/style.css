@@ -57,8 +57,6 @@ ul { list-style: none; margin: 0; padding: 0; }
 
 .container.narrow { max-width: 780px; }
 
-section#inicio.hero { padding-top: 0; }
-
 .muted { color: var(--text-muted); }
 .muted.small { font-size: 0.85rem; }
 
@@ -226,7 +224,7 @@ section#inicio.hero { padding-top: 0; }
   position: relative;
   background: linear-gradient(160deg, var(--gold-900) 0%, var(--gold-800) 55%, var(--gold-600) 100%);
   color: var(--white);
-  padding: 76px 0 60px;
+  padding: 56px 0 60px;
   overflow: hidden;
 }
 .hero-slideshow {
@@ -289,13 +287,7 @@ section#inicio.hero { padding-top: 0; }
 .hero h1 {
   color: var(--white);
   font-size: clamp(2rem, 5vw, 3.2rem);
-  margin-bottom: 14px;
-}
-.hero-sub {
-  max-width: 620px;
-  margin: 0 auto 30px;
-  font-size: 1.08rem;
-  opacity: 0.92;
+  margin-bottom: 34px;
 }
 .hero-actions {
   display: flex;
