@@ -278,12 +278,44 @@ document.addEventListener('DOMContentLoaded', () => {
 
   renderCandles();
 
-  /* ---------- Formulário de contacto (demonstração) ---------- */
+  /* ---------- Formulário de contacto (envio via Formspree) ---------- */
   const contactForm = document.getElementById('contactForm');
+  const contactStatus = document.getElementById('contactFormStatus');
   contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    alert('Obrigado pela sua mensagem! Este formulário é uma demonstração — ligue-o a um serviço de envio de email para ativar o envio real.');
-    contactForm.reset();
+
+    if (contactForm.action.includes('SEU_FORM_ID')) {
+      contactStatus.textContent = 'Formulário ainda não está ligado a um email — falta configurar o Formspree (ver README.md).';
+      contactStatus.classList.add('form-status-error');
+      return;
+    }
+
+    const submitBtn = contactForm.querySelector('button[type="submit"]');
+    submitBtn.disabled = true;
+    contactStatus.classList.remove('form-status-error', 'form-status-success');
+    contactStatus.textContent = 'A enviar...';
+
+    fetch(contactForm.action, {
+      method: 'POST',
+      body: new FormData(contactForm),
+      headers: { Accept: 'application/json' },
+    })
+      .then((res) => {
+        if (res.ok) {
+          contactStatus.textContent = 'Mensagem enviada! Obrigado pelo contacto — responderemos assim que possível.';
+          contactStatus.classList.add('form-status-success');
+          contactForm.reset();
+        } else {
+          throw new Error('Falha no envio');
+        }
+      })
+      .catch(() => {
+        contactStatus.textContent = 'Não foi possível enviar a mensagem. Tente novamente ou contacte-nos diretamente por email.';
+        contactStatus.classList.add('form-status-error');
+      })
+      .finally(() => {
+        submitBtn.disabled = false;
+      });
   });
 
 });

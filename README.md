@@ -31,8 +31,9 @@ grupos e história) já foi preenchida com dados reais a partir do Plano Pastora
 - **Slideshow do topo**: as duas fotos em `assets/img/hero/` (Sé Catedral e Catedral Nova) são fotos
   de Bragança com licença aberta (Wikimedia Commons), usadas só como ponto de partida — substitua por
   fotos próprias da paróquia assim que possível (ver secção abaixo).
-- **Formulário de contacto**: é apenas uma demonstração no browser; ligue-o a um serviço de envio de
-  email (ex.: Formspree, EmailJS) ou a um backend próprio para funcionar de facto.
+- **Formulário de contacto**: já está preparado para enviar as mensagens para
+  `sjbaptistaparoquiacom@gmail.com` via Formspree, mas falta o passo final de configuração — ver
+  secção "Formulário de contacto" abaixo.
 - **História**: falta ainda o ano exato de fundação da paróquia (secção `#historia`, marcado `[Ano]`).
 - **Notícias / Agenda**: só têm alguns exemplos reais; adicione mais conforme forem surgindo.
 
@@ -115,6 +116,29 @@ As duas fotos atuais (Sé Catedral de Bragança e Catedral Nova/Nossa Senhora Ra
 Commons, com licença Creative Commons que exige atribuição (CC BY-SA 2.0 e CC BY 2.0, créditos no
 rodapé do slideshow) — servem só como ponto de partida até a paróquia ter fotos próprias das suas
 igrejas para colocar no lugar.
+
+## Formulário de contacto
+
+O formulário da secção *Contactos* está preparado para enviar as mensagens por email para
+**sjbaptistaparoquiacom@gmail.com**, usando o [Formspree](https://formspree.io) — um serviço
+gratuito que recebe o envio do formulário e reencaminha por email, sem precisar de servidor
+próprio. Falta só um passo de configuração de 2 minutos, feito uma única vez:
+
+1. Vá a [formspree.io](https://formspree.io) e crie uma conta gratuita usando o email
+   `sjbaptistaparoquiacom@gmail.com`.
+2. Crie um novo formulário (**+ New Form**) — pode chamar-lhe, por exemplo, "Contactos PASCOM".
+   Confirme que o email de destino é `sjbaptistaparoquiacom@gmail.com` (o Formspree envia um
+   email de confirmação para essa caixa — é preciso clicar no link para ativar).
+3. Copie o **endpoint** do formulário, algo como `https://formspree.io/f/abcdwxyz`.
+4. Em `index.html`, na secção `<!-- ================= CONTACTOS ================= -->`, substitua
+   `SEU_FORM_ID` no atributo `action` do `<form id="contactForm" ...>` pelo código copiado.
+5. Faça *commit* e *push* — depois de publicado, teste o formulário no site e confirme que chega
+   o email (a mensagem de sucesso/erro aparece por baixo do botão "Enviar Mensagem").
+
+O plano gratuito do Formspree permite 50 mensagens por mês, suficiente para um formulário de
+contacto de uma paróquia — se for necessário mais, é possível ligar a um plano pago ou trocar por
+outro serviço (ex.: EmailJS) editando o mesmo bloco em `js/script.js` (função de envio do
+`contactForm`).
 
 ## Velas Virtuais
 
