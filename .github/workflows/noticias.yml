@@ -1,0 +1,40 @@
+name: Publicar notícias (Google Docs)
+
+on:
+  schedule:
+    # A cada 2 horas
+    - cron: "20 */2 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+env:
+  # Substitua pelo URL de publicação em CSV da Google Sheet "índice" de
+  # notícias — ver README.md, secção "Notícias (artigos completos)".
+  NOTICIAS_SHEET_CSV_URL: "SEU_CSV_URL_AQUI"
+
+jobs:
+  publicar-noticias:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Instalar dependências
+        run: pip install --quiet beautifulsoup4
+
+      - name: Gerar artigos e atualizar a secção Notícias
+        run: python3 scripts/gerar-noticias.py "$NOTICIAS_SHEET_CSV_URL"
+
+      - name: Commit e push (se houver alterações)
+        run: |
+          git config user.name "PASCOM Bot"
+          git config user.email "actions@github.com"
+          git add index.html noticias/
+          if git diff --staged --quiet; then
+            echo "Sem alterações — nada a comitar."
+          else
+            git commit -m "Publicar notícias"
+            git push
+          fi
