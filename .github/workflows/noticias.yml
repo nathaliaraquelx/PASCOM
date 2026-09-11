@@ -12,7 +12,7 @@ permissions:
 env:
   # Substitua pelo URL de publicação em CSV da Google Sheet "índice" de
   # notícias — ver README.md, secção "Notícias (artigos completos)".
-  NOTICIAS_SHEET_CSV_URL: "SEU_CSV_URL_AQUI"
+  NOTICIAS_SHEET_CSV_URL: "https://docs.google.com/spreadsheets/d/e/2PACX-1vSV3iVMPel9XJKxW9GHtkbxcNRWbXUWk6R0BurMksOJ8nU-Nwy3uzuJT0jzwvsii8wg_COlAjMKMVDd/pub?gid=0&single=true&output=csv"
 
 jobs:
   publicar-noticias:
