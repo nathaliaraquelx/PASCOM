@@ -167,6 +167,20 @@ velas partilhada por todos os visitantes é necessário ligar a uma base de dado
 2. Em **Settings → Pages**, escolha a branch principal e a pasta `/ (root)`.
 3. O site fica disponível em `https://<utilizador>.github.io/<repositorio>/`.
 
+### Domínio próprio
+
+O site já está configurado para o domínio **paroquiasaojoaobaptista.pt** (ficheiro `CNAME` na
+raiz do repositório). Para o ligar:
+
+1. No registrador do domínio, configure estes registos DNS:
+   - **A** (domínio raiz, `@`) a apontar para os 4 IPs do GitHub Pages:
+     `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+   - **CNAME** de `www` a apontar para `nathaliaraquelx.github.io.` (opcional, para
+     `www.paroquiasaojoaobaptista.pt` funcionar também).
+2. Em **Settings → Pages → Custom domain**, escreva `paroquiasaojoaobaptista.pt` e grave.
+3. Aguarde a propagação do DNS (pode levar algumas horas) e depois ative **Enforce HTTPS** na
+   mesma página de definições.
+
 ## Desenvolvimento local
 
 Não é necessário qualquer build. Basta abrir `index.html` num navegador, ou correr um servidor local:
