@@ -33,7 +33,9 @@ grupos e história) já foi preenchida com dados reais a partir do Plano Pastora
   de Bragança com licença aberta (Wikimedia Commons), usadas só como ponto de partida — substitua por
   fotos próprias da paróquia assim que possível (ver secção abaixo).
 - **História**: falta ainda o ano exato de fundação da paróquia (secção `#historia`, marcado `[Ano]`).
-- **Notícias / Agenda**: só têm alguns exemplos reais; adicione mais conforme forem surgindo.
+- **Notícias**: mostra 3 cartões de exemplo até a Google Sheet "índice" ser configurada — ver
+  secção "Notícias (artigos completos)" abaixo.
+- **Agenda**: só tem alguns exemplos reais; adicione mais conforme forem surgindo.
 
 ## Evangelho e Santo do Dia (automático)
 
@@ -54,6 +56,55 @@ na *branch principal* (default) do repositório. Se a branch publicada no GitHub
 essa, mude-a em **Settings → General → Default branch**, ou o Evangelho/Santo do dia deixam de
 atualizar sozinhos (pode sempre correr o workflow manualmente em **Actions → Atualizar liturgia
 diária → Run workflow**, seja qual for a branch principal).
+
+## Notícias (artigos completos)
+
+A secção *Notícias* também não é editada diretamente no código: cada artigo é escrito pelo pároco
+(ou por quem trata das notícias) num **Google Doc**, e um GitHub Action
+(`.github/workflows/noticias.yml`) gera automaticamente a página do artigo e o cartão que aparece
+no site, a partir de uma **Google Sheet "índice"**.
+
+### Configuração inicial (uma vez)
+
+1. Crie uma Google Sheet nova com estas colunas na primeira linha (por esta ordem):
+
+   | `data` | `titulo` | `resumo` | `link_doc` | `imagem` | `publicar` |
+   |--------|----------|----------|------------|----------|------------|
+
+   - `data`: no formato `AAAA-MM-DD` (ex.: `2026-09-11`).
+   - `titulo` / `resumo`: título do artigo e o resumo curto que aparece no cartão.
+   - `link_doc`: o link de "Publicar na Web" do Google Doc do artigo (ver abaixo).
+   - `imagem` (opcional): um URL de imagem para a miniatura do cartão. Se ficar vazio, usa-se a
+     primeira imagem do próprio artigo (se houver) ou um ícone genérico.
+   - `publicar` (opcional): escreva `nao` para esconder um artigo sem apagar a linha (rascunho).
+     Vazio ou `sim` = publicado.
+
+2. Publique a Sheet como CSV: **Ficheiro → Partilhar → Publicar no Web** → escolha a folha certa →
+   formato **CSV** → **Publicar**. Copie o URL gerado.
+3. Em `.github/workflows/noticias.yml`, substitua `SEU_CSV_URL_AQUI` (variável
+   `NOTICIAS_SHEET_CSV_URL`) por esse URL, e faça *commit*/*push*.
+
+### Publicar um artigo novo (sempre que houver notícia)
+
+1. Escreva o artigo num **Google Doc** novo — título, texto, negrito/itálico, títulos internos
+   (estilos "Título 1"/"Título 2" do Docs), listas, links e imagens funcionam.
+2. **Ficheiro → Partilhar → Publicar no Web** → **Publicar** → copie o link gerado.
+3. Acrescente uma linha na Google Sheet "índice" com a data, título, resumo, esse link e,
+   opcionalmente, uma imagem de capa.
+4. No sincronismo seguinte (a cada 2 horas, ou manualmente em **Actions → Publicar notícias
+   (Google Docs) → Run workflow**), o Action gera `noticias/<slug-do-artigo>.html` com o texto
+   completo e atualiza os cartões da secção *Notícias* em `index.html` — mostra sempre os 9
+   artigos mais recentes.
+
+**Formatação suportada:** parágrafos, negrito, itálico, sublinhado, títulos internos, listas,
+ligações e imagens. Não suporta tabelas, colunas ou layouts mais complexos do Google Docs — esse
+conteúdo aparece só como texto simples.
+
+**Nota:** remover uma linha da Sheet (ou marcar `publicar` como `nao`) tira o artigo da lista, mas
+o ficheiro `noticias/<slug>.html` já gerado não é apagado automaticamente (fica só "não listado" —
+continua acessível a quem tiver o link direto). Para o remover de vez, apague o ficheiro à mão.
+
+Está sujeita à mesma limitação de *branch* principal descrita acima para o Evangelho/Santo do dia.
 
 ## Slideshow do topo (fotos das igrejas)
 

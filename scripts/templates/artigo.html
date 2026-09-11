@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{TITULO}} &middot; PASCOM &middot; Paróquia de São João Baptista</title>
+<meta name="description" content="{{RESUMO}}">
+<link rel="icon" href="../assets/img/logo-paroquia.jpg" type="image/jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<!-- ================= TOPBAR ================= -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <div class="topbar-info">
+      <span><i class="fa-solid fa-location-dot"></i> Praça da Sé &middot; 5300-265 Bragança</span>
+      <span><i class="fa-solid fa-phone"></i> 273 322 671</span>
+    </div>
+    <div class="topbar-social">
+      <a href="https://www.instagram.com/paroquiasaojoaobaptista.bgc/" aria-label="Instagram" title="Instagram" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=61593665807246&locale=pt_PT" aria-label="Facebook" title="Facebook" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#" aria-label="Comunidade de WhatsApp" title="Comunidade de WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="#" aria-label="TikTok" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= HEADER / NAV ================= -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="../index.html#inicio" class="brand">
+      <span class="brand-badge"><img src="../assets/img/logo-paroquia.jpg" alt="Logótipo da PASCOM São João Baptista"></span>
+      <span class="brand-text">
+        <strong>Paróquia de São João Baptista</strong>
+        <small>PASCOM</small>
+      </span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="../index.html#inicio" class="nav-link">Início</a></li>
+        <li class="has-dropdown">
+          <a href="../index.html#evangelho" class="nav-link">Hoje <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="../index.html#evangelho">Evangelho do Dia</a></li>
+            <li><a href="../index.html#santo">Santo do Dia</a></li>
+            <li><a href="../index.html#agenda">Agenda Paroquial</a></li>
+          </ul>
+        </li>
+        <li><a href="../index.html#historia" class="nav-link">História</a></li>
+        <li><a href="../index.html#paroco" class="nav-link">Pároco</a></li>
+        <li class="has-dropdown">
+          <a href="../index.html#missas" class="nav-link">Vida Litúrgica <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="../index.html#missas">Horário das Missas</a></li>
+            <li><a href="../index.html#confissoes">Confissões</a></li>
+            <li><a href="../index.html#adoracao">Dias de Adoração</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="../index.html#comunidade" class="nav-link">Comunidade <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="../index.html#catequese">Catequese</a></li>
+            <li><a href="../index.html#grupos">Grupos e Ordens</a></li>
+            <li><a href="../index.html#noticias">Notícias</a></li>
+            <li><a href="../index.html#galeria">Galeria</a></li>
+          </ul>
+        </li>
+        <li><a href="../index.html#velas" class="nav-link">Velas Virtuais</a></li>
+        <li><a href="../index.html#contactos" class="nav-link nav-cta">Contactos</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+<article class="article-header">
+  <div class="container narrow">
+    <a href="../index.html#noticias" class="article-back"><i class="fa-solid fa-arrow-left"></i> Voltar às Notícias</a>
+    <p class="article-date"><time datetime="{{DATA_ISO}}">{{DATA_FORMATADA}}</time></p>
+    <h1 class="article-title">{{TITULO}}</h1>
+    {{CAPA_HTML}}
+    <div class="article-body">
+{{CORPO}}
+    </div>
+  </div>
+</article>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="brand-badge"><img src="../assets/img/logo-paroquia.jpg" alt="Logótipo da PASCOM São João Baptista"></span>
+      <div>
+        <strong>PASCOM</strong>
+        <p>Paróquia de São João Baptista &middot; Diocese de Bragança-Miranda</p>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a href="../index.html#historia">História</a>
+      <a href="../index.html#missas">Missas</a>
+      <a href="../index.html#catequese">Catequese</a>
+      <a href="../index.html#noticias">Notícias</a>
+      <a href="../index.html#contactos">Contactos</a>
+    </div>
+    <div class="footer-social">
+      <a href="https://www.instagram.com/paroquiasaojoaobaptista.bgc/" aria-label="Instagram" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=61593665807246&locale=pt_PT" aria-label="Facebook" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#" aria-label="Comunidade de WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> PASCOM &middot; Paróquia de São João Baptista. Sob a proteção de São Carlo Acutis.</p>
+  </div>
+</footer>
+
+<button id="backToTop" class="back-to-top" aria-label="Voltar ao topo"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const navToggle = document.getElementById('navToggle');
+  const mainNav = document.getElementById('mainNav');
+  navToggle.addEventListener('click', () => {
+    const isOpen = mainNav.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', isOpen);
+    navToggle.classList.toggle('open', isOpen);
+  });
+  document.querySelectorAll('.has-dropdown > .nav-link').forEach(link => {
+    link.addEventListener('click', (e) => {
+      if (window.innerWidth <= 780) {
+        e.preventDefault();
+        link.parentElement.classList.toggle('open');
+      }
+    });
+  });
+
+  const backToTop = document.getElementById('backToTop');
+  window.addEventListener('scroll', () => {
+    backToTop.classList.toggle('show', window.scrollY > 500);
+  });
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+</body>
+</html>
