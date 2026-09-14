@@ -32,9 +32,10 @@ grupos e história) já foi preenchida com dados reais a partir do Plano Pastora
 - **Slideshow do topo**: as duas fotos em `assets/img/hero/` (Sé Catedral e Catedral Nova) são fotos
   de Bragança com licença aberta (Wikimedia Commons), usadas só como ponto de partida — substitua por
   fotos próprias da paróquia assim que possível (ver secção abaixo).
-- **História**: falta ainda o ano exato de fundação da paróquia (secção `#historia`, marcado `[Ano]`).
-- **Notícias**: mostra 3 cartões de exemplo até a Google Sheet "índice" ser configurada — ver
-  secção "Notícias (artigos completos)" abaixo.
+- **História**: falta ainda o ano exato de fundação da paróquia — foi removido do cronograma
+  (secção `#historia`) até haver essa informação; acrescente-a quando for conhecida.
+- **Notícias**: mostra uma mensagem "ainda não há notícias" até o primeiro artigo ser publicado —
+  ver secção "Notícias (artigos completos)" abaixo.
 - **Agenda**: só tem alguns exemplos reais; adicione mais conforme forem surgindo.
 
 ## Evangelho e Santo do Dia (automático)
