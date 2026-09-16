@@ -24,9 +24,9 @@ Grupos e Ordens Religiosas · Galeria de Imagens · Velas Virtuais · Contactos.
 Grande parte do conteúdo (contactos, pároco, horários de Missas/Confissões/Adoração, catequese,
 grupos e história) já foi preenchida com dados reais a partir do Plano Pastoral 2025. Ainda falta:
 
-- **Redes sociais**: Instagram e Facebook já têm os links reais. Os ícones de Comunidade de
-  WhatsApp e TikTok ainda apontam para `#` — substitua pelos links reais assim que existirem, em
-  **todas** as ocorrências (cabeçalho, secção *Contactos* e rodapé).
+- **Redes sociais**: Instagram, Facebook e a Comunidade de WhatsApp já têm os links reais. O ícone
+  de TikTok ainda aponta para `#` — substitua pelo link real assim que existir, em **todas** as
+  ocorrências (cabeçalho, secção *Contactos* e rodapé).
 - **Galeria**: as fotos são placeholders com ícones; substitua os elementos `.gallery-tile` em
   `js/script.js` (array `galleryData`) por imagens reais (`<img src="assets/img/...">`).
 - **Slideshow do topo**: as duas fotos em `assets/img/hero/` (Sé Catedral e Catedral Nova) são fotos
