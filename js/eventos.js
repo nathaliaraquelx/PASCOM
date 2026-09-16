@@ -24,6 +24,16 @@
 const PASCOM_EVENTOS = [
   {
     "id": 1,
+    "titulo": "Missionário Digitais",
+    "data": "2026-09-26",
+    "horaInicio": "Todo o dia",
+    "horaFim": "",
+    "categoria": "comunidade",
+    "local": "Paróquia de São João Baptista",
+    "descricao": ""
+  },
+  {
+    "id": 2,
     "titulo": "E-vangelizar",
     "data": "2026-10-03",
     "horaInicio": "09:00",
