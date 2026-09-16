@@ -31,7 +31,7 @@ jobs:
         run: |
           git config user.name "PASCOM Bot"
           git config user.email "actions@github.com"
-          git add index.html noticias/
+          git add index.html noticias/ sitemap.xml
           if git diff --staged --quiet; then
             echo "Sem alterações — nada a comitar."
           else

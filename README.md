@@ -182,6 +182,20 @@ raiz do repositório). Para o ligar:
 3. Aguarde a propagação do DNS (pode levar algumas horas) e depois ative **Enforce HTTPS** na
    mesma página de definições.
 
+### Aparecer no Google (SEO)
+
+Um domínio novo não aparece logo nas pesquisas do Google — pode levar dias a semanas até ser
+descoberto e indexado sozinho. Para acelerar:
+
+1. Adicione o site ao [Google Search Console](https://search.google.com/search-console) (verificação
+   por registo **TXT** no DNS, igual ao que já foi feito para `paroquiasaojoaobaptista.pt`).
+2. Submeta o `sitemap.xml` (já existe na raiz do site, `https://paroquiasaojoaobaptista.pt/sitemap.xml`
+   — é atualizado automaticamente com os artigos de notícias sempre que
+   `.github/workflows/noticias.yml` corre) e use **"Pedir indexação"** na página inicial.
+
+O `robots.txt` na raiz do site já aponta para o sitemap, para o Google o encontrar sozinho mesmo
+sem submissão manual.
+
 ## Desenvolvimento local
 
 Não é necessário qualquer build. Basta abrir `index.html` num navegador, ou correr um servidor local:
