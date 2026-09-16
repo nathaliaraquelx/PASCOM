@@ -25,6 +25,8 @@ REPO_ROOT = sys.path[0] + "/.."
 TEMPLATE_PATH = f"{REPO_ROOT}/scripts/templates/artigo.html"
 INDEX_HTML_PATH = f"{REPO_ROOT}/index.html"
 NOTICIAS_DIR = f"{REPO_ROOT}/noticias"
+SITEMAP_PATH = f"{REPO_ROOT}/sitemap.xml"
+SITE_URL = "https://paroquiasaojoaobaptista.pt"
 
 MARCADOR_INICIO = "<!-- NOTICIAS:AUTO:INICIO -->"
 MARCADOR_FIM = "<!-- NOTICIAS:AUTO:FIM -->"
@@ -211,6 +213,25 @@ def gerar_cartao(item):
       </article>'''
 
 
+def gerar_sitemap(itens):
+    urls = [f"  <url>\n    <loc>{SITE_URL}/</loc>\n  </url>"]
+    for item in itens:
+        urls.append(
+            f"  <url>\n"
+            f"    <loc>{SITE_URL}/noticias/{item['slug']}.html</loc>\n"
+            f"    <lastmod>{item['data']}</lastmod>\n"
+            f"  </url>"
+        )
+    conteudo = (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        + "\n".join(urls) + "\n"
+        "</urlset>\n"
+    )
+    with open(SITEMAP_PATH, "w", encoding="utf-8") as f:
+        f.write(conteudo)
+
+
 def ler_sheet(csv_url):
     conteudo = buscar_url(csv_url)
     leitor = csv.DictReader(io.StringIO(conteudo))
@@ -293,6 +314,8 @@ def main():
         pagina = gerar_pagina_artigo(template, item)
         with open(f"{NOTICIAS_DIR}/{item['slug']}.html", "w", encoding="utf-8") as f:
             f.write(pagina)
+
+    gerar_sitemap(itens)
 
     cartoes_html = "\n".join(gerar_cartao(item) for item in itens[:MAX_CARTOES])
 
