@@ -24,7 +24,7 @@
 const PASCOM_EVENTOS = [
   {
     "id": 1,
-    "titulo": "Missionário Digitais",
+    "titulo": "Missionários Digitais",
     "data": "2026-09-26",
     "horaInicio": "Todo o dia",
     "horaFim": "",
