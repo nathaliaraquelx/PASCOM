@@ -35,7 +35,17 @@ jobs:
           git add js/eventos.js
           if git diff --staged --quiet; then
             echo "Sem alterações — nada a comitar."
-          else
-            git commit -m "Sincronizar agenda com o Google Calendar"
-            git push
+            exit 0
           fi
+          git commit -m "Sincronizar agenda com o Google Calendar"
+          for tentativa in 1 2 3 4 5; do
+            if git push; then
+              exit 0
+            fi
+            echo "Push rejeitado (outra atualização automática chegou primeiro) — a tentar de novo ($tentativa/5)..."
+            git fetch origin "$GITHUB_REF_NAME"
+            git rebase "origin/$GITHUB_REF_NAME"
+            sleep $((RANDOM % 10 + 3))
+          done
+          echo "Não foi possível fazer push depois de várias tentativas." >&2
+          exit 1
