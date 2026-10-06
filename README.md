@@ -74,7 +74,7 @@ no site, a partir de uma **Google Sheet "índice"**.
 
    - `data`: no formato `AAAA-MM-DD` (ex.: `2026-09-11`).
    - `titulo` / `resumo`: título do artigo e o resumo curto que aparece no cartão.
-   - `link_doc`: o link de "Publicar na Web" do Google Doc do artigo (ver abaixo).
+   - `link_doc`: o link do Google Doc do artigo (ver abaixo como obter).
    - `imagem` (opcional): um URL de imagem para a miniatura do cartão. Se ficar vazio, usa-se a
      primeira imagem do próprio artigo (se houver) ou um ícone genérico.
    - `publicar` (opcional): escreva `nao` para esconder um artigo sem apagar a linha (rascunho).
@@ -88,14 +88,17 @@ no site, a partir de uma **Google Sheet "índice"**.
 ### Publicar um artigo novo (sempre que houver notícia)
 
 1. Escreva o artigo num **Google Doc** novo — título, texto, negrito/itálico, títulos internos
-   (estilos "Título 1"/"Título 2" do Docs), listas, links e imagens funcionam.
-2. **Ficheiro → Partilhar → Publicar no Web** → **Publicar** → copie o link gerado.
+   (estilos "Título 1"/"Título 2" do Docs), listas, links e imagens (ex.: um cartaz) funcionam.
+2. Partilhe o Doc como **"Qualquer pessoa com o link" → Visualizador**: botão **Partilhar** →
+   em "Acesso geral" escolha "Qualquer pessoa com o link" → copie o link. (A opção mais antiga
+   "Publicar na Web", em Ficheiro → Partilhar, também funciona, se preferir.)
 3. Acrescente uma linha na Google Sheet "índice" com a data, título, resumo, esse link e,
    opcionalmente, uma imagem de capa.
 4. No sincronismo seguinte (a cada 2 horas, ou manualmente em **Actions → Publicar notícias
    (Google Docs) → Run workflow**), o Action gera `noticias/<slug-do-artigo>.html` com o texto
    completo e atualiza os cartões da secção *Notícias* em `index.html` — mostra sempre os 9
-   artigos mais recentes.
+   artigos mais recentes. Imagens do Doc são gravadas como ficheiros em `noticias/img/`
+   automaticamente, para as páginas não ficarem pesadas.
 
 **Formatação suportada:** parágrafos, negrito, itálico, sublinhado, títulos internos, listas,
 ligações e imagens. Não suporta tabelas, colunas ou layouts mais complexos do Google Docs — esse

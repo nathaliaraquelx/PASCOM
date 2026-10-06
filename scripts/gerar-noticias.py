@@ -10,9 +10,11 @@ Ver README.md, secção "Notícias (artigos completos)", para o formato
 esperado da Sheet e como publicar os Docs.
 """
 
+import base64
 import csv
 import html
 import io
+import os
 import re
 import sys
 import unicodedata
@@ -49,6 +51,22 @@ def buscar_url(url):
     req = urllib.request.Request(url, headers=REQUEST_HEADERS)
     with urllib.request.urlopen(req, timeout=20) as resp:
         return resp.read().decode("utf-8", errors="replace")
+
+
+def normalizar_link_doc(url):
+    """Aceita qualquer link de um Google Doc — de partilha normal
+    (/edit, /view) ou já publicado na Web (/document/d/e/.../pub) — e
+    devolve sempre um URL que podemos descarregar diretamente, sem
+    sessão/login. Um link de partilha normal só funciona se o Doc
+    estiver partilhado como "Qualquer pessoa com o link" (ver)."""
+    m = re.search(r"/document/d/e/[^/]+/pub", url)
+    if m:
+        return url
+    m = re.search(r"/document/d/([a-zA-Z0-9_-]+)", url)
+    if not m:
+        raise ValueError("não parece um link do Google Docs")
+    doc_id = m.group(1)
+    return f"https://docs.google.com/document/d/{doc_id}/export?format=html"
 
 
 def formatar_data_pt(data_iso):
@@ -168,7 +186,12 @@ def limpar_no(no, nivel_titulo_offset=1):
 
 def limpar_corpo_google_doc(html_bruto):
     soup = BeautifulSoup(html_bruto, "html.parser")
-    corpo = soup.find("body") or soup
+    # Docs publicados ("Publicar na Web") envolvem o conteúdo real num
+    # <div id="contents">, ao lado de um <div id="banners"> com o aviso
+    # "Published using Google Docs / Report abuse" — não faz parte do
+    # artigo. O /export?format=html não tem essa divisão, por isso o
+    # corpo inteiro é usado nesse caso.
+    corpo = soup.find("div", id="contents") or soup.find("body") or soup
 
     raiz = Tag(name="div")
     for filho in corpo.children:
@@ -177,9 +200,35 @@ def limpar_corpo_google_doc(html_bruto):
     return "".join(str(x) for x in raiz.contents).strip()
 
 
+IMG_DATA_RE = re.compile(r'src="data:image/([a-zA-Z0-9.+-]+);base64,([^"]+)"')
+
+
+def extrair_e_gravar_imagens(corpo_html, slug):
+    """Google Docs embute imagens como data: URIs base64 no HTML — isso
+    tornaria cada página (e o próprio index.html, via miniatura do
+    cartão) enormes. Grava cada imagem como ficheiro real em
+    noticias/img/ e substitui pelo caminho relativo correspondente."""
+    pasta = f"{NOTICIAS_DIR}/img"
+    os.makedirs(pasta, exist_ok=True)
+    contador = {"n": 0}
+
+    def substituir(m):
+        contador["n"] += 1
+        subtipo, dados_b64 = m.group(1), m.group(2)
+        ext = "jpg" if subtipo.lower() == "jpeg" else re.sub(r"[^a-z0-9]", "", subtipo.lower())
+        ext = ext or "png"
+        nome = f"{slug}-{contador['n']}.{ext}"
+        with open(f"{pasta}/{nome}", "wb") as f:
+            f.write(base64.b64decode(dados_b64))
+        return f'src="img/{nome}"'
+
+    return IMG_DATA_RE.sub(substituir, corpo_html)
+
+
 def extrair_primeira_imagem(corpo_html):
     m = re.search(r'<img[^>]+src="([^"]+)"', corpo_html)
     return m.group(1) if m else None
+
 
 
 def gerar_pagina_artigo(template, item):
@@ -199,7 +248,13 @@ def gerar_pagina_artigo(template, item):
 
 def gerar_cartao(item):
     if item["imagem"]:
-        thumb = f'<img src="{html.escape(item["imagem"])}" alt="" loading="lazy">'
+        # Caminhos locais (gravados por extrair_e_gravar_imagens) são
+        # relativos a noticias/ — a partir de index.html, na raiz do
+        # site, precisam do prefixo "noticias/".
+        src = item["imagem"]
+        if "://" not in src:
+            src = f"noticias/{src}"
+        thumb = f'<img src="{html.escape(src)}" alt="" loading="lazy">'
     else:
         thumb = '<i class="fa-solid fa-image"></i>'
     return f'''      <article class="news-card">
@@ -276,8 +331,10 @@ def main():
             print(f"A ignorar '{titulo}': data '{data}' inválida (esperado AAAA-MM-DD).", file=sys.stderr)
             continue
 
+        slug = f"{data}-{slugificar(titulo)}"
+
         try:
-            html_doc = buscar_url(link_doc)
+            html_doc = buscar_url(normalizar_link_doc(link_doc))
             corpo_html = limpar_corpo_google_doc(html_doc)
         except Exception as e:
             print(f"A ignorar '{titulo}': não foi possível ler o Google Doc ({e}).", file=sys.stderr)
@@ -287,6 +344,7 @@ def main():
             print(f"A ignorar '{titulo}': o Google Doc parece estar vazio.", file=sys.stderr)
             continue
 
+        corpo_html = extrair_e_gravar_imagens(corpo_html, slug)
         imagem = linha.get("imagem", "") or extrair_primeira_imagem(corpo_html) or ""
 
         itens.append({
@@ -295,7 +353,7 @@ def main():
             "resumo": linha.get("resumo", "") or "",
             "imagem": imagem,
             "corpo_html": corpo_html,
-            "slug": f"{data}-{slugificar(titulo)}",
+            "slug": slug,
         })
 
     if not itens:
@@ -307,7 +365,6 @@ def main():
     with open(TEMPLATE_PATH, encoding="utf-8") as f:
         template = f.read()
 
-    import os
     os.makedirs(NOTICIAS_DIR, exist_ok=True)
 
     for item in itens:
