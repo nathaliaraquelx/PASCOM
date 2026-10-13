@@ -2,8 +2,11 @@ name: Atualizar liturgia diária
 
 on:
   schedule:
-    # 05:00 UTC todos os dias (~05:00-06:00 em Portugal, consoante hora de verão/inverno)
-    - cron: "0 5 * * *"
+    # 21:00 UTC (dia anterior) — o agendamento do GitHub tem corrido com
+    # várias horas de atraso em relação à hora configurada, por isso
+    # isto fica propositadamente adiantado para o conteúdo já estar
+    # pronto de manhã cedo em Portugal, mesmo com esse atraso.
+    - cron: "0 21 * * *"
   workflow_dispatch: {}
 
 permissions:
