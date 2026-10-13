@@ -2,8 +2,8 @@ name: Sincronizar agenda com o Google Calendar
 
 on:
   schedule:
-    # 05:15 UTC todos os dias — a seguir à liturgia diária (05:00 UTC)
-    - cron: "15 5 * * *"
+    # 21:15 UTC (dia anterior) — a seguir à liturgia diária (21:00 UTC)
+    - cron: "15 21 * * *"
   workflow_dispatch: {}
 
 permissions:
