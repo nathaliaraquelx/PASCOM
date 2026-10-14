@@ -75,7 +75,7 @@
 
 .cal-mini-grid {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(7, minmax(0, 1fr));
   gap: 4px;
   text-align: center;
   font-size: 0.78rem;
@@ -181,7 +181,7 @@
 /* Grelha do mês */
 .cal-grid {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(7, minmax(0, 1fr));
   gap: 6px;
 }
 .cal-grid .cal-dow {
@@ -195,6 +195,7 @@
 }
 .cal-dia {
   min-height: 88px;
+  min-width: 0;
   border: 1px solid var(--cal-borda);
   border-radius: 10px;
   padding: 6px;
@@ -214,6 +215,8 @@
   color: #374151;
 }
 .cal-dia-evento {
+  display: block;
+  max-width: 100%;
   font-size: 0.7rem;
   padding: 2px 6px;
   border-radius: 5px;
