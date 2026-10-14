@@ -259,7 +259,7 @@ def extrair_primeira_imagem(corpo_html):
 
 def gerar_pagina_artigo(template, item):
     capa_html = ""
-    if item["imagem"]:
+    if item["imagem"] and item.get("mostrar_capa"):
         capa_html = f'<img class="article-cover" src="{html.escape(item["imagem"])}" alt="{html.escape(item["titulo"])}" loading="lazy">'
 
     pagina = template
@@ -371,13 +371,20 @@ def main():
             continue
 
         corpo_html = extrair_e_gravar_imagens(corpo_html, slug)
-        imagem = linha.get("imagem", "") or extrair_primeira_imagem(corpo_html) or ""
+        imagem_explicita = linha.get("imagem", "")
+        imagem = imagem_explicita or extrair_primeira_imagem(corpo_html) or ""
 
         itens.append({
             "titulo": titulo,
             "data": data,
             "resumo": linha.get("resumo", "") or "",
             "imagem": imagem,
+            # Só mostra a imagem em destaque no topo do artigo quando foi
+            # escolhida à parte na Sheet — quando é só a primeira imagem
+            # detetada dentro do próprio Doc, já aparece no corpo do
+            # artigo, e repeti-la como destaque ficaria duplicada (e
+            # cortada, por causa do enquadramento do destaque).
+            "mostrar_capa": bool(imagem_explicita),
             "corpo_html": corpo_html,
             "slug": slug,
         })
