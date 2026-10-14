@@ -53,6 +53,12 @@ def buscar_url(url):
         return resp.read().decode("utf-8", errors="replace")
 
 
+def buscar_bytes(url):
+    req = urllib.request.Request(url, headers=REQUEST_HEADERS)
+    with urllib.request.urlopen(req, timeout=20) as resp:
+        return resp.read(), resp.headers.get("Content-Type", "")
+
+
 def normalizar_link_doc(url):
     """Aceita qualquer link de um Google Doc — de partilha normal
     (/edit, /view) ou já publicado na Web (/document/d/e/.../pub) — e
@@ -200,29 +206,49 @@ def limpar_corpo_google_doc(html_bruto):
     return "".join(str(x) for x in raiz.contents).strip()
 
 
-IMG_DATA_RE = re.compile(r'src="data:image/([a-zA-Z0-9.+-]+);base64,([^"]+)"')
+IMG_SRC_RE = re.compile(r'src="(data:image/[a-zA-Z0-9.+-]+;base64,[^"]+|https?://[^"]+)"')
+
+EXTENSAO_POR_TIPO = {
+    "image/jpeg": "jpg", "image/png": "png", "image/gif": "gif", "image/webp": "webp",
+}
 
 
 def extrair_e_gravar_imagens(corpo_html, slug):
-    """Google Docs embute imagens como data: URIs base64 no HTML — isso
-    tornaria cada página (e o próprio index.html, via miniatura do
-    cartão) enormes. Grava cada imagem como ficheiro real em
-    noticias/img/ e substitui pelo caminho relativo correspondente."""
+    """As imagens de um Google Doc aparecem no HTML ou como data: URIs
+    base64, ou como links temporários para servidores do Google
+    (ex.: docs-images-rt) — nenhum dos dois é fiável a longo prazo:
+    o primeiro tornaria as páginas enormes, o segundo pode deixar de
+    funcionar passado algum tempo (não é um link público estável).
+    Descarrega/descodifica cada imagem e grava-a como ficheiro real em
+    noticias/img/, substituindo pelo caminho relativo correspondente.
+    Se o descarregamento falhar, mantém o link original em vez de
+    partir a página."""
     pasta = f"{NOTICIAS_DIR}/img"
     os.makedirs(pasta, exist_ok=True)
     contador = {"n": 0}
 
     def substituir(m):
+        origem = m.group(1)
         contador["n"] += 1
-        subtipo, dados_b64 = m.group(1), m.group(2)
-        ext = "jpg" if subtipo.lower() == "jpeg" else re.sub(r"[^a-z0-9]", "", subtipo.lower())
-        ext = ext or "png"
+        try:
+            if origem.startswith("data:"):
+                cabecalho, dados_b64 = origem.split(",", 1)
+                subtipo = cabecalho.split("/")[1].split(";")[0]
+                ext = "jpg" if subtipo.lower() == "jpeg" else (re.sub(r"[^a-z0-9]", "", subtipo.lower()) or "png")
+                conteudo = base64.b64decode(dados_b64)
+            else:
+                conteudo, tipo = buscar_bytes(origem)
+                ext = EXTENSAO_POR_TIPO.get(tipo.split(";")[0].strip().lower(), "png")
+        except Exception as e:
+            print(f"Aviso: não foi possível gravar uma imagem de '{slug}' ({e}) — mantém o link original.", file=sys.stderr)
+            return m.group(0)
+
         nome = f"{slug}-{contador['n']}.{ext}"
         with open(f"{pasta}/{nome}", "wb") as f:
-            f.write(base64.b64decode(dados_b64))
+            f.write(conteudo)
         return f'src="img/{nome}"'
 
-    return IMG_DATA_RE.sub(substituir, corpo_html)
+    return IMG_SRC_RE.sub(substituir, corpo_html)
 
 
 def extrair_primeira_imagem(corpo_html):
