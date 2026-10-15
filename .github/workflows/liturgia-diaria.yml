@@ -2,11 +2,13 @@ name: Atualizar liturgia diária
 
 on:
   schedule:
-    # 21:00 UTC (dia anterior) — o agendamento do GitHub tem corrido com
-    # várias horas de atraso em relação à hora configurada, por isso
-    # isto fica propositadamente adiantado para o conteúdo já estar
-    # pronto de manhã cedo em Portugal, mesmo com esse atraso.
-    - cron: "0 21 * * *"
+    # A cada 2 horas, durante a noite/madrugada (UTC). O feed da
+    # Evangelizo nem sempre atualiza para o dia novo à mesma hora, e o
+    # agendamento do GitHub também pode atrasar — em vez de tentar
+    # acertar uma hora exata, corre várias vezes até apanhar o momento
+    # em que o feed já mudou de dia. Não faz mal correr sem haver
+    # novidades — só comita quando o conteúdo muda mesmo.
+    - cron: "0 0,2,4,6,8,10 * * *"
   workflow_dispatch: {}
 
 permissions:
