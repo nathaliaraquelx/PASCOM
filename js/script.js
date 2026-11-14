@@ -157,67 +157,110 @@ document.addEventListener('DOMContentLoaded', () => {
       /* Mantém o texto placeholder já presente no HTML. */
     });
 
-  /* ---------- Galeria de imagens (placeholders + lightbox) ---------- */
+  /* ---------- Galeria de imagens (grid tipo Instagram + lightbox) ----------
+     Os posts vêm de js/galeria.js (PASCOM_GALERIA), gerado todos os dias
+     por um GitHub Action (.github/workflows/galeria.yml) a partir da
+     Google Sheet "índice" da galeria. Se ainda não houver posts, mostra-se
+     uma mensagem a explicar que a galeria está por configurar. */
   const galleryGrid = document.getElementById('galleryGrid');
-  const galleryData = [
-    { icon: 'fa-church', label: 'Igreja Paroquial' },
-    { icon: 'fa-child', label: 'Catequese' },
-    { icon: 'fa-hands-praying', label: 'Adoração' },
-    { icon: 'fa-people-group', label: 'Grupos Paroquiais' },
-    { icon: 'fa-music', label: 'Coro' },
-    { icon: 'fa-cross', label: 'Celebrações' },
-    { icon: 'fa-dove', label: 'Festa do Padroeiro' },
-    { icon: 'fa-heart', label: 'Vida Comunitária' },
-  ];
+  const posts = (typeof PASCOM_GALERIA !== 'undefined') ? PASCOM_GALERIA : [];
 
-  galleryData.forEach((item, index) => {
-    const tile = document.createElement('button');
-    tile.className = 'gallery-tile';
-    tile.dataset.index = index;
-    tile.innerHTML = `<i class="fa-solid ${item.icon}"></i><span>${item.label}</span>`;
-    galleryGrid.appendChild(tile);
-  });
+  if (posts.length === 0) {
+    galleryGrid.innerHTML = '<p class="gallery-empty">Ainda não há fotografias publicadas na galeria. Volte em breve! <i class="fa-regular fa-images"></i></p>';
+  } else {
+    posts.forEach((post, index) => {
+      const tile = document.createElement('button');
+      tile.className = 'gallery-tile';
+      tile.dataset.index = index;
+      tile.setAttribute('aria-label', post.legenda || 'Ver fotografia');
+      const temVariasFotos = post.imagens.length > 1;
+      tile.innerHTML = `
+        <img src="${post.imagens[0]}" alt="${(post.legenda || '').replace(/"/g, '&quot;')}" loading="lazy">
+        ${temVariasFotos ? '<span class="gallery-tile-badge" title="Várias fotografias"><i class="fa-regular fa-images"></i></span>' : ''}
+      `;
+      galleryGrid.appendChild(tile);
+    });
+  }
 
   const lightbox = document.getElementById('lightbox');
   const lightboxContent = document.getElementById('lightboxContent');
-  let currentIndex = 0;
+  let currentPostIndex = 0;
+  let currentImageIndex = 0;
 
-  function openLightbox(index) {
-    currentIndex = index;
+  function openLightbox(postIndex) {
+    currentPostIndex = postIndex;
+    currentImageIndex = 0;
     renderLightbox();
     lightbox.classList.add('open');
     lightbox.setAttribute('aria-hidden', 'false');
   }
+
   function renderLightbox() {
-    const item = galleryData[currentIndex];
-    lightboxContent.innerHTML = `<i class="fa-solid ${item.icon}"></i>`;
+    const post = posts[currentPostIndex];
+    const imagens = post.imagens;
+    const temVarias = imagens.length > 1;
+
+    let dotsHTML = '';
+    if (temVarias) {
+      dotsHTML = '<div class="lightbox-dots">' +
+        imagens.map((_, i) => `<span class="lightbox-dot${i === currentImageIndex ? ' active' : ''}"></span>`).join('') +
+        '</div>';
+    }
+
+    lightboxContent.innerHTML = `
+      <img src="${imagens[currentImageIndex]}" alt="${(post.legenda || '').replace(/"/g, '&quot;')}">
+      ${dotsHTML}
+      ${post.legenda ? `<p class="lightbox-caption">${post.legenda}</p>` : ''}
+    `;
+
+    document.getElementById('lightboxPrev').style.display = (posts.length > 1 || temVarias) ? 'flex' : 'none';
+    document.getElementById('lightboxNext').style.display = (posts.length > 1 || temVarias) ? 'flex' : 'none';
   }
+
   function closeLightbox() {
     lightbox.classList.remove('open');
     lightbox.setAttribute('aria-hidden', 'true');
   }
 
-  galleryGrid.addEventListener('click', (e) => {
-    const tile = e.target.closest('.gallery-tile');
-    if (tile) openLightbox(Number(tile.dataset.index));
-  });
+  function irParaImagemAnterior() {
+    const imagens = posts[currentPostIndex].imagens;
+    if (imagens.length > 1) {
+      currentImageIndex = (currentImageIndex - 1 + imagens.length) % imagens.length;
+    } else {
+      currentPostIndex = (currentPostIndex - 1 + posts.length) % posts.length;
+      currentImageIndex = 0;
+    }
+    renderLightbox();
+  }
 
-  document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
-  document.getElementById('lightboxPrev').addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + galleryData.length) % galleryData.length;
+  function irParaImagemSeguinte() {
+    const imagens = posts[currentPostIndex].imagens;
+    if (currentImageIndex < imagens.length - 1) {
+      currentImageIndex += 1;
+    } else {
+      currentPostIndex = (currentPostIndex + 1) % posts.length;
+      currentImageIndex = 0;
+    }
     renderLightbox();
-  });
-  document.getElementById('lightboxNext').addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % galleryData.length;
-    renderLightbox();
-  });
-  lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
-  document.addEventListener('keydown', (e) => {
-    if (!lightbox.classList.contains('open')) return;
-    if (e.key === 'Escape') closeLightbox();
-    if (e.key === 'ArrowRight') document.getElementById('lightboxNext').click();
-    if (e.key === 'ArrowLeft') document.getElementById('lightboxPrev').click();
-  });
+  }
+
+  if (posts.length > 0) {
+    galleryGrid.addEventListener('click', (e) => {
+      const tile = e.target.closest('.gallery-tile');
+      if (tile) openLightbox(Number(tile.dataset.index));
+    });
+
+    document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+    document.getElementById('lightboxPrev').addEventListener('click', irParaImagemAnterior);
+    document.getElementById('lightboxNext').addEventListener('click', irParaImagemSeguinte);
+    lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+    document.addEventListener('keydown', (e) => {
+      if (!lightbox.classList.contains('open')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowRight') irParaImagemSeguinte();
+      if (e.key === 'ArrowLeft') irParaImagemAnterior();
+    });
+  }
 
   /* ---------- Velas Virtuais ---------- */
   const candleForm = document.getElementById('candleForm');
