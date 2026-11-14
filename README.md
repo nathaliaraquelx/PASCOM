@@ -8,6 +8,7 @@ Site institucional da Pastoral da Comunicação (PASCOM) da Paróquia de São Jo
 index.html        Página única com todas as secções
 css/style.css      Estilos (azul, amarelo e branco)
 js/script.js       Interações: menu, tabs, acordeão, galeria/lightbox, velas virtuais, formulários
+js/galeria.js      Dados da galeria (gerado automaticamente, ver "Galeria de Imagens" abaixo)
 assets/img/        Imagens e favicon
 ```
 
@@ -27,8 +28,8 @@ grupos e história) já foi preenchida com dados reais a partir do Plano Pastora
 - **Redes sociais**: Instagram, Facebook e a Comunidade de WhatsApp já têm os links reais. O ícone
   de TikTok ainda aponta para `#` — substitua pelo link real assim que existir, em **todas** as
   ocorrências (cabeçalho, secção *Contactos* e rodapé).
-- **Galeria**: as fotos são placeholders com ícones; substitua os elementos `.gallery-tile` em
-  `js/script.js` (array `galleryData`) por imagens reais (`<img src="assets/img/...">`).
+- **Galeria**: mostra uma mensagem "ainda não há fotografias" até o primeiro post ser publicado —
+  ver secção "Galeria de Imagens" abaixo.
 - **Slideshow do topo**: as duas fotos em `assets/img/hero/` (Sé Catedral e Catedral Nova) são fotos
   de Bragança com licença aberta (Wikimedia Commons), usadas só como ponto de partida — substitua por
   fotos próprias da paróquia assim que possível (ver secção abaixo).
@@ -137,6 +138,54 @@ conteúdo aparece só como texto simples.
 **Nota:** remover uma linha da Sheet (ou marcar `publicar` como `nao`) tira o artigo da lista, mas
 o ficheiro `noticias/<slug>.html` já gerado não é apagado automaticamente (fica só "não listado" —
 continua acessível a quem tiver o link direto). Para o remover de vez, apague o ficheiro à mão.
+
+Está sujeita à mesma limitação de *branch* principal descrita acima para o Evangelho/Santo do dia.
+
+## Galeria de Imagens (grid tipo Instagram)
+
+A secção *Galeria* funciona como um grid de fotos ao estilo Instagram: cada "post" é um **Google
+Doc** com uma ou várias fotos, listado numa **Google Sheet "índice"**, tal como as *Notícias*. Um
+GitHub Action (`.github/workflows/galeria.yml`) descarrega as fotos de cada Doc e gera
+`js/galeria.js`. Posts com mais do que uma foto mostram um ícone de "várias fotografias" no
+cartão e abrem como carrossel/slideshow na pré-visualização (lightbox).
+
+### Configuração inicial (uma vez)
+
+1. Crie uma Google Sheet nova com estas colunas na primeira linha (por esta ordem):
+
+   | `data` | `legenda` | `link_doc` | `publicar` |
+   |--------|-----------|------------|------------|
+
+   - `data`: no formato `AAAA-MM-DD` (ex.: `2026-09-11`) — define a ordem dos posts (mais
+     recentes primeiro).
+   - `legenda` (opcional): o texto que aparece como legenda ao abrir o post.
+   - `link_doc`: o link do Google Doc do post (ver abaixo).
+   - `publicar` (opcional): escreva `nao` para esconder um post sem apagar a linha (rascunho).
+     Vazio ou `sim` = publicado.
+
+2. Publique a Sheet como CSV: **Ficheiro → Partilhar → Publicar no Web** → escolha a folha certa →
+   formato **CSV** → **Publicar**. Copie o URL gerado.
+3. Em `.github/workflows/galeria.yml`, substitua `SEU_CSV_URL_AQUI` (variável
+   `GALERIA_SHEET_CSV_URL`) por esse URL, e faça *commit*/*push*.
+
+### Publicar um post novo (sempre que houver fotos novas)
+
+1. Crie um **Google Doc** novo e insira dentro dele, por ordem, as fotos desse post (uma foto =
+   post simples; várias fotos = carrossel, tal como no Instagram). Não é preciso texto nenhum no
+   Doc — só as imagens contam.
+2. Partilhe o Doc como **"Qualquer pessoa com o link" → Visualizador**: botão **Partilhar** →
+   em "Acesso geral" escolha "Qualquer pessoa com o link" → copie o link. (A opção mais antiga
+   "Publicar na Web", em Ficheiro → Partilhar, também funciona, se preferir.)
+3. Acrescente uma linha na Google Sheet "índice" da galeria com a data, uma legenda (opcional) e
+   esse link.
+4. No sincronismo seguinte (a cada 2 horas, ou manualmente em **Actions → Publicar galeria de
+   imagens (Google Docs) → Run workflow**), o Action descarrega as fotos do Doc, grava-as em
+   `assets/img/galeria/` e atualiza o grid da secção *Galeria* — mostra sempre os 60 posts mais
+   recentes.
+
+**Nota:** remover uma linha da Sheet (ou marcar `publicar` como `nao`) tira o post do grid, mas as
+fotos já descarregadas em `assets/img/galeria/` não são apagadas automaticamente. Para as remover
+de vez, apague os ficheiros à mão.
 
 Está sujeita à mesma limitação de *branch* principal descrita acima para o Evangelho/Santo do dia.
 
