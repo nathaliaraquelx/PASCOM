@@ -130,6 +130,7 @@ def main():
         sys.exit(1)
 
     posts = []
+    slugs_usados = {}
     for linha in linhas:
         data = linha.get("data", "")
         legenda = linha.get("legenda", "")
@@ -146,7 +147,10 @@ def main():
             print(f"A ignorar post de '{data}': data inválida (esperado AAAA-MM-DD).", file=sys.stderr)
             continue
 
-        slug = f"{data}-{slugificar(legenda or 'post')}"
+        slug_base = f"{data}-{slugificar(legenda or 'post')}"
+        slugs_usados[slug_base] = slugs_usados.get(slug_base, 0) + 1
+        ocorrencia = slugs_usados[slug_base]
+        slug = slug_base if ocorrencia == 1 else f"{slug_base}-{ocorrencia}"
 
         try:
             html_doc = buscar_url(normalizar_link_doc(link_doc))
