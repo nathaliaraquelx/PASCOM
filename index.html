@@ -283,30 +283,38 @@
 <!-- ================= CONFISSÕES ================= -->
 <section id="confissoes" class="section section-alt">
   <div class="container">
-    <p class="section-kicker">Sacramento da Reconciliação</p>
-    <h2 class="section-title"><i class="fa-solid fa-hands-praying icon-title"></i> Horário das Confissões</h2>
-    <div class="card-row">
-      <div class="info-card">
+    <div class="carousel-header-row">
+      <div>
+        <p class="section-kicker">Sacramento da Reconciliação</p>
+        <h2 class="section-title"><i class="fa-solid fa-hands-praying icon-title"></i> Horário das Confissões</h2>
+      </div>
+      <div class="carousel-controls">
+        <button class="carousel-btn" id="confissoesPrev" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="carousel-btn" id="confissoesNext" aria-label="Seguinte"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+    <div class="carousel-track" id="confissoesTrack">
+      <div class="info-card carousel-item">
         <i class="fa-solid fa-calendar-day"></i>
         <h3>Comunidade Sé</h3>
         <p>Segunda-feira &mdash; <strong>18:00</strong></p>
       </div>
-      <div class="info-card">
+      <div class="info-card carousel-item">
         <i class="fa-solid fa-calendar-week"></i>
         <h3>Comunidade Santos Mártires</h3>
         <p>Terça e quinta-feira &mdash; <strong>09:30</strong></p>
       </div>
-      <div class="info-card">
+      <div class="info-card carousel-item">
         <i class="fa-solid fa-calendar-week"></i>
         <h3>Comunidade S. Tiago</h3>
         <p>Sexta-feira &mdash; <strong>09:30</strong></p>
       </div>
-      <div class="info-card">
+      <div class="info-card carousel-item">
         <i class="fa-solid fa-church"></i>
         <h3>Catedral</h3>
         <p>Domingo &mdash; <strong>17:00</strong></p>
       </div>
-      <div class="info-card">
+      <div class="info-card carousel-item">
         <i class="fa-solid fa-phone"></i>
         <h3>Marcação Pessoal</h3>
         <p>Contacte o cartório paroquial para outro horário.</p>
@@ -318,25 +326,33 @@
 <!-- ================= ADORAÇÃO ================= -->
 <section id="adoracao" class="section">
   <div class="container">
-    <p class="section-kicker">Diante do Santíssimo</p>
-    <h2 class="section-title"><i class="fa-solid fa-monument icon-title"></i> Dias de Adoração</h2>
-    <div class="card-row">
-      <div class="info-card">
+    <div class="carousel-header-row">
+      <div>
+        <p class="section-kicker">Diante do Santíssimo</p>
+        <h2 class="section-title"><i class="fa-solid fa-monument icon-title"></i> Dias de Adoração</h2>
+      </div>
+      <div class="carousel-controls">
+        <button class="carousel-btn" id="adoracaoPrev" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="carousel-btn" id="adoracaoNext" aria-label="Seguinte"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+    <div class="carousel-track" id="adoracaoTrack">
+      <div class="info-card carousel-item">
         <i class="fa-solid fa-calendar"></i>
         <h3>Comunidade Sé</h3>
         <p>Segunda-feira &mdash; <strong>18:00</strong></p>
       </div>
-      <div class="info-card">
+      <div class="info-card carousel-item">
         <i class="fa-solid fa-star-of-life"></i>
         <h3>Comunidade Santos Mártires</h3>
         <p>Quinta-feira &mdash; <strong>09:30</strong></p>
       </div>
-      <div class="info-card">
+      <div class="info-card carousel-item">
         <i class="fa-solid fa-cross"></i>
         <h3>Comunidade S. Tiago</h3>
         <p>Sexta-feira &mdash; <strong>09:30</strong></p>
       </div>
-      <div class="info-card">
+      <div class="info-card carousel-item">
         <i class="fa-solid fa-heart"></i>
         <h3>Terço da Misericórdia</h3>
         <p>Igreja do Loreto &mdash; todos os dias, <strong>15:00</strong></p>
@@ -419,25 +435,25 @@
 <!-- ================= GRUPOS E ORDENS RELIGIOSAS ================= -->
 <section id="grupos" class="section section-alt">
   <div class="container">
-    <div class="groups-header-row">
+    <div class="carousel-header-row">
       <div>
         <p class="section-kicker">Caminhar em comunidade</p>
         <h2 class="section-title"><i class="fa-solid fa-people-group icon-title"></i> Grupos e Ordens Religiosas</h2>
       </div>
-      <div class="groups-carousel-controls">
-        <button class="groups-carousel-btn" id="groupsPrev" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
-        <button class="groups-carousel-btn" id="groupsNext" aria-label="Seguinte"><i class="fa-solid fa-chevron-right"></i></button>
+      <div class="carousel-controls">
+        <button class="carousel-btn" id="groupsPrev" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="carousel-btn" id="groupsNext" aria-label="Seguinte"><i class="fa-solid fa-chevron-right"></i></button>
       </div>
     </div>
-    <div class="groups-grid" id="groupsTrack">
-      <div class="group-card"><i class="fa-solid fa-people-roof"></i><h3>Conselho Pastoral Paroquial</h3><p>Órgão de participação, discernimento e corresponsabilidade na vida da paróquia.</p></div>
-      <div class="group-card"><i class="fa-solid fa-book-open-reader"></i><h3>Leitores</h3><p>Proclamação da Palavra de Deus nas celebrações litúrgicas.</p></div>
-      <div class="group-card"><i class="fa-solid fa-seedling"></i><h3>Grupos Semeadores da Alegria</h3><p>Grupos bíblicos e eucarísticos das comunidades da paróquia.</p></div>
-      <div class="group-card"><i class="fa-solid fa-dove"></i><h3>Catecumenado</h3><p>Caminho de iniciação cristã para adultos não baptizados.</p></div>
-      <div class="group-card"><i class="fa-solid fa-child-reaching"></i><h3>Grupo de Crisma</h3><p>Preparação para o Sacramento da Confirmação, às segundas-feiras.</p></div>
-      <div class="group-card"><i class="fa-solid fa-people-group"></i><h3>Plataforma dos Jovens Sem Sofá</h3><p>Espaço de encontro, formação e convívio para os jovens da paróquia.</p></div>
-      <div class="group-card"><i class="fa-solid fa-church"></i><h3>Equipas Pastorais das Comunidades</h3><p>Catedral, Sé, S. Tiago, Santos Mártires e S. Lourenço das Cantarias.</p></div>
-      <div class="group-card"><i class="fa-solid fa-video"></i><h3>PASCOM</h3><p>Pastoral da Comunicação: redes sociais, transmissões e este site.</p></div>
+    <div class="carousel-track" id="groupsTrack">
+      <div class="group-card carousel-item"><i class="fa-solid fa-people-roof"></i><h3>Conselho Pastoral Paroquial</h3><p>Órgão de participação, discernimento e corresponsabilidade na vida da paróquia.</p></div>
+      <div class="group-card carousel-item"><i class="fa-solid fa-book-open-reader"></i><h3>Leitores</h3><p>Proclamação da Palavra de Deus nas celebrações litúrgicas.</p></div>
+      <div class="group-card carousel-item"><i class="fa-solid fa-seedling"></i><h3>Grupos Semeadores da Alegria</h3><p>Grupos bíblicos e eucarísticos das comunidades da paróquia.</p></div>
+      <div class="group-card carousel-item"><i class="fa-solid fa-dove"></i><h3>Catecumenado</h3><p>Caminho de iniciação cristã para adultos não baptizados.</p></div>
+      <div class="group-card carousel-item"><i class="fa-solid fa-child-reaching"></i><h3>Grupo de Crisma</h3><p>Preparação para o Sacramento da Confirmação, às segundas-feiras.</p></div>
+      <div class="group-card carousel-item"><i class="fa-solid fa-people-group"></i><h3>Plataforma dos Jovens Sem Sofá</h3><p>Espaço de encontro, formação e convívio para os jovens da paróquia.</p></div>
+      <div class="group-card carousel-item"><i class="fa-solid fa-church"></i><h3>Equipas Pastorais das Comunidades</h3><p>Catedral, Sé, S. Tiago, Santos Mártires e S. Lourenço das Cantarias.</p></div>
+      <div class="group-card carousel-item"><i class="fa-solid fa-video"></i><h3>PASCOM</h3><p>Pastoral da Comunicação: redes sociais, transmissões e este site.</p></div>
     </div>
   </div>
 </section>
