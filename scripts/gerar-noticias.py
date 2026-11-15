@@ -25,6 +25,7 @@ from bs4 import BeautifulSoup, NavigableString, Tag
 
 REPO_ROOT = sys.path[0] + "/.."
 TEMPLATE_PATH = f"{REPO_ROOT}/scripts/templates/artigo.html"
+TEMPLATE_ARQUIVO_PATH = f"{REPO_ROOT}/scripts/templates/noticias-index.html"
 INDEX_HTML_PATH = f"{REPO_ROOT}/index.html"
 NOTICIAS_DIR = f"{REPO_ROOT}/noticias"
 SITEMAP_PATH = f"{REPO_ROOT}/sitemap.xml"
@@ -33,7 +34,9 @@ SITE_URL = "https://paroquiasaojoaobaptista.pt"
 MARCADOR_INICIO = "<!-- NOTICIAS:AUTO:INICIO -->"
 MARCADOR_FIM = "<!-- NOTICIAS:AUTO:FIM -->"
 
-MAX_CARTOES = 9
+# Na página inicial só aparecem as notícias mais recentes — o arquivo
+# completo (noticias/index.html) lista sempre todas.
+MAX_CARTOES = 3
 
 MESES_PT = [
     "janeiro", "fevereiro", "março", "abril", "maio", "junho",
@@ -272,14 +275,17 @@ def gerar_pagina_artigo(template, item):
     return pagina
 
 
-def gerar_cartao(item):
+def gerar_cartao(item, prefixo_link="noticias/"):
+    """prefixo_link é "noticias/" quando o cartão aparece em index.html
+    (na raiz do site) e "" quando aparece no próprio arquivo de notícias
+    (noticias/index.html), que já está dentro dessa pasta."""
     if item["imagem"]:
         # Caminhos locais (gravados por extrair_e_gravar_imagens) são
         # relativos a noticias/ — a partir de index.html, na raiz do
-        # site, precisam do prefixo "noticias/".
+        # site, precisam do mesmo prefixo dos links.
         src = item["imagem"]
         if "://" not in src:
-            src = f"noticias/{src}"
+            src = f"{prefixo_link}{src}"
         thumb = f'<img src="{html.escape(src)}" alt="" loading="lazy">'
     else:
         thumb = '<i class="fa-solid fa-image"></i>'
@@ -289,13 +295,16 @@ def gerar_cartao(item):
           <span class="news-date">{formatar_data_pt(item["data"])}</span>
           <h3>{html.escape(item["titulo"])}</h3>
           <p>{html.escape(item["resumo"])}</p>
-          <a href="noticias/{item["slug"]}.html" class="news-link">Ler mais <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="{prefixo_link}{item["slug"]}.html" class="news-link">Ler mais <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </article>'''
 
 
 def gerar_sitemap(itens):
-    urls = [f"  <url>\n    <loc>{SITE_URL}/</loc>\n  </url>"]
+    urls = [
+        f"  <url>\n    <loc>{SITE_URL}/</loc>\n  </url>",
+        f"  <url>\n    <loc>{SITE_URL}/noticias/</loc>\n  </url>",
+    ]
     for item in itens:
         urls.append(
             f"  <url>\n"
@@ -407,7 +416,21 @@ def main():
 
     gerar_sitemap(itens)
 
+    # Arquivo completo (noticias/index.html) — lista sempre todos os
+    # artigos publicados, não só os mais recentes.
+    with open(TEMPLATE_ARQUIVO_PATH, encoding="utf-8") as f:
+        template_arquivo = f.read()
+    cartoes_arquivo_html = "\n".join(gerar_cartao(item, prefixo_link="") for item in itens)
+    pagina_arquivo = template_arquivo.replace("{{CARTOES}}", cartoes_arquivo_html)
+    with open(f"{NOTICIAS_DIR}/index.html", "w", encoding="utf-8") as f:
+        f.write(pagina_arquivo)
+
     cartoes_html = "\n".join(gerar_cartao(item) for item in itens[:MAX_CARTOES])
+    ver_todas_html = (
+        '      <p class="news-ver-todas">'
+        '<a href="noticias/index.html" class="btn btn-outline">'
+        'Ver todas as notícias <i class="fa-solid fa-arrow-right"></i></a></p>\n'
+    )
 
     with open(INDEX_HTML_PATH, encoding="utf-8") as f:
         index_html = f.read()
@@ -415,7 +438,12 @@ def main():
     padrao = re.compile(
         re.escape(MARCADOR_INICIO) + r".*?" + re.escape(MARCADOR_FIM), re.DOTALL
     )
-    novo_bloco = f"{MARCADOR_INICIO}\n{cartoes_html}\n      {MARCADOR_FIM}"
+    novo_bloco = (
+        f"{MARCADOR_INICIO}\n"
+        f"      <div class=\"news-grid\">\n{cartoes_html}\n      </div>\n"
+        f"{ver_todas_html}"
+        f"      {MARCADOR_FIM}"
+    )
     if not padrao.search(index_html):
         print("Não encontrei os marcadores NOTICIAS:AUTO em index.html — abortei sem alterar nada.", file=sys.stderr)
         sys.exit(1)

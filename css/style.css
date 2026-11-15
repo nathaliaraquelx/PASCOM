@@ -655,6 +655,7 @@ ul { list-style: none; margin: 0; padding: 0; }
 .news-link { color: var(--gold-600); font-weight: 600; display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; }
 .news-link:hover { color: var(--gold-900); }
 .news-empty { color: var(--text-muted); grid-column: 1/-1; text-align: center; padding: 20px; }
+.news-ver-todas { text-align: center; margin-top: 32px; }
 
 /* Article page (secção Notícias, artigo completo) */
 .article-header { padding: 44px 0 30px; }
