@@ -42,7 +42,12 @@ EXTENSAO_POR_TIPO = {
     "image/jpeg": "jpg", "image/png": "png", "image/gif": "gif", "image/webp": "webp",
 }
 
-CARTAZ_RE = re.compile(r"^\s*\[Cartaz\]\s*(\S+)\s*$", re.IGNORECASE | re.MULTILINE)
+# O Google Calendar converte automaticamente um link colado na descrição em
+# HTML (ex.: [Cartaz] (<u><a href="URL" target="_blank">URL</a></u>)), por
+# isso procuramos o primeiro URL depois da etiqueta em vez de exigir uma
+# linha só com a etiqueta e o link em texto simples.
+CARTAZ_RE = re.compile(r"\[Cartaz\][^\n]*?(https?://[^\s\"'<>]+)", re.IGNORECASE)
+CARTAZ_LINHA_RE = re.compile(r"\[Cartaz\][^\n]*", re.IGNORECASE)
 
 
 def buscar_url(url):
@@ -176,7 +181,7 @@ def main():
         descricao_bruta = str(ev.get("DESCRIPTION", "")).strip()
 
         cartaz_match = CARTAZ_RE.search(descricao_bruta)
-        descricao = CARTAZ_RE.sub("", descricao_bruta).strip()
+        descricao = CARTAZ_LINHA_RE.sub("", descricao_bruta).strip()
         cartaz = extrair_e_gravar_cartaz(cartaz_match.group(1), idx) if cartaz_match else None
 
         eventos.append({
