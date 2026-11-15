@@ -20,7 +20,7 @@ const PASCOM_GALERIA = [
     "data": "2026-11-18",
     "legenda": "Jesus está presente no Santíssimo Sacramento. E espera por ti!",
     "imagens": [
-      "assets/img/galeria/2026-11-18-jesus-esta-presente-no-santissimo-sacramento-e-espera-por-ti-1.jpg"
+      "assets/img/galeria/2026-11-18-jesus-esta-presente-no-santissimo-sacramento-e-espera-por-ti-2-1.jpg"
     ],
     "id": 2
   },
