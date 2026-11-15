@@ -222,6 +222,52 @@ document.addEventListener('DOMContentLoaded', () => {
     lightbox.setAttribute('aria-hidden', 'true');
   }
 
+  function avisarPartilha(texto) {
+    const botao = document.getElementById('lightboxShare');
+    const iconeOriginal = botao.innerHTML;
+    botao.innerHTML = '<i class="fa-solid fa-check"></i>';
+    botao.setAttribute('aria-label', texto);
+    setTimeout(() => {
+      botao.innerHTML = iconeOriginal;
+      botao.setAttribute('aria-label', 'Partilhar');
+    }, 1800);
+  }
+
+  async function partilharImagemAtual() {
+    const post = posts[currentPostIndex];
+    const caminhoImagem = post.imagens[currentImageIndex];
+    const urlImagem = new URL(caminhoImagem, window.location.href).href;
+    const titulo = post.legenda || 'Galeria da Paróquia de São João Baptista';
+
+    if (navigator.share) {
+      try {
+        if (navigator.canShare) {
+          try {
+            const resposta = await fetch(urlImagem);
+            const blob = await resposta.blob();
+            const ficheiro = new File([blob], caminhoImagem.split('/').pop(), { type: blob.type });
+            if (navigator.canShare({ files: [ficheiro] })) {
+              await navigator.share({ files: [ficheiro], title: titulo, text: titulo });
+              return;
+            }
+          } catch (e) {
+            // Não foi possível partilhar como ficheiro (ex.: fetch falhou) — tenta por link.
+          }
+        }
+        await navigator.share({ title: titulo, text: titulo, url: urlImagem });
+      } catch (e) {
+        // Utilizador cancelou a partilha — não faz nada.
+      }
+    } else if (navigator.clipboard) {
+      try {
+        await navigator.clipboard.writeText(urlImagem);
+        avisarPartilha('Link copiado!');
+      } catch (e) {
+        // Sem suporte para partilhar ou copiar — ignora silenciosamente.
+      }
+    }
+  }
+
   function irParaImagemAnterior() {
     const imagens = posts[currentPostIndex].imagens;
     if (imagens.length > 1) {
@@ -251,6 +297,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+    document.getElementById('lightboxShare').addEventListener('click', partilharImagemAtual);
     document.getElementById('lightboxPrev').addEventListener('click', irParaImagemAnterior);
     document.getElementById('lightboxNext').addEventListener('click', irParaImagemSeguinte);
     lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
