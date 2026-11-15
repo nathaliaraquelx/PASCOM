@@ -729,7 +729,7 @@ ul { list-style: none; margin: 0; padding: 0; }
   gap: 16px;
   flex-wrap: wrap;
 }
-.carousel-controls { display: flex; gap: 10px; }
+.carousel-controls { display: flex; gap: 10px; justify-content: center; margin-top: 20px; }
 .carousel-btn {
   width: 44px;
   height: 44px;
@@ -745,7 +745,8 @@ ul { list-style: none; margin: 0; padding: 0; }
   justify-content: center;
   transition: background .2s, color .2s;
 }
-.carousel-btn:hover { background: var(--gold-800); color: var(--white); }
+.carousel-btn:hover:not(:disabled) { background: var(--gold-800); color: var(--white); }
+.carousel-btn:disabled { opacity: 0.35; cursor: default; box-shadow: none; }
 .carousel-track {
   display: flex;
   gap: 20px;
