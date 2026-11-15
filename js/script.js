@@ -134,12 +134,25 @@ document.addEventListener('DOMContentLoaded', () => {
       const estilo = getComputedStyle(track);
       return item.getBoundingClientRect().width + parseFloat(estilo.gap || 20);
     }
+
+    /* Só deixa avançar/recuar enquanto houver mais itens nessa direção
+       — sem isto, continuar a clicar no fim/início dava a sensação de
+       um carrossel infinito, mesmo sem haver mais nada para mostrar. */
+    function atualizarBotoes() {
+      const scrollMax = track.scrollWidth - track.clientWidth;
+      prev.disabled = track.scrollLeft <= 1;
+      next.disabled = track.scrollLeft >= scrollMax - 1;
+    }
+
     prev.addEventListener('click', () => {
       track.scrollBy({ left: -deslocamento(), behavior: 'smooth' });
     });
     next.addEventListener('click', () => {
       track.scrollBy({ left: deslocamento(), behavior: 'smooth' });
     });
+    track.addEventListener('scroll', atualizarBotoes);
+    window.addEventListener('resize', atualizarBotoes);
+    atualizarBotoes();
   }
 
   configurarCarrossel('groupsTrack', 'groupsPrev', 'groupsNext');
