@@ -233,37 +233,49 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 1800);
   }
 
+  function urlDaFotoAtual() {
+    const post = posts[currentPostIndex];
+    const nomeFicheiro = post.imagens[currentImageIndex].split('/').pop();
+    const url = new URL(window.location.href);
+    url.search = '';
+    url.hash = '';
+    url.searchParams.set('foto', nomeFicheiro);
+    url.hash = 'galeria';
+    return url.href;
+  }
+
   async function partilharImagemAtual() {
     const post = posts[currentPostIndex];
-    const caminhoImagem = post.imagens[currentImageIndex];
-    const urlImagem = new URL(caminhoImagem, window.location.href).href;
+    const urlPagina = urlDaFotoAtual();
     const titulo = post.legenda || 'Galeria da Paróquia de São João Baptista';
 
     if (navigator.share) {
       try {
-        if (navigator.canShare) {
-          try {
-            const resposta = await fetch(urlImagem);
-            const blob = await resposta.blob();
-            const ficheiro = new File([blob], caminhoImagem.split('/').pop(), { type: blob.type });
-            if (navigator.canShare({ files: [ficheiro] })) {
-              await navigator.share({ files: [ficheiro], title: titulo, text: titulo });
-              return;
-            }
-          } catch (e) {
-            // Não foi possível partilhar como ficheiro (ex.: fetch falhou) — tenta por link.
-          }
-        }
-        await navigator.share({ title: titulo, text: titulo, url: urlImagem });
+        await navigator.share({ title: titulo, text: titulo, url: urlPagina });
       } catch (e) {
         // Utilizador cancelou a partilha — não faz nada.
       }
     } else if (navigator.clipboard) {
       try {
-        await navigator.clipboard.writeText(urlImagem);
+        await navigator.clipboard.writeText(urlPagina);
         avisarPartilha('Link copiado!');
       } catch (e) {
         // Sem suporte para partilhar ou copiar — ignora silenciosamente.
+      }
+    }
+  }
+
+  function abrirFotoPeloLink() {
+    const nomeFicheiro = new URLSearchParams(window.location.search).get('foto');
+    if (!nomeFicheiro) return;
+    for (let postIndex = 0; postIndex < posts.length; postIndex++) {
+      const imageIndex = posts[postIndex].imagens.findIndex(caminho => caminho.endsWith(nomeFicheiro));
+      if (imageIndex !== -1) {
+        openLightbox(postIndex);
+        currentImageIndex = imageIndex;
+        renderLightbox();
+        document.getElementById('galeria').scrollIntoView();
+        break;
       }
     }
   }
@@ -307,6 +319,8 @@ document.addEventListener('DOMContentLoaded', () => {
       if (e.key === 'ArrowRight') irParaImagemSeguinte();
       if (e.key === 'ArrowLeft') irParaImagemAnterior();
     });
+
+    abrirFotoPeloLink();
   }
 
   /* ---------- Velas Virtuais ---------- */
