@@ -12,6 +12,7 @@ da Sheet e como publicar os Docs.
 
 import base64
 import csv
+import hashlib
 import io
 import json
 import os
@@ -66,6 +67,15 @@ def normalizar_link_doc(url):
         raise ValueError("não parece um link do Google Docs")
     doc_id = m.group(1)
     return f"https://docs.google.com/document/d/{doc_id}/export?format=html"
+
+
+def extrair_id_doc(url):
+    """Devolve o identificador do Google Doc a partir do link (a parte
+    /document/d/... ou /document/d/e/...), para identificar cada post
+    pelo link e não pela legenda — duas linhas com a mesma legenda mas
+    Docs diferentes nunca podem gerar o mesmo nome de ficheiro."""
+    m = re.search(r"/document/d/(?:e/)?([a-zA-Z0-9_-]+)", url)
+    return m.group(1) if m else None
 
 
 def slugificar(texto):
@@ -147,10 +157,16 @@ def main():
             print(f"A ignorar post de '{data}': data inválida (esperado AAAA-MM-DD).", file=sys.stderr)
             continue
 
+        id_doc = extrair_id_doc(link_doc)
         slug_base = f"{data}-{slugificar(legenda or 'post')}"
-        slugs_usados[slug_base] = slugs_usados.get(slug_base, 0) + 1
-        ocorrencia = slugs_usados[slug_base]
-        slug = slug_base if ocorrencia == 1 else f"{slug_base}-{ocorrencia}"
+        docs_do_slug = slugs_usados.setdefault(slug_base, [])
+        if id_doc not in docs_do_slug:
+            docs_do_slug.append(id_doc)
+        if len(docs_do_slug) == 1:
+            slug = slug_base
+        else:
+            sufixo = hashlib.sha1((id_doc or link_doc).encode()).hexdigest()[:8]
+            slug = f"{slug_base}-{sufixo}"
 
         try:
             html_doc = buscar_url(normalizar_link_doc(link_doc))
