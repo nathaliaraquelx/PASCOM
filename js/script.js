@@ -377,7 +377,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const candles = loadCandles();
     candlesGrid.innerHTML = '';
     if (candles.length === 0) {
-      candlesGrid.innerHTML = '<p class="candles-empty">Ainda não há velas acesas. Seja a primeira pessoa a acender uma. 🕯️</p>';
+      candlesGrid.innerHTML = '<p class="candles-empty">Ainda não há velas acesas 🕯️</p>';
       return;
     }
     candles.slice().reverse().forEach(candle => {
