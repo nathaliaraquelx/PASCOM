@@ -121,24 +121,30 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* ---------- Carrossel de Grupos e Ordens Religiosas ---------- */
-  const groupsTrack = document.getElementById('groupsTrack');
-  const groupsPrev = document.getElementById('groupsPrev');
-  const groupsNext = document.getElementById('groupsNext');
-  if (groupsTrack && groupsPrev && groupsNext) {
-    function deslocamentoGroupCard() {
-      const card = groupsTrack.querySelector('.group-card');
-      if (!card) return 300;
-      const estilo = getComputedStyle(groupsTrack);
-      return card.getBoundingClientRect().width + parseFloat(estilo.gap || 20);
+  /* ---------- Carrosséis (Grupos, Confissões, Adoração) ---------- */
+  function configurarCarrossel(idTrack, idPrev, idNext) {
+    const track = document.getElementById(idTrack);
+    const prev = document.getElementById(idPrev);
+    const next = document.getElementById(idNext);
+    if (!track || !prev || !next) return;
+
+    function deslocamento() {
+      const item = track.querySelector('.carousel-item');
+      if (!item) return 300;
+      const estilo = getComputedStyle(track);
+      return item.getBoundingClientRect().width + parseFloat(estilo.gap || 20);
     }
-    groupsPrev.addEventListener('click', () => {
-      groupsTrack.scrollBy({ left: -deslocamentoGroupCard(), behavior: 'smooth' });
+    prev.addEventListener('click', () => {
+      track.scrollBy({ left: -deslocamento(), behavior: 'smooth' });
     });
-    groupsNext.addEventListener('click', () => {
-      groupsTrack.scrollBy({ left: deslocamentoGroupCard(), behavior: 'smooth' });
+    next.addEventListener('click', () => {
+      track.scrollBy({ left: deslocamento(), behavior: 'smooth' });
     });
   }
+
+  configurarCarrossel('groupsTrack', 'groupsPrev', 'groupsNext');
+  configurarCarrossel('confissoesTrack', 'confissoesPrev', 'confissoesNext');
+  configurarCarrossel('adoracaoTrack', 'adoracaoPrev', 'adoracaoNext');
 
   /* ---------- Evangelho / Santo do dia: data de hoje ---------- */
   const today = new Date();

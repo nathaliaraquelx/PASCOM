@@ -575,12 +575,7 @@ ul { list-style: none; margin: 0; padding: 0; }
 }
 .schedule-list i { color: var(--gold-600); }
 
-/* Info card rows (Confissões / Adoração) */
-.card-row {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
+/* Info card rows (Confissões / Adoração) — carrossel */
 .info-card {
   background: var(--white);
   border-radius: var(--radius);
@@ -724,16 +719,16 @@ ul { list-style: none; margin: 0; padding: 0; }
   font-style: italic;
 }
 
-/* Groups (carrossel) */
-.groups-header-row {
+/* Carrosséis (Grupos, Confissões, Adoração) */
+.carousel-header-row {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   gap: 16px;
   flex-wrap: wrap;
 }
-.groups-carousel-controls { display: flex; gap: 10px; }
-.groups-carousel-btn {
+.carousel-controls { display: flex; gap: 10px; }
+.carousel-btn {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -748,8 +743,8 @@ ul { list-style: none; margin: 0; padding: 0; }
   justify-content: center;
   transition: background .2s, color .2s;
 }
-.groups-carousel-btn:hover { background: var(--gold-800); color: var(--white); }
-.groups-grid {
+.carousel-btn:hover { background: var(--gold-800); color: var(--white); }
+.carousel-track {
   display: flex;
   gap: 20px;
   overflow-x: auto;
@@ -759,10 +754,10 @@ ul { list-style: none; margin: 0; padding: 0; }
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
 }
-.groups-grid::-webkit-scrollbar { display: none; }
+.carousel-track::-webkit-scrollbar { display: none; }
+.carousel-item { flex: 0 0 clamp(220px, 28vw, 280px); scroll-snap-align: start; }
+
 .group-card {
-  flex: 0 0 clamp(220px, 28vw, 280px);
-  scroll-snap-align: start;
   background: var(--white);
   border-radius: var(--radius);
   padding: 26px;
@@ -1008,7 +1003,7 @@ ul { list-style: none; margin: 0; padding: 0; }
 @media (max-width: 960px) {
   .two-col, .contact-wrap { grid-template-columns: 1fr; }
   .patrono-inner { grid-template-columns: 1fr; text-align: center; }
-  .card-row, .news-grid { grid-template-columns: repeat(2, 1fr); }
+  .news-grid { grid-template-columns: repeat(2, 1fr); }
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
@@ -1061,7 +1056,7 @@ ul { list-style: none; margin: 0; padding: 0; }
   .quick-grid { grid-template-columns: repeat(2, 1fr); }
   .priest-card { flex-direction: column; text-align: center; }
   .priest-contacts { align-items: center; }
-  .card-row, .news-grid { grid-template-columns: 1fr; }
+  .news-grid { grid-template-columns: 1fr; }
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
   .footer-inner { flex-direction: column; text-align: center; }
 }
