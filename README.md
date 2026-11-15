@@ -172,7 +172,6 @@ As imagens estão em `assets/img/hero/` e são listadas em `index.html`, dentro 
 <div class="hero-slideshow" aria-hidden="true">
   <div class="hero-slide active" style="background-image:url('assets/img/hero/se-catedral.jpg')"></div>
   <div class="hero-slide" style="background-image:url('assets/img/hero/catedral-nova.jpg')"></div>
-  <div class="hero-slide" style="background-image:url('assets/img/hero/praca-se-cruzeiro.jpg')"></div>
 </div>
 ```
 
@@ -185,12 +184,10 @@ As imagens estão em `assets/img/hero/` e são listadas em `index.html`, dentro 
 3. Se a foto não for própria da paróquia, adicione o crédito em `.hero-photo-credit` (mesmo bloco,
    logo a seguir) e confirme a licença antes de usar.
 
-As duas primeiras fotos (Sé Catedral de Bragança e Catedral Nova/Nossa Senhora Rainha) são do
-Wikimedia Commons, com licença Creative Commons que exige atribuição (CC BY-SA 2.0 e CC BY 2.0). A
-terceira (Praça da Sé e cruzeiro) vem da ficha da DGPC/SIPA para a Igreja de São João Baptista —
-créditos no rodapé do slideshow. Servem só como ponto de partida até a paróquia ter fotos próprias
-das suas igrejas para colocar no lugar; a foto da DGPC/SIPA tem resolução baixa (600px de largura),
-pelo que vale a pena substituir por uma versão em maior resolução assim que possível.
+As duas fotos atuais (Sé Catedral de Bragança e Catedral Nova/Nossa Senhora Rainha) são do Wikimedia
+Commons, com licença Creative Commons que exige atribuição (CC BY-SA 2.0 e CC BY 2.0, créditos no
+rodapé do slideshow) — servem só como ponto de partida até a paróquia ter fotos próprias das suas
+igrejas para colocar no lugar.
 
 ## Formulário de contacto
 
