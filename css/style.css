@@ -417,24 +417,9 @@ ul { list-style: none; margin: 0; padding: 0; }
 }
 .two-col-historia { grid-template-columns: 1fr 1.1fr; align-items: center; }
 
-.historia-intro {
-  position: relative;
-  background: var(--gold-100);
-  border: 1px solid var(--gold-border);
-  border-radius: var(--radius);
-  padding: 32px 32px 28px 56px;
-}
-.historia-quote-icon {
-  position: absolute;
-  top: 24px;
-  left: 24px;
-  font-size: 1.3rem;
-  color: var(--gold-400);
-}
 .historia-intro p {
   font-size: 1.05rem;
   line-height: 1.7;
-  color: var(--gold-900);
   margin: 0;
 }
 
