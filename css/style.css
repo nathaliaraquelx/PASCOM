@@ -1061,4 +1061,11 @@ ul { list-style: none; margin: 0; padding: 0; }
   .news-grid { grid-template-columns: 1fr; }
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
   .footer-inner { flex-direction: column; text-align: center; }
+  .schedule-list li {
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+  }
+  .schedule-list li::-webkit-scrollbar { display: none; }
+  .schedule-list li i { flex-shrink: 0; }
 }
