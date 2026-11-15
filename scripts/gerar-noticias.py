@@ -428,8 +428,9 @@ def main():
     cartoes_html = "\n".join(gerar_cartao(item) for item in itens[:MAX_CARTOES])
     ver_todas_html = (
         '      <p class="news-ver-todas">'
-        '<a href="noticias/index.html" class="btn btn-outline">'
-        'Ver todas as notícias <i class="fa-solid fa-arrow-right"></i></a></p>\n'
+        '<a href="noticias/index.html" class="btn btn-blue">'
+        '<i class="fa-solid fa-box-archive"></i> Aceda aqui para ver todas as notícias '
+        '<i class="fa-solid fa-arrow-right"></i></a></p>\n'
     )
 
     with open(INDEX_HTML_PATH, encoding="utf-8") as f:
