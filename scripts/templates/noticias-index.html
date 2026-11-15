@@ -45,6 +45,7 @@
     </button>
 
     <nav class="main-nav" id="mainNav">
+      <button class="nav-close" id="navClose" aria-label="Fechar menu"><i class="fa-solid fa-xmark"></i></button>
       <ul>
         <li><a href="../index.html#inicio" class="nav-link">Início</a></li>
         <li class="has-dropdown">
@@ -134,11 +135,17 @@
   document.getElementById('year').textContent = new Date().getFullYear();
 
   const navToggle = document.getElementById('navToggle');
+  const navClose = document.getElementById('navClose');
   const mainNav = document.getElementById('mainNav');
   navToggle.addEventListener('click', () => {
     const isOpen = mainNav.classList.toggle('open');
     navToggle.setAttribute('aria-expanded', isOpen);
     navToggle.classList.toggle('open', isOpen);
+  });
+  navClose.addEventListener('click', () => {
+    mainNav.classList.remove('open');
+    navToggle.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', false);
   });
   document.querySelectorAll('.has-dropdown > .nav-link').forEach(link => {
     link.addEventListener('click', (e) => {
