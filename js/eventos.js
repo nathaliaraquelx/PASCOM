@@ -24,6 +24,17 @@
 const PASCOM_EVENTOS = [
   {
     "id": 1,
+    "titulo": "Dia Mundial do Pobre",
+    "data": "2026-11-15",
+    "horaInicio": "Todo o dia",
+    "horaFim": "",
+    "categoria": "comunidade",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 2,
     "titulo": "Festa de Acolhimento - Dia de Cristo Rei",
     "data": "2026-11-21",
     "horaInicio": "Todo o dia",
@@ -34,7 +45,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 2,
+    "id": 3,
     "titulo": "Festa de Acolhimento - Dia de Cristo Rei",
     "data": "2026-11-22",
     "horaInicio": "Todo o dia",
@@ -45,18 +56,18 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 3,
+    "id": 4,
     "titulo": "20º Aniversário da Dedicação da Igreja",
     "data": "2026-11-22",
-    "horaInicio": "15:00",
-    "horaFim": "16:00",
+    "horaInicio": "11:30",
+    "horaFim": "15:30",
     "categoria": "festa",
     "local": "Paróquia de São João Baptista",
     "descricao": "",
-    "cartaz": "assets/img/agenda/evento-3.png"
+    "cartaz": "assets/img/agenda/evento-4.png"
   },
   {
-    "id": 4,
+    "id": 5,
     "titulo": "Festa de Natal",
     "data": "2026-12-08",
     "horaInicio": "16:00",
@@ -67,7 +78,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 5,
+    "id": 6,
     "titulo": "Festa da Palavra - Domingo da Palavra",
     "data": "2027-01-23",
     "horaInicio": "Todo o dia",
@@ -78,7 +89,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 6,
+    "id": 7,
     "titulo": "Festa da Palavra - Domingo da Palavra",
     "data": "2027-01-24",
     "horaInicio": "Todo o dia",
@@ -89,7 +100,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 7,
+    "id": 8,
     "titulo": "24 h para o Senhor",
     "data": "2027-03-05",
     "horaInicio": "Todo o dia",
@@ -100,7 +111,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 8,
+    "id": 9,
     "titulo": "Via Sacra",
     "data": "2027-03-12",
     "horaInicio": "20:30",
@@ -111,7 +122,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 9,
+    "id": 10,
     "titulo": "Festa da Fé - Dia do Bom Pastor",
     "data": "2027-04-17",
     "horaInicio": "Todo o dia",
@@ -122,7 +133,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 10,
+    "id": 11,
     "titulo": "Festa da Fé - Dia do Bom Pastor",
     "data": "2027-04-18",
     "horaInicio": "Todo o dia",
@@ -133,7 +144,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 11,
+    "id": 12,
     "titulo": "Festa da Avé Maria",
     "data": "2027-05-01",
     "horaInicio": "Todo o dia",
@@ -144,7 +155,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 12,
+    "id": 13,
     "titulo": "Festa da Avé Maria",
     "data": "2027-05-02",
     "horaInicio": "Todo o dia",
@@ -155,7 +166,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 13,
+    "id": 14,
     "titulo": "Festa do Perdão",
     "data": "2027-05-14",
     "horaInicio": "Todo o dia",
@@ -166,7 +177,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 14,
+    "id": 15,
     "titulo": "Festa da Eucaristia (Primeira Comunhão)",
     "data": "2027-05-16",
     "horaInicio": "Todo o dia",
@@ -177,7 +188,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 15,
+    "id": 16,
     "titulo": "Festa do Perdão",
     "data": "2027-05-21",
     "horaInicio": "Todo o dia",
@@ -188,7 +199,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 16,
+    "id": 17,
     "titulo": "Festa da Eucaristia (Primeira Comunhão)",
     "data": "2027-05-23",
     "horaInicio": "Todo o dia",
@@ -199,20 +210,9 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 17,
+    "id": 18,
     "titulo": "Festa do Perdão",
     "data": "2027-05-25",
-    "horaInicio": "Todo o dia",
-    "horaFim": "",
-    "categoria": "catequese",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "Santos Mártires",
-    "cartaz": null
-  },
-  {
-    "id": 18,
-    "titulo": "Festa da Eucaristia (Primeira Comunhão)",
-    "data": "2027-05-27",
     "horaInicio": "Todo o dia",
     "horaFim": "",
     "categoria": "catequese",
@@ -233,6 +233,17 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 20,
+    "titulo": "Festa da Eucaristia (Primeira Comunhão)",
+    "data": "2027-05-27",
+    "horaInicio": "Todo o dia",
+    "horaFim": "",
+    "categoria": "catequese",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "Santos Mártires",
+    "cartaz": null
+  },
+  {
+    "id": 21,
     "titulo": "Procissão 3 pastorinhos",
     "data": "2027-05-31",
     "horaInicio": "21:00",
@@ -243,7 +254,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 21,
+    "id": 22,
     "titulo": "Dia de S. João Baptista",
     "data": "2027-06-24",
     "horaInicio": "Todo o dia",
@@ -254,7 +265,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 22,
+    "id": 23,
     "titulo": "Festa de Encerramento",
     "data": "2027-06-24",
     "horaInicio": "16:30",
