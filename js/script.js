@@ -185,6 +185,21 @@ document.addEventListener('DOMContentLoaded', () => {
       if (saintNameEl && liturgia.santo) {
         saintNameEl.textContent = liturgia.santo;
       }
+
+      /* O Evangelho do Dia troca um placeholder curto por um texto
+         bem mais longo, o que empurra todas as secções seguintes para
+         baixo. Se a página foi aberta já com uma âncora (ex.: o botão
+         "Voltar às Notícias" de um artigo), esse deslocamento faz o
+         scroll ficar na secção errada — por isso volta a aplicar a
+         âncora depois do texto entrar. */
+      if (location.hash) {
+        const alvo = document.querySelector(location.hash);
+        if (alvo) {
+          requestAnimationFrame(() => requestAnimationFrame(() => {
+            alvo.scrollIntoView({ block: 'start' });
+          }));
+        }
+      }
     })
     .catch(() => {
       /* Mantém o texto placeholder já presente no HTML. */
