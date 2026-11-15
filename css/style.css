@@ -807,7 +807,7 @@ ul { list-style: none; margin: 0; padding: 0; }
 .lightbox-dots { display: flex; gap: 6px; }
 .lightbox-dot { width: 7px; height: 7px; border-radius: 50%; background: rgba(255,255,255,0.35); }
 .lightbox-dot.active { background: var(--white); }
-.lightbox-close, .lightbox-prev, .lightbox-next {
+.lightbox-close, .lightbox-prev, .lightbox-next, .lightbox-share {
   position: absolute;
   background: rgba(255,255,255,0.12);
   color: var(--white);
@@ -822,8 +822,9 @@ ul { list-style: none; margin: 0; padding: 0; }
   justify-content: center;
   transition: background .2s;
 }
-.lightbox-close:hover, .lightbox-prev:hover, .lightbox-next:hover { background: var(--white); color: var(--gold-900); }
+.lightbox-close:hover, .lightbox-prev:hover, .lightbox-next:hover, .lightbox-share:hover { background: var(--white); color: var(--gold-900); }
 .lightbox-close { top: 24px; right: 24px; }
+.lightbox-share { top: 24px; left: 24px; font-size: 1.05rem; }
 .lightbox-prev { left: 24px; top: 50%; transform: translateY(-50%); }
 .lightbox-next { right: 24px; top: 50%; transform: translateY(-50%); }
 
