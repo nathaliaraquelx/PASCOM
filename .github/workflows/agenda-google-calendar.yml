@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Instalar dependências
-        run: pip install --quiet icalendar recurring-ical-events
+        run: pip install --quiet icalendar recurring-ical-events beautifulsoup4
 
       - name: Obter o calendário público da paróquia (Google Calendar)
         run: |
@@ -32,7 +32,7 @@ jobs:
         run: |
           git config user.name "PASCOM Bot"
           git config user.email "actions@github.com"
-          git add js/eventos.js
+          git add js/eventos.js assets/img/agenda/
           if git diff --staged --quiet; then
             echo "Sem alterações — nada a comitar."
             exit 0

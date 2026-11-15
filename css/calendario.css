@@ -283,6 +283,15 @@
   font-size: 0.82rem;
   color: var(--cal-texto-muted);
 }
+.cal-evento-cartaz-link { display: inline-block; margin-top: 8px; }
+.cal-evento-cartaz {
+  max-width: 140px;
+  max-height: 140px;
+  border-radius: 8px;
+  display: block;
+  transition: transform .2s;
+}
+.cal-evento-cartaz-link:hover .cal-evento-cartaz { transform: scale(1.04); }
 .cal-vazio {
   color: var(--cal-texto-muted);
   font-size: 0.9rem;

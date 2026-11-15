@@ -16,14 +16,92 @@ com uma destas etiquetas entre parênteses retos (não sensível a maiúsculas):
   [Festa]       -> Festas
 Sem etiqueta (ou etiqueta não reconhecida), o evento entra em "Comunidade".
 A etiqueta é removida do título antes de aparecer no site.
+
+Cartaz do evento (opcional): numa linha própria da descrição do evento,
+escreva "[Cartaz] <link do Google Doc>" com um Google Doc só com a imagem
+do cartaz lá dentro (ver README.md, secção "Agenda Paroquial"). Essa linha
+é removida da descrição mostrada no site.
 """
+import base64
 import json
+import os
 import re
 import sys
+import urllib.request
 from datetime import date, datetime, timedelta
 
 import icalendar
 import recurring_ical_events
+from bs4 import BeautifulSoup
+
+REQUEST_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (compatible; PASCOM-site-bot/1.0; +https://github.com/nathaliaraquelx/PASCOM)"
+}
+
+EXTENSAO_POR_TIPO = {
+    "image/jpeg": "jpg", "image/png": "png", "image/gif": "gif", "image/webp": "webp",
+}
+
+CARTAZ_RE = re.compile(r"^\s*\[Cartaz\]\s*(\S+)\s*$", re.IGNORECASE | re.MULTILINE)
+
+
+def buscar_url(url):
+    req = urllib.request.Request(url, headers=REQUEST_HEADERS)
+    with urllib.request.urlopen(req, timeout=20) as resp:
+        return resp.read().decode("utf-8", errors="replace")
+
+
+def buscar_bytes(url):
+    req = urllib.request.Request(url, headers=REQUEST_HEADERS)
+    with urllib.request.urlopen(req, timeout=20) as resp:
+        return resp.read(), resp.headers.get("Content-Type", "")
+
+
+def normalizar_link_doc(url):
+    """Aceita qualquer link de um Google Doc — de partilha normal
+    (/edit, /view) ou já publicado na Web (/document/d/e/.../pub) — e
+    devolve sempre um URL que podemos descarregar diretamente."""
+    m = re.search(r"/document/d/e/[^/]+/pub", url)
+    if m:
+        return url
+    m = re.search(r"/document/d/([a-zA-Z0-9_-]+)", url)
+    if not m:
+        raise ValueError("não parece um link do Google Docs")
+    doc_id = m.group(1)
+    return f"https://docs.google.com/document/d/{doc_id}/export?format=html"
+
+
+def extrair_e_gravar_cartaz(link_doc, evento_id):
+    """Vai buscar o Google Doc do cartaz, grava a primeira imagem como
+    ficheiro local e devolve o caminho relativo (ou None em caso de
+    erro, para uma falha pontual não impedir a atualização dos eventos)."""
+    try:
+        html_doc = buscar_url(normalizar_link_doc(link_doc))
+        soup = BeautifulSoup(html_doc, "html.parser")
+        corpo = soup.find("div", id="contents") or soup.find("body") or soup
+        img = corpo.find("img")
+        if not img or not img.get("src"):
+            print(f"Aviso: cartaz do evento {evento_id} não tem nenhuma imagem.", file=sys.stderr)
+            return None
+
+        origem = img["src"]
+        os.makedirs("assets/img/agenda", exist_ok=True)
+        if origem.startswith("data:"):
+            cabecalho, dados_b64 = origem.split(",", 1)
+            subtipo = cabecalho.split("/")[1].split(";")[0]
+            ext = "jpg" if subtipo.lower() == "jpeg" else (re.sub(r"[^a-z0-9]", "", subtipo.lower()) or "jpg")
+            conteudo = base64.b64decode(dados_b64)
+        else:
+            conteudo, tipo = buscar_bytes(origem)
+            ext = EXTENSAO_POR_TIPO.get(tipo.split(";")[0].strip().lower(), "jpg")
+
+        nome = f"evento-{evento_id}.{ext}"
+        with open(f"assets/img/agenda/{nome}", "wb") as f:
+            f.write(conteudo)
+        return f"assets/img/agenda/{nome}"
+    except Exception as e:
+        print(f"Aviso: não foi possível obter o cartaz do evento {evento_id} ({e}).", file=sys.stderr)
+        return None
 
 CATEGORIA_TAGS = {
     "liturgico": "liturgico",
@@ -95,7 +173,11 @@ def main():
         categoria, titulo = extrair_categoria(titulo_bruto)
         data_iso, hora_inicio, hora_fim = formatar_ocorrencia(ev)
         local = str(ev.get("LOCATION", "")).strip() or "Paróquia de São João Baptista"
-        descricao = str(ev.get("DESCRIPTION", "")).strip()
+        descricao_bruta = str(ev.get("DESCRIPTION", "")).strip()
+
+        cartaz_match = CARTAZ_RE.search(descricao_bruta)
+        descricao = CARTAZ_RE.sub("", descricao_bruta).strip()
+        cartaz = extrair_e_gravar_cartaz(cartaz_match.group(1), idx) if cartaz_match else None
 
         eventos.append({
             "id": idx,
@@ -106,6 +188,7 @@ def main():
             "categoria": categoria,
             "local": local,
             "descricao": descricao,
+            "cartaz": cartaz,
         })
 
     cabecalho = """/* =========================================================

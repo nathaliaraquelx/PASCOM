@@ -213,6 +213,11 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="cal-evento-corpo">
           <h5>${ev.titulo}</h5>
           <p>${ev.local ? ev.local + ' · ' : ''}${ev.descricao || ''}</p>
+          ${ev.cartaz ? `
+            <a href="${ev.cartaz}" target="_blank" rel="noopener" class="cal-evento-cartaz-link">
+              <img src="${ev.cartaz}" alt="Cartaz do evento: ${ev.titulo}" class="cal-evento-cartaz" loading="lazy">
+            </a>
+          ` : ''}
         </div>
       </div>
     `).join('');

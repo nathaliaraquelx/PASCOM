@@ -84,6 +84,15 @@ etiquetas entre parênteses retos (a etiqueta não aparece no site, só a catego
 | `[Festa]`              | Festas (dourado) |
 | *(sem etiqueta)*       | Comunidade (azul) |
 
+**Cartaz do evento (opcional)** — para eventos especiais (ex.: aniversários, festas), pode
+mostrar-se um cartaz/imagem junto ao evento na Agenda:
+
+1. Crie um **Google Doc** novo e insira lá dentro só a imagem do cartaz.
+2. Partilhe-o como **"Qualquer pessoa com o link" → Visualizador** e copie o link.
+3. Na **descrição** desse evento no Google Calendar, acrescente uma linha só com:
+   `[Cartaz] <link do Google Doc>`
+   (essa linha não aparece no site — só a imagem, como miniatura clicável por baixo do evento).
+
 `AgendaAdmin.html` continua disponível só para pré-visualizar rapidamente como um evento vai
 ficar, em computador local — não é mais o sítio para publicar eventos a sério.
 
