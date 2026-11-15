@@ -121,6 +121,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  /* ---------- Carrossel de Grupos e Ordens Religiosas ---------- */
+  const groupsTrack = document.getElementById('groupsTrack');
+  const groupsPrev = document.getElementById('groupsPrev');
+  const groupsNext = document.getElementById('groupsNext');
+  if (groupsTrack && groupsPrev && groupsNext) {
+    function deslocamentoGroupCard() {
+      const card = groupsTrack.querySelector('.group-card');
+      if (!card) return 300;
+      const estilo = getComputedStyle(groupsTrack);
+      return card.getBoundingClientRect().width + parseFloat(estilo.gap || 20);
+    }
+    groupsPrev.addEventListener('click', () => {
+      groupsTrack.scrollBy({ left: -deslocamentoGroupCard(), behavior: 'smooth' });
+    });
+    groupsNext.addEventListener('click', () => {
+      groupsTrack.scrollBy({ left: deslocamentoGroupCard(), behavior: 'smooth' });
+    });
+  }
+
   /* ---------- Evangelho / Santo do dia: data de hoje ---------- */
   const today = new Date();
   const formatted = today.toLocaleDateString('pt-PT', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
