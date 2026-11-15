@@ -35,13 +35,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ---------- Menu mobile ---------- */
   const navToggle = document.getElementById('navToggle');
+  const navClose = document.getElementById('navClose');
   const mainNav = document.getElementById('mainNav');
+
+  function fecharMenuMobile() {
+    mainNav.classList.remove('open');
+    navToggle.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', false);
+  }
 
   navToggle.addEventListener('click', () => {
     const isOpen = mainNav.classList.toggle('open');
     navToggle.setAttribute('aria-expanded', isOpen);
     navToggle.classList.toggle('open', isOpen);
   });
+
+  navClose.addEventListener('click', fecharMenuMobile);
 
   // Dropdowns funcionam como acordeões em ecrãs pequenos
   document.querySelectorAll('.has-dropdown > .nav-link').forEach(link => {
@@ -57,8 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.main-nav a').forEach(link => {
     link.addEventListener('click', () => {
       if (window.innerWidth <= 780 && !link.parentElement.classList.contains('has-dropdown')) {
-        mainNav.classList.remove('open');
-        navToggle.setAttribute('aria-expanded', false);
+        fecharMenuMobile();
       }
     });
   });
