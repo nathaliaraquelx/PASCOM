@@ -222,17 +222,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 19,
-    "titulo": "Missa e Procissão do Corpo de Deus",
-    "data": "2027-05-27",
-    "horaInicio": "Todo o dia",
-    "horaFim": "",
-    "categoria": "comunidade",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 20,
     "titulo": "Festa da Eucaristia (Primeira Comunhão)",
     "data": "2027-05-27",
     "horaInicio": "Todo o dia",
@@ -240,6 +229,17 @@ const PASCOM_EVENTOS = [
     "categoria": "catequese",
     "local": "Paróquia de São João Baptista",
     "descricao": "Santos Mártires",
+    "cartaz": null
+  },
+  {
+    "id": 20,
+    "titulo": "Missa e Procissão do Corpo de Deus",
+    "data": "2027-05-27",
+    "horaInicio": "Todo o dia",
+    "horaFim": "",
+    "categoria": "comunidade",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
     "cartaz": null
   },
   {
