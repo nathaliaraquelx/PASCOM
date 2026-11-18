@@ -6060,5 +6060,27 @@ const PASCOM_EVENTOS = [
     "local": "Paróquia de São João Baptista",
     "descricao": "",
     "cartaz": null
+  },
+  {
+    "id": 550,
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-11-18",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 551,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-11-18",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
   }
 ];
