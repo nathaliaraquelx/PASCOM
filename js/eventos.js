@@ -3258,17 +3258,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 295,
-    "titulo": "Missa e Procissão do Corpo de Deus",
-    "data": "2027-05-27",
-    "horaInicio": "Todo o dia",
-    "horaFim": "",
-    "categoria": "comunidade",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 296,
     "titulo": "Festa da Eucaristia (Primeira Comunhão)",
     "data": "2027-05-27",
     "horaInicio": "Todo o dia",
@@ -3276,6 +3265,17 @@ const PASCOM_EVENTOS = [
     "categoria": "catequese",
     "local": "Paróquia de São João Baptista",
     "descricao": "Santos Mártires",
+    "cartaz": null
+  },
+  {
+    "id": 296,
+    "titulo": "Missa e Procissão do Corpo de Deus",
+    "data": "2027-05-27",
+    "horaInicio": "Todo o dia",
+    "horaFim": "",
+    "categoria": "comunidade",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
     "cartaz": null
   },
   {
@@ -6076,6 +6076,28 @@ const PASCOM_EVENTOS = [
     "id": 551,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-11-18",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 552,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-11-19",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 553,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-11-19",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
