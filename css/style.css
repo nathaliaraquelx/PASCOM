@@ -4,22 +4,23 @@
    ========================================================= */
 
 :root {
-  --gold-900: #5c4412;
-  --gold-800: #8a6a1a;
-  --gold-600: #b8912c;
-  --gold-400: #d9b65b;
+  /* Paleta alinhada com o novo logótipo (anel turquesa + destaque dourado) */
+  --gold-900: #0e6470;
+  --gold-800: #128394;
+  --gold-600: #1ea2b6;
+  --gold-400: #7cd0dc;
   --white: #ffffff;
-  --gold-200: #f0dfa8;
-  --gold-100: #faf3de;
-  --gold-border: #ecdca0;
-  --text: #3b2c0d;
-  --text-muted: #8a7645;
+  --gold-200: #cdeef2;
+  --gold-100: #eaf8fa;
+  --gold-border: #cfeef1;
+  --text: #16272a;
+  --text-muted: #5e8186;
 
   --font-heading: 'Poppins', sans-serif;
   --font-body: 'Inter', sans-serif;
 
   --radius: 14px;
-  --shadow: 0 10px 30px rgba(92, 68, 18, 0.10);
+  --shadow: 0 10px 30px rgba(14, 100, 112, 0.10);
 }
 
 * { box-sizing: border-box; }
@@ -86,7 +87,7 @@ ul { list-style: none; margin: 0; padding: 0; }
   top: 0;
   z-index: 500;
   background: var(--white);
-  box-shadow: 0 2px 14px rgba(92, 68, 18, 0.08);
+  box-shadow: 0 2px 14px rgba(14, 100, 112, 0.08);
 }
 .header-inner {
   display: flex;
@@ -218,9 +219,9 @@ ul { list-style: none; margin: 0; padding: 0; }
 }
 .btn:hover { transform: translateY(-2px); }
 .btn-yellow { background: var(--white); color: var(--gold-900); }
-.btn-yellow:hover { background: var(--gold-200); box-shadow: 0 8px 20px rgba(184,145,44,.4); }
+.btn-yellow:hover { background: var(--gold-200); box-shadow: 0 8px 20px rgba(30,162,182,.4); }
 .btn-blue { background: var(--gold-800); color: var(--white); }
-.btn-blue:hover { background: var(--gold-900); box-shadow: 0 8px 20px rgba(138,106,26,.35); }
+.btn-blue:hover { background: var(--gold-900); box-shadow: 0 8px 20px rgba(18,131,148,.35); }
 .btn-outline { background: transparent; border-color: rgba(255,255,255,.8); color: var(--white); }
 .btn-outline:hover { background: rgba(255,255,255,.15); }
 
@@ -251,7 +252,7 @@ ul { list-style: none; margin: 0; padding: 0; }
   inset: 0;
   z-index: 1;
   background:
-    linear-gradient(160deg, rgba(92,68,18,0.88) 0%, rgba(138,106,26,0.72) 55%, rgba(184,145,44,0.55) 100%),
+    linear-gradient(160deg, rgba(14,100,112,0.88) 0%, rgba(18,131,148,0.72) 55%, rgba(30,162,182,0.55) 100%),
     radial-gradient(circle at 85% 15%, rgba(255,255,255,0.2), transparent 45%),
     radial-gradient(circle at 10% 90%, rgba(255,255,255,0.06), transparent 40%);
   pointer-events: none;
@@ -366,7 +367,7 @@ ul { list-style: none; margin: 0; padding: 0; }
   justify-content: center;
   font-size: 4rem;
   color: var(--gold-900);
-  box-shadow: 0 16px 30px rgba(184,145,44,0.35);
+  box-shadow: 0 16px 30px rgba(30,162,182,0.35);
   border: 6px solid var(--white);
   outline: 3px solid var(--gold-800);
 }
@@ -442,7 +443,7 @@ ul { list-style: none; margin: 0; padding: 0; }
   border: 1px solid var(--gold-border);
   border-radius: 12px;
   padding: 16px 20px;
-  box-shadow: 0 2px 10px rgba(92,68,18,.06);
+  box-shadow: 0 2px 10px rgba(14,100,112,.06);
 }
 .timeline-dot {
   position: absolute;
@@ -767,7 +768,7 @@ ul { list-style: none; margin: 0; padding: 0; }
   box-shadow: var(--shadow);
   transition: transform .2s, box-shadow .2s;
 }
-.group-card:hover { transform: translateY(-5px); box-shadow: 0 16px 34px rgba(92,68,18,0.14); }
+.group-card:hover { transform: translateY(-5px); box-shadow: 0 16px 34px rgba(14,100,112,0.14); }
 .group-card i { font-size: 1.6rem; color: var(--gold-800); background: var(--gold-100); width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 14px; }
 
 /* Gallery */
