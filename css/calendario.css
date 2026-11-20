@@ -4,13 +4,13 @@
    ========================================================= */
 
 .cal-wrap {
-  --cal-azul: #5c4412;
-  --cal-azul-claro: #b8912c;
+  --cal-azul: #0e6470;
+  --cal-azul-claro: #1ea2b6;
   --cal-dourado: #c9962c;
   --cal-verde: #3f8f5f;
   --cal-roxo: #6d4aa8;
   --cal-bg-card: #ffffff;
-  --cal-borda: #ecdca0;
+  --cal-borda: #cfeef1;
   --cal-texto-muted: #6b7280;
 
   display: grid;
@@ -63,7 +63,7 @@
 }
 .cal-mini-nav button {
   border: none;
-  background: #faf3de;
+  background: #eaf8fa;
   color: var(--cal-azul);
   width: 28px;
   height: 28px;
@@ -71,7 +71,7 @@
   cursor: pointer;
   font-size: 0.9rem;
 }
-.cal-mini-nav button:hover { background: #f0dfa8; }
+.cal-mini-nav button:hover { background: #cdeef2; }
 
 .cal-mini-grid {
   display: grid;
@@ -97,7 +97,7 @@
 .cal-mini-grid button.cal-outro-mes { color: #c7ccd6; }
 .cal-mini-grid button.cal-hoje { font-weight: 700; color: var(--cal-azul-claro); }
 .cal-mini-grid button.cal-selecionado { background: var(--cal-azul); color: #fff; }
-.cal-mini-grid button:hover:not(.cal-selecionado) { background: #faf3de; }
+.cal-mini-grid button:hover:not(.cal-selecionado) { background: #eaf8fa; }
 .cal-mini-dot {
   position: absolute;
   bottom: 2px;
@@ -157,14 +157,14 @@
 }
 .cal-main-nav button {
   border: none;
-  background: #faf3de;
+  background: #eaf8fa;
   color: var(--cal-azul);
   width: 32px;
   height: 32px;
   border-radius: 9px;
   cursor: pointer;
 }
-.cal-main-nav button:hover { background: #f0dfa8; }
+.cal-main-nav button:hover { background: #cdeef2; }
 .cal-hoje-btn {
   margin-left: auto;
   border: 1px solid var(--cal-borda);
@@ -176,7 +176,7 @@
   cursor: pointer;
   font-weight: 600;
 }
-.cal-hoje-btn:hover { background: #faf3de; }
+.cal-hoje-btn:hover { background: #eaf8fa; }
 
 /* Grelha do mês */
 .cal-grid {
@@ -208,7 +208,7 @@
 .cal-dia:hover { background: #fdf9ee; }
 .cal-dia.cal-outro-mes { opacity: 0.35; }
 .cal-dia.cal-hoje { border-color: var(--cal-azul-claro); }
-.cal-dia.cal-selecionado { background: #f5ecd4; border-color: var(--cal-azul); }
+.cal-dia.cal-selecionado { background: #ddf3f6; border-color: var(--cal-azul); }
 .cal-dia-num {
   font-size: 0.82rem;
   font-weight: 600;
