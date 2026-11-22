@@ -3258,17 +3258,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 295,
-    "titulo": "Missa e Procissão do Corpo de Deus",
-    "data": "2027-05-27",
-    "horaInicio": "Todo o dia",
-    "horaFim": "",
-    "categoria": "comunidade",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 296,
     "titulo": "Festa da Eucaristia (Primeira Comunhão)",
     "data": "2027-05-27",
     "horaInicio": "Todo o dia",
@@ -3276,6 +3265,17 @@ const PASCOM_EVENTOS = [
     "categoria": "catequese",
     "local": "Paróquia de São João Baptista",
     "descricao": "Santos Mártires",
+    "cartaz": null
+  },
+  {
+    "id": 296,
+    "titulo": "Missa e Procissão do Corpo de Deus",
+    "data": "2027-05-27",
+    "horaInicio": "Todo o dia",
+    "horaFim": "",
+    "categoria": "comunidade",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
     "cartaz": null
   },
   {
@@ -6103,6 +6103,28 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 554,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-11-22",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 555,
+    "titulo": "Confissões e Adoração - Igreja da Sé",
+    "data": "2027-11-22",
+    "horaInicio": "18:15",
+    "horaFim": "19:35",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "Missa na Igreja da Sé às 17h40 seguida de Adoração ao Santíssimo e Confissões",
     "cartaz": null
   }
 ];
