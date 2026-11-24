@@ -636,6 +636,20 @@ ul { list-style: none; margin: 0; padding: 0; }
 .missas-dot.is-active { background: var(--gold-800); }
 .missas-empty { color: var(--text-muted); font-size: 0.9rem; }
 
+/* Confissões: cartaz ilustrado + horário em texto, lado a lado */
+.confissoes-grid { display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start; }
+.confissoes-col-cartaz { flex: 1 1 280px; max-width: 320px; min-width: 0; }
+.confissoes-col-principal { flex: 1 1 420px; min-width: 0; }
+.confissoes-img-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--gold-border);
+  background: var(--white);
+}
+.confissoes-img-card img { display: block; width: 100%; height: auto; }
+
 /* Info card rows (Confissões / Adoração) — carrossel */
 .info-card {
   background: var(--white);
