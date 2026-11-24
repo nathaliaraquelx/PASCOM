@@ -159,6 +159,52 @@ de vez, apague os ficheiros à mão.
 
 Está sujeita à mesma limitação de *branch* principal descrita acima para o Evangelho/Santo do dia.
 
+## Missas da Semana (cartazes por dia)
+
+Na secção *Horário das Missas*, ao lado do quadro de horários em texto, há um pequeno slideshow
+com os cartazes (imagens já desenhadas) dos horários de cada dia da semana — mostra sempre o dia
+de hoje primeiro, avança sozinho a cada 7 segundos, e também se pode navegar com as setas ou os
+pontos. Ao contrário da Galeria/Notícias, não há histórico: cada dia da semana tem sempre **um**
+cartaz atual, substituído quando a Sheet é atualizada.
+
+### Configuração inicial (uma vez)
+
+1. Crie uma Google Sheet nova com estas colunas na primeira linha (por esta ordem):
+
+   | `dia_semana` | `link_doc` | `publicar` |
+   |--------------|------------|------------|
+
+   - `dia_semana`: o dia da semana a que esse cartaz pertence — `segunda`, `terca`, `quarta`,
+     `quinta`, `sexta`, `sabado` ou `domingo` (sem acento, em minúsculas; `terça-feira`, `Terça` etc.
+     também são aceites).
+   - `link_doc`: o link do Google Doc com a imagem desse dia (ver abaixo).
+   - `publicar` (opcional): escreva `nao` para esconder um cartaz sem apagar a linha (rascunho).
+     Vazio ou `sim` = publicado.
+
+   Uma linha por dia da semana — no máximo 7 linhas (uma por cada dia).
+2. Publique a Sheet como CSV: **Ficheiro → Partilhar → Publicar no Web** → escolha a folha certa →
+   formato **CSV** → **Publicar**. Copie o URL gerado.
+3. Em `.github/workflows/missas-semana.yml`, substitua `SEU_CSV_URL_AQUI` (variável
+   `MISSAS_SEMANA_SHEET_CSV_URL`) por esse URL, e faça *commit*/*push*.
+
+### Publicar ou atualizar um cartaz (sempre que mudar algo nos horários)
+
+1. Crie um **Google Doc** novo e insira dentro dele só a imagem do cartaz desse dia (como já faz
+   hoje nas suas artes).
+2. Partilhe o Doc como **"Qualquer pessoa com o link" → Visualizador**: botão **Partilhar** → em
+   "Acesso geral" escolha "Qualquer pessoa com o link" → copie o link.
+3. Na Google Sheet "índice" dos cartazes, acrescente uma linha nova para esse dia (ou edite a linha
+   já existente desse dia, se só estiver a atualizar a imagem) com esse link.
+4. No sincronismo seguinte (a cada 6 horas, ou manualmente em **Actions → Publicar cartazes de
+   Missas da Semana (Google Docs) → Run workflow**), o Action descarrega a imagem do Doc, grava-a
+   em `assets/img/missas-semana/` e atualiza o slideshow.
+
+**Nota:** remover a linha de um dia da Sheet (ou marcar `publicar` como `nao`) tira esse dia do
+slideshow, mas a imagem já descarregada em `assets/img/missas-semana/` não é apagada
+automaticamente. Para a remover de vez, apague o ficheiro à mão.
+
+Está sujeita à mesma limitação de *branch* principal descrita acima para o Evangelho/Santo do dia.
+
 ## Slideshow do topo (fotos das igrejas)
 
 A secção inicial (`#inicio`) mostra um slideshow de fotos em fundo, com transição suave (*crossfade*)

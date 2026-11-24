@@ -159,6 +159,68 @@ document.addEventListener('DOMContentLoaded', () => {
   configurarCarrossel('confissoesTrack', 'confissoesPrev', 'confissoesNext');
   configurarCarrossel('adoracaoTrack', 'adoracaoPrev', 'adoracaoNext');
 
+  /* ---------- Missas da Semana (cartaz por dia, slideshow) ----------
+     Os cartazes vêm de js/missas-semana.js (PASCOM_MISSAS_SEMANA), gerado
+     todos os dias por um GitHub Action (.github/workflows/missas-semana.yml)
+     a partir da Google Sheet "índice". Se ainda não houver cartazes
+     publicados, mostra-se uma mensagem a explicar que a secção está por
+     configurar. */
+  const missasCard = document.getElementById('missasSlideshowCard');
+  const cartazesSemana = (typeof PASCOM_MISSAS_SEMANA !== 'undefined') ? PASCOM_MISSAS_SEMANA : [];
+
+  if (missasCard) {
+    if (cartazesSemana.length === 0) {
+      missasCard.innerHTML = '<p class="missas-empty">Ainda não há cartazes publicados para os dias da semana. Volte em breve! <i class="fa-regular fa-image"></i></p>';
+    } else {
+      const missasImg = document.getElementById('missasSlideshowImg');
+      const missasBadge = document.getElementById('missasDiaBadge');
+      const missasDots = document.getElementById('missasDots');
+      const missasPrev = document.getElementById('missasPrev');
+      const missasNext = document.getElementById('missasNext');
+
+      const chaveParaDiaSemana = { domingo: 0, segunda: 1, terca: 2, quarta: 3, quinta: 4, sexta: 5, sabado: 6 };
+      const diaDeHoje = new Date().getDay();
+      let indiceAtual = cartazesSemana.findIndex(c => chaveParaDiaSemana[c.dia] === diaDeHoje);
+      if (indiceAtual === -1) indiceAtual = 0;
+
+      missasDots.innerHTML = cartazesSemana.map((_, i) => `<button class="missas-dot" aria-label="Cartaz ${i + 1}"></button>`).join('');
+      const dots = Array.from(missasDots.querySelectorAll('.missas-dot'));
+
+      function renderMissaAtual() {
+        const cartaz = cartazesSemana[indiceAtual];
+        missasImg.src = cartaz.imagens[0];
+        missasImg.alt = `Horários das missas de ${cartaz.label}`;
+        missasBadge.textContent = cartaz.label;
+        dots.forEach((dot, i) => dot.classList.toggle('is-active', i === indiceAtual));
+      }
+
+      function irParaCartaz(indice) {
+        indiceAtual = (indice + cartazesSemana.length) % cartazesSemana.length;
+        renderMissaAtual();
+      }
+
+      missasPrev.addEventListener('click', () => irParaCartaz(indiceAtual - 1));
+      missasNext.addEventListener('click', () => irParaCartaz(indiceAtual + 1));
+      dots.forEach((dot, i) => dot.addEventListener('click', () => irParaCartaz(i)));
+
+      renderMissaAtual();
+
+      if (cartazesSemana.length > 1) {
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (!reduceMotion) {
+          let missasTimer = setInterval(() => irParaCartaz(indiceAtual + 1), 7000);
+          document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+              clearInterval(missasTimer);
+            } else {
+              missasTimer = setInterval(() => irParaCartaz(indiceAtual + 1), 7000);
+            }
+          });
+        }
+      }
+    }
+  }
+
   /* ---------- Evangelho / Santo do dia: data de hoje ---------- */
   const today = new Date();
   const formatted = today.toLocaleDateString('pt-PT', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
