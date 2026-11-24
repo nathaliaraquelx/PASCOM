@@ -13,7 +13,7 @@ env:
   # URL de publicação em CSV da Google Sheet "índice" dos cartazes de
   # Missas da Semana — ver README.md, secção "Missas da Semana
   # (cartazes por dia)".
-  MISSAS_SEMANA_SHEET_CSV_URL: "SEU_CSV_URL_AQUI"
+  MISSAS_SEMANA_SHEET_CSV_URL: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTzfHfaAFS8ApxP6IPp2QvERYGuR1LfXtujPoScxB3SaKyhJzO4ZkyFoqz4WjSdCdwpIdDQyecJV57p/pub?output=csv"
 
 jobs:
   publicar-missas-semana:
