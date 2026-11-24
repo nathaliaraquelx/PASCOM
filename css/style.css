@@ -573,6 +573,69 @@ ul { list-style: none; margin: 0; padding: 0; }
 }
 .schedule-list i { color: var(--gold-600); }
 
+/* Horário das Missas: texto + cartaz da semana, lado a lado */
+.missas-grid { display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start; }
+.missas-col-principal { flex: 1 1 420px; min-width: 0; }
+.missas-col-cartaz { flex: 1 1 280px; max-width: 320px; min-width: 0; }
+.missas-col-cartaz .section-title { font-size: 1.15rem; margin-bottom: 14px; }
+.icon-title-sm { width: 38px; height: 38px; font-size: 1.05rem; border-radius: 10px; }
+
+.missas-slideshow-card { width: 100%; position: relative; }
+.missas-slideshow-frame {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--gold-border);
+  background: var(--white);
+  aspect-ratio: 2 / 3;
+}
+.missas-slideshow-frame img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.missas-day-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: rgba(14,100,112,0.92);
+  color: var(--white);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 7px 16px;
+  border-radius: 30px;
+  letter-spacing: 0.3px;
+}
+.missas-slide-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255,255,255,0.9);
+  color: var(--gold-900);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.missas-slide-nav:hover { background: var(--gold-800); color: var(--white); }
+.missas-slide-prev { left: 8px; }
+.missas-slide-next { right: 8px; }
+.missas-dots { display: flex; justify-content: center; gap: 8px; margin-top: 14px; }
+.missas-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background: var(--gold-200);
+  cursor: pointer;
+  padding: 0;
+}
+.missas-dot.is-active { background: var(--gold-800); }
+.missas-empty { color: var(--text-muted); font-size: 0.9rem; }
+
 /* Info card rows (Confissões / Adoração) — carrossel */
 .info-card {
   background: var(--white);

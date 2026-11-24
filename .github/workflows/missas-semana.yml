@@ -1,0 +1,51 @@
+name: Publicar cartazes de Missas da Semana (Google Docs)
+
+on:
+  schedule:
+    # A cada 6 horas
+    - cron: "20 */6 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+env:
+  # URL de publicação em CSV da Google Sheet "índice" dos cartazes de
+  # Missas da Semana — ver README.md, secção "Missas da Semana
+  # (cartazes por dia)".
+  MISSAS_SEMANA_SHEET_CSV_URL: "SEU_CSV_URL_AQUI"
+
+jobs:
+  publicar-missas-semana:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Instalar dependências
+        run: pip install --quiet beautifulsoup4
+
+      - name: Gerar js/missas-semana.js a partir da Google Sheet
+        run: python3 scripts/gerar-missas-semana.py "$MISSAS_SEMANA_SHEET_CSV_URL"
+
+      - name: Commit e push (se houver alterações)
+        run: |
+          git config user.name "PASCOM Bot"
+          git config user.email "actions@github.com"
+          git add js/missas-semana.js assets/img/missas-semana/
+          if git diff --staged --quiet; then
+            echo "Sem alterações — nada a comitar."
+            exit 0
+          fi
+          git commit -m "Publicar cartazes de Missas da Semana"
+          for tentativa in 1 2 3 4 5; do
+            if git push; then
+              exit 0
+            fi
+            echo "Push rejeitado (outra atualização automática chegou primeiro) — a tentar de novo ($tentativa/5)..."
+            git fetch origin "$GITHUB_REF_NAME"
+            git rebase "origin/$GITHUB_REF_NAME"
+            sleep $((RANDOM % 10 + 3))
+          done
+          echo "Não foi possível fazer push depois de várias tentativas." >&2
+          exit 1

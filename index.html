@@ -244,38 +244,56 @@
 <!-- ================= HORÁRIO DAS MISSAS ================= -->
 <section id="missas" class="section">
   <div class="container">
-    <p class="section-kicker">Celebrações</p>
-    <h2 class="section-title"><i class="fa-solid fa-church icon-title"></i> Horário das Missas</h2>
-    <div class="tabs" data-tabs="missas">
-      <div class="tab-buttons">
-        <button class="tab-btn active" data-tab="semana">Dias de Semana</button>
-        <button class="tab-btn" data-tab="sabado">Sábado</button>
-        <button class="tab-btn" data-tab="domingo">Domingo e Dias Santos</button>
+    <div class="missas-grid">
+      <div class="missas-col-principal">
+        <p class="section-kicker">Celebrações</p>
+        <h2 class="section-title"><i class="fa-solid fa-church icon-title"></i> Horário das Missas</h2>
+        <div class="tabs" data-tabs="missas">
+          <div class="tab-buttons">
+            <button class="tab-btn active" data-tab="semana">Dias de Semana</button>
+            <button class="tab-btn" data-tab="sabado">Sábado</button>
+            <button class="tab-btn" data-tab="domingo">Domingo e Dias Santos</button>
+          </div>
+          <div class="tab-panel active" data-panel="semana">
+            <ul class="schedule-list">
+              <li><i class="fa-solid fa-clock"></i> Igreja da Sé &mdash; <strong>17:40</strong>, segunda a sexta-feira</li>
+              <li><i class="fa-solid fa-clock"></i> Igreja de S. Tiago &mdash; <strong>09:00</strong>, quarta e sexta-feira</li>
+              <li><i class="fa-solid fa-clock"></i> Igreja dos Santos Mártires &mdash; <strong>09:00</strong>, terça e quinta-feira</li>
+              <li><i class="fa-solid fa-clock"></i> Igreja Senhor dos Aflitos &mdash; <strong>19:00</strong>, primeira sexta-feira do mês</li>
+            </ul>
+          </div>
+          <div class="tab-panel" data-panel="sabado">
+            <ul class="schedule-list">
+              <li><i class="fa-solid fa-clock"></i> Igreja da Sé &mdash; <strong>18:00</strong></li>
+              <li><i class="fa-solid fa-clock"></i> Igreja de S. Tiago &mdash; <strong>19:00</strong></li>
+            </ul>
+          </div>
+          <div class="tab-panel" data-panel="domingo">
+            <ul class="schedule-list">
+              <li><i class="fa-solid fa-clock"></i> Igreja Catedral &mdash; <strong>18:00</strong></li>
+              <li><i class="fa-solid fa-clock"></i> Igreja de S. Tiago &mdash; <strong>10:00</strong></li>
+              <li><i class="fa-solid fa-clock"></i> Igreja dos Santos Mártires &mdash; <strong>11:30</strong></li>
+              <li><i class="fa-solid fa-clock"></i> Igreja de S. Lourenço nas Cantarias &mdash; <strong>09:00</strong></li>
+            </ul>
+          </div>
+        </div>
+        <p class="muted"><i class="fa-solid fa-circle-info"></i> Horários das cinco comunidades da paróquia &mdash; Catedral, Sé, S. Tiago, Santos Mártires e S. Lourenço das Cantarias.</p>
       </div>
-      <div class="tab-panel active" data-panel="semana">
-        <ul class="schedule-list">
-          <li><i class="fa-solid fa-clock"></i> Igreja da Sé &mdash; <strong>17:40</strong>, segunda a sexta-feira</li>
-          <li><i class="fa-solid fa-clock"></i> Igreja de S. Tiago &mdash; <strong>09:00</strong>, quarta e sexta-feira</li>
-          <li><i class="fa-solid fa-clock"></i> Igreja dos Santos Mártires &mdash; <strong>09:00</strong>, terça e quinta-feira</li>
-          <li><i class="fa-solid fa-clock"></i> Igreja Senhor dos Aflitos &mdash; <strong>19:00</strong>, primeira sexta-feira do mês</li>
-        </ul>
-      </div>
-      <div class="tab-panel" data-panel="sabado">
-        <ul class="schedule-list">
-          <li><i class="fa-solid fa-clock"></i> Igreja da Sé &mdash; <strong>18:00</strong></li>
-          <li><i class="fa-solid fa-clock"></i> Igreja de S. Tiago &mdash; <strong>19:00</strong></li>
-        </ul>
-      </div>
-      <div class="tab-panel" data-panel="domingo">
-        <ul class="schedule-list">
-          <li><i class="fa-solid fa-clock"></i> Igreja Catedral &mdash; <strong>18:00</strong></li>
-          <li><i class="fa-solid fa-clock"></i> Igreja de S. Tiago &mdash; <strong>10:00</strong></li>
-          <li><i class="fa-solid fa-clock"></i> Igreja dos Santos Mártires &mdash; <strong>11:30</strong></li>
-          <li><i class="fa-solid fa-clock"></i> Igreja de S. Lourenço nas Cantarias &mdash; <strong>09:00</strong></li>
-        </ul>
+
+      <div class="missas-col-cartaz">
+        <p class="section-kicker">Cartaz da semana</p>
+        <h2 class="section-title"><i class="fa-solid fa-calendar-week icon-title icon-title-sm"></i> Missas da Semana</h2>
+        <div class="missas-slideshow-card" id="missasSlideshowCard">
+          <div class="missas-slideshow-frame">
+            <span class="missas-day-badge" id="missasDiaBadge"></span>
+            <img id="missasSlideshowImg" src="" alt="" loading="lazy">
+            <button class="missas-slide-nav missas-slide-prev" id="missasPrev" aria-label="Dia anterior"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="missas-slide-nav missas-slide-next" id="missasNext" aria-label="Dia seguinte"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+          <div class="missas-dots" id="missasDots"></div>
+        </div>
       </div>
     </div>
-    <p class="muted"><i class="fa-solid fa-circle-info"></i> Horários das cinco comunidades da paróquia &mdash; Catedral, Sé, S. Tiago, Santos Mártires e S. Lourenço das Cantarias.</p>
   </div>
 </section>
 
@@ -596,6 +614,7 @@
 <script src="js/eventos.js"></script>
 <script src="js/calendario.js"></script>
 <script src="js/galeria.js"></script>
+<script src="js/missas-semana.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
