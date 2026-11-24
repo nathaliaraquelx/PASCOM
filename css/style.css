@@ -1177,4 +1177,15 @@ ul { list-style: none; margin: 0; padding: 0; }
      com o quadro de horários (mantém-se ao lado no desktop). */
   .confissoes-col-principal { order: -1; }
   .adoracao-col-imagem { order: -1; }
+
+  /* Cartaz da semana: centrado no telemóvel — a coluna tem max-width
+     e por defeito ficava encostada à esquerda, com espaço vazio à
+     direita (fica alinhado à esquerda, como o resto, no desktop). */
+  .missas-col-cartaz {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .missas-col-cartaz .section-title { justify-content: center; }
 }
