@@ -572,6 +572,10 @@ ul { list-style: none; margin: 0; padding: 0; }
   gap: 12px;
 }
 .schedule-list i { color: var(--gold-600); }
+.schedule-text { display: flex; flex-direction: column; gap: 3px; }
+.schedule-local { color: var(--gold-900); }
+.schedule-horario { color: var(--text-muted); font-size: 0.92rem; }
+.schedule-horario strong { color: var(--text); }
 
 /* Horário das Missas: texto + cartaz da semana, lado a lado */
 .missas-grid { display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start; }
@@ -1157,12 +1161,17 @@ ul { list-style: none; margin: 0; padding: 0; }
   }
   .schedule-list li {
     flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
     white-space: normal;
     overflow-x: visible;
+    padding: 20px 14px;
   }
-  .schedule-list li i { flex-shrink: 0; }
+  .schedule-list li i { flex-shrink: 0; font-size: 1.6rem; }
+  .schedule-list .schedule-text { align-items: center; gap: 4px; }
+  .schedule-local { font-size: 0.95rem; }
 
   /* Confissões / Adoração: no telemóvel, a imagem troca de posição
      com o quadro de horários (mantém-se ao lado no desktop). */
