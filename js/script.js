@@ -157,7 +157,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   configurarCarrossel('groupsTrack', 'groupsPrev', 'groupsNext');
   configurarCarrossel('confissoesTrack', 'confissoesPrev', 'confissoesNext');
-  configurarCarrossel('adoracaoTrack', 'adoracaoPrev', 'adoracaoNext');
 
   /* ---------- Missas da Semana (cartaz por dia, slideshow) ----------
      Os cartazes vêm de js/missas-semana.js (PASCOM_MISSAS_SEMANA), gerado
