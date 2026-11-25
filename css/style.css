@@ -668,6 +668,15 @@ ul { list-style: none; margin: 0; padding: 0; }
   background: var(--white);
 }
 .confissoes-img-card img { display: block; width: 100%; height: auto; }
+.confissoes-col-principal .info-card {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.confissoes-col-principal .info-card i { font-size: 2.4rem; margin-bottom: 20px; }
+.confissoes-col-principal .info-card h3 { margin-bottom: 14px; }
+.confissoes-col-principal .info-card p { font-size: 1rem; }
 
 /* Adoração: horário em texto + foto, lado a lado */
 .adoracao-grid { display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start; }
