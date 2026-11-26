@@ -9,10 +9,10 @@
 
 const PASCOM_GALERIA = [
   {
-    "data": "2026-11-18",
-    "legenda": "Jesus está presente no Santíssimo Sacramento. E espera por ti!",
+    "data": "2026-11-26",
+    "legenda": "Os Convívios Fraternos de Bragança - Miranda têm um convite para ti!",
     "imagens": [
-      "assets/img/galeria/2026-11-18-jesus-esta-presente-no-santissimo-sacramento-e-espera-por-ti-1.jpg"
+      "assets/img/galeria/2026-11-26-os-convivios-fraternos-de-braganca-miranda-tem-um-convite-para-ti-1.png"
     ],
     "id": 1
   },
@@ -20,9 +20,17 @@ const PASCOM_GALERIA = [
     "data": "2026-11-18",
     "legenda": "Jesus está presente no Santíssimo Sacramento. E espera por ti!",
     "imagens": [
-      "assets/img/galeria/2026-11-18-jesus-esta-presente-no-santissimo-sacramento-e-espera-por-ti-56993074-1.jpg"
+      "assets/img/galeria/2026-11-18-jesus-esta-presente-no-santissimo-sacramento-e-espera-por-ti-1.jpg"
     ],
     "id": 2
+  },
+  {
+    "data": "2026-11-18",
+    "legenda": "Jesus está presente no Santíssimo Sacramento. E espera por ti!",
+    "imagens": [
+      "assets/img/galeria/2026-11-18-jesus-esta-presente-no-santissimo-sacramento-e-espera-por-ti-56993074-1.jpg"
+    ],
+    "id": 3
   },
   {
     "data": "2026-11-18",
@@ -30,7 +38,7 @@ const PASCOM_GALERIA = [
     "imagens": [
       "assets/img/galeria/2026-11-18-oracao-do-terco-com-sao-jose-1.jpg"
     ],
-    "id": 3
+    "id": 4
   },
   {
     "data": "2026-11-18",
@@ -38,7 +46,7 @@ const PASCOM_GALERIA = [
     "imagens": [
       "assets/img/galeria/2026-11-18-santa-misssa-as-primeiras-sextas-feiras-do-mes-1.jpg"
     ],
-    "id": 4
+    "id": 5
   },
   {
     "data": "2026-11-15",
@@ -46,7 +54,7 @@ const PASCOM_GALERIA = [
     "imagens": [
       "assets/img/galeria/2026-11-15-20-anos-de-historia-uma-so-fe-uma-comunidade-unida-em-cristo-1.png"
     ],
-    "id": 5
+    "id": 6
   },
   {
     "data": "2026-11-15",
@@ -54,7 +62,7 @@ const PASCOM_GALERIA = [
     "imagens": [
       "assets/img/galeria/2026-11-15-neste-domingo-15-de-novembro-celebramos-o-dia-mundial-dos-pobres-um-convite-a-olhar-para-os-nossos-irmaos-mais-necessitados-com-os-olhos-e-o-coracao-de-cristo-1.png"
     ],
-    "id": 6
+    "id": 7
   },
   {
     "data": "2026-11-15",
@@ -62,6 +70,6 @@ const PASCOM_GALERIA = [
     "imagens": [
       "assets/img/galeria/2026-11-15-temos-uma-novidade-especial-a-paroquia-de-sao-joao-baptista-em-braganca-tem-um-canal-oficial-no-whatsapp-1.png"
     ],
-    "id": 7
+    "id": 8
   }
 ];
