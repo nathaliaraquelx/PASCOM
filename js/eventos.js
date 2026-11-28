@@ -24,28 +24,6 @@
 const PASCOM_EVENTOS = [
   {
     "id": 1,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2026-11-20",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 2,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2026-11-20",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 3,
     "titulo": "Festa de Acolhimento - Dia de Cristo Rei",
     "data": "2026-11-21",
     "horaInicio": "Todo o dia",
@@ -56,7 +34,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 4,
+    "id": 2,
     "titulo": "Festa de Acolhimento - Dia de Cristo Rei",
     "data": "2026-11-22",
     "horaInicio": "Todo o dia",
@@ -67,7 +45,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 5,
+    "id": 3,
     "titulo": "20º Aniversário da Dedicação da Igreja",
     "data": "2026-11-22",
     "horaInicio": "11:30",
@@ -75,10 +53,10 @@ const PASCOM_EVENTOS = [
     "categoria": "festa",
     "local": "Paróquia de São João Baptista",
     "descricao": "",
-    "cartaz": "assets/img/agenda/evento-5.png"
+    "cartaz": "assets/img/agenda/evento-3.png"
   },
   {
-    "id": 6,
+    "id": 4,
     "titulo": "Missa na Igreja da Sé",
     "data": "2026-11-23",
     "horaInicio": "17:40",
@@ -89,7 +67,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 7,
+    "id": 5,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2026-11-23",
     "horaInicio": "18:15",
@@ -100,9 +78,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 8,
+    "id": 6,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2026-11-24",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 7,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2026-11-24",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 8,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2026-11-25",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -113,7 +113,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 9,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2026-11-24",
+    "data": "2026-11-25",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -123,8 +123,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 10,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2026-11-25",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2026-11-26",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -135,7 +135,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 11,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2026-11-25",
+    "data": "2026-11-26",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -145,8 +145,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 12,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2026-11-26",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2026-11-27",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -157,7 +157,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 13,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2026-11-26",
+    "data": "2026-11-27",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -167,28 +167,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 14,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2026-11-27",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 15,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2026-11-27",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 16,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2026-11-28",
     "horaInicio": "19:00",
@@ -196,10 +174,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-16.png"
+    "cartaz": "assets/img/agenda/evento-14.png"
   },
   {
-    "id": 17,
+    "id": 15,
     "titulo": "Abertura do Ano Pastoral",
     "data": "2026-11-29",
     "horaInicio": "16:00",
@@ -207,10 +185,10 @@ const PASCOM_EVENTOS = [
     "categoria": "comunidade",
     "local": "Paróquia de São João Baptista",
     "descricao": "",
-    "cartaz": "assets/img/agenda/evento-17.jpg"
+    "cartaz": "assets/img/agenda/evento-15.jpg"
   },
   {
-    "id": 18,
+    "id": 16,
     "titulo": "Missa na Igreja da Sé",
     "data": "2026-11-30",
     "horaInicio": "17:40",
@@ -221,7 +199,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 19,
+    "id": 17,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2026-11-30",
     "horaInicio": "18:15",
@@ -232,9 +210,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 20,
+    "id": 18,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2026-12-01",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 19,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2026-12-01",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 20,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2026-12-02",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -245,7 +245,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 21,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2026-12-01",
+    "data": "2026-12-02",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -255,8 +255,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 22,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2026-12-02",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2026-12-03",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -267,7 +267,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 23,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2026-12-02",
+    "data": "2026-12-03",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -277,8 +277,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 24,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2026-12-03",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2026-12-04",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -289,7 +289,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 25,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2026-12-03",
+    "data": "2026-12-04",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -299,28 +299,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 26,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2026-12-04",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 27,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2026-12-04",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 28,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2026-12-05",
     "horaInicio": "19:00",
@@ -328,10 +306,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-28.png"
+    "cartaz": "assets/img/agenda/evento-26.png"
   },
   {
-    "id": 29,
+    "id": 27,
     "titulo": "Missa na Igreja da Sé",
     "data": "2026-12-07",
     "horaInicio": "17:40",
@@ -342,7 +320,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 30,
+    "id": 28,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2026-12-07",
     "horaInicio": "18:15",
@@ -353,7 +331,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 31,
+    "id": 29,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2026-12-08",
     "horaInicio": "09:00",
@@ -364,7 +342,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 32,
+    "id": 30,
     "titulo": "Festa de Natal",
     "data": "2026-12-08",
     "horaInicio": "16:00",
@@ -375,7 +353,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 33,
+    "id": 31,
     "titulo": "Missa na Igreja da Sé",
     "data": "2026-12-08",
     "horaInicio": "17:40",
@@ -386,9 +364,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 34,
+    "id": 32,
     "titulo": "Missa na Igreja de S. Tiago",
     "data": "2026-12-09",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 33,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2026-12-09",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 34,
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2026-12-10",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -399,7 +399,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 35,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2026-12-09",
+    "data": "2026-12-10",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -409,8 +409,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 36,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2026-12-10",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2026-12-11",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -421,7 +421,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 37,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2026-12-10",
+    "data": "2026-12-11",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -431,28 +431,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 38,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2026-12-11",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 39,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2026-12-11",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 40,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2026-12-12",
     "horaInicio": "19:00",
@@ -460,10 +438,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-40.png"
+    "cartaz": "assets/img/agenda/evento-38.png"
   },
   {
-    "id": 41,
+    "id": 39,
     "titulo": "Missa na Igreja da Sé",
     "data": "2026-12-14",
     "horaInicio": "17:40",
@@ -474,7 +452,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 42,
+    "id": 40,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2026-12-14",
     "horaInicio": "18:15",
@@ -485,9 +463,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 43,
+    "id": 41,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2026-12-15",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 42,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2026-12-15",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 43,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2026-12-16",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -498,7 +498,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 44,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2026-12-15",
+    "data": "2026-12-16",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -508,8 +508,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 45,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2026-12-16",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2026-12-17",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -520,7 +520,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 46,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2026-12-16",
+    "data": "2026-12-17",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -530,8 +530,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 47,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2026-12-17",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2026-12-18",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -542,7 +542,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 48,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2026-12-17",
+    "data": "2026-12-18",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -552,28 +552,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 49,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2026-12-18",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 50,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2026-12-18",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 51,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2026-12-19",
     "horaInicio": "19:00",
@@ -581,10 +559,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-51.png"
+    "cartaz": "assets/img/agenda/evento-49.png"
   },
   {
-    "id": 52,
+    "id": 50,
     "titulo": "Missa na Igreja da Sé",
     "data": "2026-12-21",
     "horaInicio": "17:40",
@@ -595,7 +573,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 53,
+    "id": 51,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2026-12-21",
     "horaInicio": "18:15",
@@ -606,9 +584,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 54,
+    "id": 52,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2026-12-22",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 53,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2026-12-22",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 54,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2026-12-23",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -619,7 +619,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 55,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2026-12-22",
+    "data": "2026-12-23",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -629,8 +629,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 56,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2026-12-23",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2026-12-24",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -641,7 +641,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 57,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2026-12-23",
+    "data": "2026-12-24",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -651,8 +651,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 58,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2026-12-24",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2026-12-25",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -663,7 +663,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 59,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2026-12-24",
+    "data": "2026-12-25",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -673,28 +673,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 60,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2026-12-25",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 61,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2026-12-25",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 62,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2026-12-26",
     "horaInicio": "19:00",
@@ -702,10 +680,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-62.png"
+    "cartaz": "assets/img/agenda/evento-60.png"
   },
   {
-    "id": 63,
+    "id": 61,
     "titulo": "Missa na Igreja da Sé",
     "data": "2026-12-28",
     "horaInicio": "17:40",
@@ -716,7 +694,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 64,
+    "id": 62,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2026-12-28",
     "horaInicio": "18:15",
@@ -727,9 +705,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 65,
+    "id": 63,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2026-12-29",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 64,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2026-12-29",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 65,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2026-12-30",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -740,7 +740,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 66,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2026-12-29",
+    "data": "2026-12-30",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -750,8 +750,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 67,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2026-12-30",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2026-12-31",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -762,7 +762,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 68,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2026-12-30",
+    "data": "2026-12-31",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -772,8 +772,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 69,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2026-12-31",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-01-01",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -784,7 +784,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 70,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2026-12-31",
+    "data": "2027-01-01",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -794,28 +794,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 71,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-01-01",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 72,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-01-01",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 73,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-01-02",
     "horaInicio": "19:00",
@@ -823,10 +801,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-73.png"
+    "cartaz": "assets/img/agenda/evento-71.png"
   },
   {
-    "id": 74,
+    "id": 72,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-01-04",
     "horaInicio": "17:40",
@@ -837,7 +815,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 75,
+    "id": 73,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-01-04",
     "horaInicio": "18:15",
@@ -848,9 +826,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 76,
+    "id": 74,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-01-05",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 75,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-01-05",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 76,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-01-06",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -861,7 +861,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 77,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-01-05",
+    "data": "2027-01-06",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -871,8 +871,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 78,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-01-06",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-01-07",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -883,7 +883,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 79,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-01-06",
+    "data": "2027-01-07",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -893,8 +893,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 80,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-01-07",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-01-08",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -905,7 +905,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 81,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-01-07",
+    "data": "2027-01-08",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -915,28 +915,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 82,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-01-08",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 83,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-01-08",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 84,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-01-09",
     "horaInicio": "19:00",
@@ -944,10 +922,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-84.png"
+    "cartaz": "assets/img/agenda/evento-82.png"
   },
   {
-    "id": 85,
+    "id": 83,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-01-11",
     "horaInicio": "17:40",
@@ -958,7 +936,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 86,
+    "id": 84,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-01-11",
     "horaInicio": "18:15",
@@ -969,9 +947,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 87,
+    "id": 85,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-01-12",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 86,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-01-12",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 87,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-01-13",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -982,7 +982,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 88,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-01-12",
+    "data": "2027-01-13",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -992,8 +992,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 89,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-01-13",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-01-14",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -1004,7 +1004,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 90,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-01-13",
+    "data": "2027-01-14",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -1014,8 +1014,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 91,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-01-14",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-01-15",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -1026,7 +1026,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 92,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-01-14",
+    "data": "2027-01-15",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -1036,28 +1036,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 93,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-01-15",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 94,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-01-15",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 95,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-01-16",
     "horaInicio": "19:00",
@@ -1065,10 +1043,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-95.png"
+    "cartaz": "assets/img/agenda/evento-93.png"
   },
   {
-    "id": 96,
+    "id": 94,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-01-18",
     "horaInicio": "17:40",
@@ -1079,7 +1057,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 97,
+    "id": 95,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-01-18",
     "horaInicio": "18:15",
@@ -1090,9 +1068,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 98,
+    "id": 96,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-01-19",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 97,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-01-19",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 98,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-01-20",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -1103,7 +1103,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 99,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-01-19",
+    "data": "2027-01-20",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -1113,8 +1113,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 100,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-01-20",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-01-21",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -1125,7 +1125,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 101,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-01-20",
+    "data": "2027-01-21",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -1135,8 +1135,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 102,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-01-21",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-01-22",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -1147,7 +1147,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 103,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-01-21",
+    "data": "2027-01-22",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -1157,28 +1157,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 104,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-01-22",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 105,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-01-22",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 106,
     "titulo": "Festa da Palavra - Domingo da Palavra",
     "data": "2027-01-23",
     "horaInicio": "Todo o dia",
@@ -1189,7 +1167,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 107,
+    "id": 105,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-01-23",
     "horaInicio": "19:00",
@@ -1197,10 +1175,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-107.png"
+    "cartaz": "assets/img/agenda/evento-105.png"
   },
   {
-    "id": 108,
+    "id": 106,
     "titulo": "Festa da Palavra - Domingo da Palavra",
     "data": "2027-01-24",
     "horaInicio": "Todo o dia",
@@ -1211,7 +1189,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 109,
+    "id": 107,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-01-25",
     "horaInicio": "17:40",
@@ -1222,7 +1200,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 110,
+    "id": 108,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-01-25",
     "horaInicio": "18:15",
@@ -1233,9 +1211,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 111,
+    "id": 109,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-01-26",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 110,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-01-26",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 111,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-01-27",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -1246,7 +1246,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 112,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-01-26",
+    "data": "2027-01-27",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -1256,8 +1256,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 113,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-01-27",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-01-28",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -1268,7 +1268,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 114,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-01-27",
+    "data": "2027-01-28",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -1278,8 +1278,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 115,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-01-28",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-01-29",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -1290,7 +1290,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 116,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-01-28",
+    "data": "2027-01-29",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -1300,28 +1300,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 117,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-01-29",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 118,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-01-29",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 119,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-01-30",
     "horaInicio": "19:00",
@@ -1329,10 +1307,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-119.png"
+    "cartaz": "assets/img/agenda/evento-117.png"
   },
   {
-    "id": 120,
+    "id": 118,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-02-01",
     "horaInicio": "17:40",
@@ -1343,7 +1321,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 121,
+    "id": 119,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-02-01",
     "horaInicio": "18:15",
@@ -1354,9 +1332,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 122,
+    "id": 120,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-02-02",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 121,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-02-02",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 122,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-02-03",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -1367,7 +1367,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 123,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-02-02",
+    "data": "2027-02-03",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -1377,8 +1377,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 124,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-02-03",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-02-04",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -1389,7 +1389,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 125,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-02-03",
+    "data": "2027-02-04",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -1399,8 +1399,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 126,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-02-04",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-02-05",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -1411,7 +1411,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 127,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-02-04",
+    "data": "2027-02-05",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -1421,28 +1421,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 128,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-02-05",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 129,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-02-05",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 130,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-02-06",
     "horaInicio": "19:00",
@@ -1450,10 +1428,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-130.png"
+    "cartaz": "assets/img/agenda/evento-128.png"
   },
   {
-    "id": 131,
+    "id": 129,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-02-08",
     "horaInicio": "17:40",
@@ -1464,7 +1442,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 132,
+    "id": 130,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-02-08",
     "horaInicio": "18:15",
@@ -1475,9 +1453,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 133,
+    "id": 131,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-02-09",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 132,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-02-09",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 133,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-02-10",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -1488,7 +1488,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 134,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-02-09",
+    "data": "2027-02-10",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -1498,8 +1498,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 135,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-02-10",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-02-11",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -1510,7 +1510,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 136,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-02-10",
+    "data": "2027-02-11",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -1520,8 +1520,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 137,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-02-11",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-02-12",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -1532,7 +1532,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 138,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-02-11",
+    "data": "2027-02-12",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -1542,28 +1542,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 139,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-02-12",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 140,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-02-12",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 141,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-02-13",
     "horaInicio": "19:00",
@@ -1571,10 +1549,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-141.png"
+    "cartaz": "assets/img/agenda/evento-139.png"
   },
   {
-    "id": 142,
+    "id": 140,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-02-15",
     "horaInicio": "17:40",
@@ -1585,7 +1563,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 143,
+    "id": 141,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-02-15",
     "horaInicio": "18:15",
@@ -1596,9 +1574,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 144,
+    "id": 142,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-02-16",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 143,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-02-16",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 144,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-02-17",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -1609,7 +1609,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 145,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-02-16",
+    "data": "2027-02-17",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -1619,8 +1619,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 146,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-02-17",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-02-18",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -1631,7 +1631,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 147,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-02-17",
+    "data": "2027-02-18",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -1641,8 +1641,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 148,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-02-18",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-02-19",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -1653,7 +1653,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 149,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-02-18",
+    "data": "2027-02-19",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -1663,28 +1663,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 150,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-02-19",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 151,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-02-19",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 152,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-02-20",
     "horaInicio": "19:00",
@@ -1692,10 +1670,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-152.png"
+    "cartaz": "assets/img/agenda/evento-150.png"
   },
   {
-    "id": 153,
+    "id": 151,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-02-22",
     "horaInicio": "17:40",
@@ -1706,7 +1684,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 154,
+    "id": 152,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-02-22",
     "horaInicio": "18:15",
@@ -1717,9 +1695,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 155,
+    "id": 153,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-02-23",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 154,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-02-23",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 155,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-02-24",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -1730,7 +1730,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 156,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-02-23",
+    "data": "2027-02-24",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -1740,8 +1740,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 157,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-02-24",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-02-25",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -1752,7 +1752,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 158,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-02-24",
+    "data": "2027-02-25",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -1762,8 +1762,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 159,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-02-25",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-02-26",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -1774,7 +1774,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 160,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-02-25",
+    "data": "2027-02-26",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -1784,28 +1784,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 161,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-02-26",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 162,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-02-26",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 163,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-02-27",
     "horaInicio": "19:00",
@@ -1813,10 +1791,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-163.png"
+    "cartaz": "assets/img/agenda/evento-161.png"
   },
   {
-    "id": 164,
+    "id": 162,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-03-01",
     "horaInicio": "17:40",
@@ -1827,7 +1805,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 165,
+    "id": 163,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-03-01",
     "horaInicio": "18:15",
@@ -1838,9 +1816,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 166,
+    "id": 164,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-03-02",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 165,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-03-02",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 166,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-03-03",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -1851,7 +1851,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 167,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-03-02",
+    "data": "2027-03-03",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -1861,8 +1861,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 168,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-03-03",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-03-04",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -1873,7 +1873,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 169,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-03-03",
+    "data": "2027-03-04",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -1883,28 +1883,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 170,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-03-04",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 171,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-03-04",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 172,
     "titulo": "24 h para o Senhor",
     "data": "2027-03-05",
     "horaInicio": "Todo o dia",
@@ -1915,7 +1893,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 173,
+    "id": 171,
     "titulo": "Missa na Igreja de S. Tiago",
     "data": "2027-03-05",
     "horaInicio": "09:00",
@@ -1926,7 +1904,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 174,
+    "id": 172,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-03-05",
     "horaInicio": "17:40",
@@ -1937,7 +1915,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 175,
+    "id": 173,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-03-06",
     "horaInicio": "19:00",
@@ -1945,10 +1923,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-175.png"
+    "cartaz": "assets/img/agenda/evento-173.png"
   },
   {
-    "id": 176,
+    "id": 174,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-03-08",
     "horaInicio": "17:40",
@@ -1959,7 +1937,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 177,
+    "id": 175,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-03-08",
     "horaInicio": "18:15",
@@ -1970,9 +1948,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 178,
+    "id": 176,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-03-09",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 177,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-03-09",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 178,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-03-10",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -1983,7 +1983,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 179,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-03-09",
+    "data": "2027-03-10",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -1993,8 +1993,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 180,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-03-10",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-03-11",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -2005,7 +2005,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 181,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-03-10",
+    "data": "2027-03-11",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -2015,8 +2015,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 182,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-03-11",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-03-12",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -2027,7 +2027,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 183,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-03-11",
+    "data": "2027-03-12",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -2037,28 +2037,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 184,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-03-12",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 185,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-03-12",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 186,
     "titulo": "Via Sacra",
     "data": "2027-03-12",
     "horaInicio": "20:30",
@@ -2069,7 +2047,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 187,
+    "id": 185,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-03-13",
     "horaInicio": "19:00",
@@ -2077,10 +2055,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-187.png"
+    "cartaz": "assets/img/agenda/evento-185.png"
   },
   {
-    "id": 188,
+    "id": 186,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-03-15",
     "horaInicio": "17:40",
@@ -2091,7 +2069,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 189,
+    "id": 187,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-03-15",
     "horaInicio": "18:15",
@@ -2102,9 +2080,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 190,
+    "id": 188,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-03-16",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 189,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-03-16",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 190,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-03-17",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -2115,7 +2115,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 191,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-03-16",
+    "data": "2027-03-17",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -2125,8 +2125,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 192,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-03-17",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-03-18",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -2137,7 +2137,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 193,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-03-17",
+    "data": "2027-03-18",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -2147,8 +2147,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 194,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-03-18",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-03-19",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -2159,7 +2159,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 195,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-03-18",
+    "data": "2027-03-19",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -2169,28 +2169,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 196,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-03-19",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 197,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-03-19",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 198,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-03-20",
     "horaInicio": "19:00",
@@ -2198,10 +2176,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-198.png"
+    "cartaz": "assets/img/agenda/evento-196.png"
   },
   {
-    "id": 199,
+    "id": 197,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-03-22",
     "horaInicio": "17:40",
@@ -2212,7 +2190,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 200,
+    "id": 198,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-03-22",
     "horaInicio": "18:15",
@@ -2223,9 +2201,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 201,
+    "id": 199,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-03-23",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 200,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-03-23",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 201,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-03-24",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -2236,7 +2236,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 202,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-03-23",
+    "data": "2027-03-24",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -2246,8 +2246,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 203,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-03-24",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-03-25",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -2258,7 +2258,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 204,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-03-24",
+    "data": "2027-03-25",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -2268,8 +2268,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 205,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-03-25",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-03-26",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -2280,7 +2280,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 206,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-03-25",
+    "data": "2027-03-26",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -2290,28 +2290,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 207,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-03-26",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 208,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-03-26",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 209,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-03-27",
     "horaInicio": "19:00",
@@ -2319,10 +2297,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-209.png"
+    "cartaz": "assets/img/agenda/evento-207.png"
   },
   {
-    "id": 210,
+    "id": 208,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-03-29",
     "horaInicio": "17:40",
@@ -2333,7 +2311,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 211,
+    "id": 209,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-03-29",
     "horaInicio": "18:15",
@@ -2344,9 +2322,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 212,
+    "id": 210,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-03-30",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 211,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-03-30",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 212,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-03-31",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -2357,7 +2357,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 213,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-03-30",
+    "data": "2027-03-31",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -2367,8 +2367,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 214,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-03-31",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-04-01",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -2379,7 +2379,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 215,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-03-31",
+    "data": "2027-04-01",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -2389,8 +2389,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 216,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-04-01",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-04-02",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -2401,7 +2401,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 217,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-04-01",
+    "data": "2027-04-02",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -2411,28 +2411,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 218,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-04-02",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 219,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-04-02",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 220,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-04-03",
     "horaInicio": "19:00",
@@ -2440,10 +2418,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-220.png"
+    "cartaz": "assets/img/agenda/evento-218.png"
   },
   {
-    "id": 221,
+    "id": 219,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-04-05",
     "horaInicio": "17:40",
@@ -2454,7 +2432,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 222,
+    "id": 220,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-04-05",
     "horaInicio": "18:15",
@@ -2465,9 +2443,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 223,
+    "id": 221,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-04-06",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 222,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-04-06",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 223,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-04-07",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -2478,7 +2478,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 224,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-04-06",
+    "data": "2027-04-07",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -2488,8 +2488,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 225,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-04-07",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-04-08",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -2500,7 +2500,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 226,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-04-07",
+    "data": "2027-04-08",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -2510,8 +2510,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 227,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-04-08",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-04-09",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -2522,7 +2522,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 228,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-04-08",
+    "data": "2027-04-09",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -2532,28 +2532,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 229,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-04-09",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 230,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-04-09",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 231,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-04-10",
     "horaInicio": "19:00",
@@ -2561,10 +2539,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-231.png"
+    "cartaz": "assets/img/agenda/evento-229.png"
   },
   {
-    "id": 232,
+    "id": 230,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-04-12",
     "horaInicio": "17:40",
@@ -2575,7 +2553,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 233,
+    "id": 231,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-04-12",
     "horaInicio": "18:15",
@@ -2586,9 +2564,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 234,
+    "id": 232,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-04-13",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 233,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-04-13",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 234,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-04-14",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -2599,7 +2599,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 235,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-04-13",
+    "data": "2027-04-14",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -2609,8 +2609,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 236,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-04-14",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-04-15",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -2621,7 +2621,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 237,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-04-14",
+    "data": "2027-04-15",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -2631,8 +2631,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 238,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-04-15",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-04-16",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -2643,7 +2643,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 239,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-04-15",
+    "data": "2027-04-16",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -2653,28 +2653,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 240,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-04-16",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 241,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-04-16",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 242,
     "titulo": "Festa da Fé - Dia do Bom Pastor",
     "data": "2027-04-17",
     "horaInicio": "Todo o dia",
@@ -2685,7 +2663,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 243,
+    "id": 241,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-04-17",
     "horaInicio": "19:00",
@@ -2693,10 +2671,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-243.png"
+    "cartaz": "assets/img/agenda/evento-241.png"
   },
   {
-    "id": 244,
+    "id": 242,
     "titulo": "Festa da Fé - Dia do Bom Pastor",
     "data": "2027-04-18",
     "horaInicio": "Todo o dia",
@@ -2707,7 +2685,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 245,
+    "id": 243,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-04-19",
     "horaInicio": "17:40",
@@ -2718,7 +2696,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 246,
+    "id": 244,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-04-19",
     "horaInicio": "18:15",
@@ -2729,9 +2707,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 247,
+    "id": 245,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-04-20",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 246,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-04-20",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 247,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-04-21",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -2742,7 +2742,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 248,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-04-20",
+    "data": "2027-04-21",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -2752,8 +2752,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 249,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-04-21",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-04-22",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -2764,7 +2764,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 250,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-04-21",
+    "data": "2027-04-22",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -2774,8 +2774,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 251,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-04-22",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-04-23",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -2786,7 +2786,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 252,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-04-22",
+    "data": "2027-04-23",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -2796,28 +2796,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 253,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-04-23",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 254,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-04-23",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 255,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-04-24",
     "horaInicio": "19:00",
@@ -2825,10 +2803,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-255.png"
+    "cartaz": "assets/img/agenda/evento-253.png"
   },
   {
-    "id": 256,
+    "id": 254,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-04-26",
     "horaInicio": "17:40",
@@ -2839,7 +2817,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 257,
+    "id": 255,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-04-26",
     "horaInicio": "18:15",
@@ -2850,9 +2828,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 258,
+    "id": 256,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-04-27",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 257,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-04-27",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 258,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-04-28",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -2863,7 +2863,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 259,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-04-27",
+    "data": "2027-04-28",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -2873,8 +2873,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 260,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-04-28",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-04-29",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -2885,7 +2885,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 261,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-04-28",
+    "data": "2027-04-29",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -2895,8 +2895,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 262,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-04-29",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-04-30",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -2907,7 +2907,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 263,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-04-29",
+    "data": "2027-04-30",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -2917,28 +2917,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 264,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-04-30",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 265,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-04-30",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 266,
     "titulo": "Festa da Avé Maria",
     "data": "2027-05-01",
     "horaInicio": "Todo o dia",
@@ -2949,7 +2927,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 267,
+    "id": 265,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-05-01",
     "horaInicio": "19:00",
@@ -2957,10 +2935,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-267.png"
+    "cartaz": "assets/img/agenda/evento-265.png"
   },
   {
-    "id": 268,
+    "id": 266,
     "titulo": "Festa da Avé Maria",
     "data": "2027-05-02",
     "horaInicio": "Todo o dia",
@@ -2971,7 +2949,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 269,
+    "id": 267,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-05-03",
     "horaInicio": "17:40",
@@ -2982,7 +2960,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 270,
+    "id": 268,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-05-03",
     "horaInicio": "18:15",
@@ -2993,9 +2971,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 271,
+    "id": 269,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-05-04",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 270,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-05-04",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 271,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-05-05",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -3006,7 +3006,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 272,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-05-04",
+    "data": "2027-05-05",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -3016,8 +3016,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 273,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-05-05",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-05-06",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -3028,7 +3028,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 274,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-05-05",
+    "data": "2027-05-06",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -3038,8 +3038,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 275,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-05-06",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-05-07",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -3050,7 +3050,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 276,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-05-06",
+    "data": "2027-05-07",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -3060,28 +3060,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 277,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-05-07",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 278,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-05-07",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 279,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-05-08",
     "horaInicio": "19:00",
@@ -3089,10 +3067,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-279.png"
+    "cartaz": "assets/img/agenda/evento-277.png"
   },
   {
-    "id": 280,
+    "id": 278,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-05-10",
     "horaInicio": "17:40",
@@ -3103,7 +3081,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 281,
+    "id": 279,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-05-10",
     "horaInicio": "18:15",
@@ -3114,9 +3092,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 282,
+    "id": 280,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-05-11",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 281,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-05-11",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 282,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-05-12",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -3127,7 +3127,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 283,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-05-11",
+    "data": "2027-05-12",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -3137,8 +3137,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 284,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-05-12",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-05-13",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -3149,7 +3149,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 285,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-05-12",
+    "data": "2027-05-13",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -3159,28 +3159,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 286,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-05-13",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 287,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-05-13",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 288,
     "titulo": "Festa do Perdão",
     "data": "2027-05-14",
     "horaInicio": "Todo o dia",
@@ -3191,7 +3169,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 289,
+    "id": 287,
     "titulo": "Missa na Igreja de S. Tiago",
     "data": "2027-05-14",
     "horaInicio": "09:00",
@@ -3202,7 +3180,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 290,
+    "id": 288,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-05-14",
     "horaInicio": "17:40",
@@ -3213,7 +3191,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 291,
+    "id": 289,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-05-15",
     "horaInicio": "19:00",
@@ -3221,10 +3199,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-291.png"
+    "cartaz": "assets/img/agenda/evento-289.png"
   },
   {
-    "id": 292,
+    "id": 290,
     "titulo": "Festa da Eucaristia (Primeira Comunhão)",
     "data": "2027-05-16",
     "horaInicio": "Todo o dia",
@@ -3235,7 +3213,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 293,
+    "id": 291,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-05-17",
     "horaInicio": "17:40",
@@ -3246,7 +3224,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 294,
+    "id": 292,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-05-17",
     "horaInicio": "18:15",
@@ -3257,9 +3235,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 295,
+    "id": 293,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-05-18",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 294,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-05-18",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 295,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-05-19",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -3270,7 +3270,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 296,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-05-18",
+    "data": "2027-05-19",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -3280,8 +3280,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 297,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-05-19",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-05-20",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -3292,7 +3292,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 298,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-05-19",
+    "data": "2027-05-20",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -3302,28 +3302,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 299,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-05-20",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 300,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-05-20",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 301,
     "titulo": "Festa do Perdão",
     "data": "2027-05-21",
     "horaInicio": "Todo o dia",
@@ -3334,7 +3312,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 302,
+    "id": 300,
     "titulo": "Missa na Igreja de S. Tiago",
     "data": "2027-05-21",
     "horaInicio": "09:00",
@@ -3345,7 +3323,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 303,
+    "id": 301,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-05-21",
     "horaInicio": "17:40",
@@ -3356,7 +3334,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 304,
+    "id": 302,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-05-22",
     "horaInicio": "19:00",
@@ -3364,10 +3342,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-304.png"
+    "cartaz": "assets/img/agenda/evento-302.png"
   },
   {
-    "id": 305,
+    "id": 303,
     "titulo": "Festa da Eucaristia (Primeira Comunhão)",
     "data": "2027-05-23",
     "horaInicio": "Todo o dia",
@@ -3378,7 +3356,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 306,
+    "id": 304,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-05-24",
     "horaInicio": "17:40",
@@ -3389,7 +3367,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 307,
+    "id": 305,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-05-24",
     "horaInicio": "18:15",
@@ -3400,7 +3378,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 308,
+    "id": 306,
     "titulo": "Festa do Perdão",
     "data": "2027-05-25",
     "horaInicio": "Todo o dia",
@@ -3411,9 +3389,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 309,
+    "id": 307,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-05-25",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 308,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-05-25",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 309,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-05-26",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -3424,7 +3424,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 310,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-05-25",
+    "data": "2027-05-26",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -3434,39 +3434,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 311,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-05-26",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 312,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-05-26",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 313,
-    "titulo": "Missa e Procissão do Corpo de Deus",
-    "data": "2027-05-27",
-    "horaInicio": "Todo o dia",
-    "horaFim": "",
-    "categoria": "comunidade",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 314,
     "titulo": "Festa da Eucaristia (Primeira Comunhão)",
     "data": "2027-05-27",
     "horaInicio": "Todo o dia",
@@ -3477,9 +3444,42 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 315,
+    "id": 312,
+    "titulo": "Missa e Procissão do Corpo de Deus",
+    "data": "2027-05-27",
+    "horaInicio": "Todo o dia",
+    "horaFim": "",
+    "categoria": "comunidade",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 313,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-05-27",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 314,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-05-27",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 315,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-05-28",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -3490,7 +3490,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 316,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-05-27",
+    "data": "2027-05-28",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -3500,28 +3500,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 317,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-05-28",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 318,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-05-28",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 319,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-05-29",
     "horaInicio": "19:00",
@@ -3529,10 +3507,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-319.png"
+    "cartaz": "assets/img/agenda/evento-317.png"
   },
   {
-    "id": 320,
+    "id": 318,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-05-31",
     "horaInicio": "17:40",
@@ -3543,7 +3521,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 321,
+    "id": 319,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-05-31",
     "horaInicio": "18:15",
@@ -3554,7 +3532,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 322,
+    "id": 320,
     "titulo": "Procissão 3 pastorinhos",
     "data": "2027-05-31",
     "horaInicio": "21:00",
@@ -3565,9 +3543,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 323,
+    "id": 321,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-06-01",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 322,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-06-01",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 323,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-06-02",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -3578,7 +3578,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 324,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-06-01",
+    "data": "2027-06-02",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -3588,8 +3588,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 325,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-06-02",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-06-03",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -3600,7 +3600,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 326,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-06-02",
+    "data": "2027-06-03",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -3610,8 +3610,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 327,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-06-03",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-06-04",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -3622,7 +3622,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 328,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-06-03",
+    "data": "2027-06-04",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -3632,28 +3632,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 329,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-06-04",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 330,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-06-04",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 331,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-06-05",
     "horaInicio": "19:00",
@@ -3661,10 +3639,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-331.png"
+    "cartaz": "assets/img/agenda/evento-329.png"
   },
   {
-    "id": 332,
+    "id": 330,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-06-07",
     "horaInicio": "17:40",
@@ -3675,7 +3653,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 333,
+    "id": 331,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-06-07",
     "horaInicio": "18:15",
@@ -3686,9 +3664,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 334,
+    "id": 332,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-06-08",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 333,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-06-08",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 334,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-06-09",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -3699,7 +3699,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 335,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-06-08",
+    "data": "2027-06-09",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -3709,8 +3709,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 336,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-06-09",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-06-10",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -3721,7 +3721,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 337,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-06-09",
+    "data": "2027-06-10",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -3731,8 +3731,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 338,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-06-10",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-06-11",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -3743,7 +3743,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 339,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-06-10",
+    "data": "2027-06-11",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -3753,28 +3753,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 340,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-06-11",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 341,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-06-11",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 342,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-06-12",
     "horaInicio": "19:00",
@@ -3782,10 +3760,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-342.png"
+    "cartaz": "assets/img/agenda/evento-340.png"
   },
   {
-    "id": 343,
+    "id": 341,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-06-14",
     "horaInicio": "17:40",
@@ -3796,7 +3774,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 344,
+    "id": 342,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-06-14",
     "horaInicio": "18:15",
@@ -3807,9 +3785,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 345,
+    "id": 343,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-06-15",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 344,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-06-15",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 345,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-06-16",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -3820,7 +3820,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 346,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-06-15",
+    "data": "2027-06-16",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -3830,8 +3830,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 347,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-06-16",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-06-17",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -3842,7 +3842,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 348,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-06-16",
+    "data": "2027-06-17",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -3852,8 +3852,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 349,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-06-17",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-06-18",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -3864,7 +3864,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 350,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-06-17",
+    "data": "2027-06-18",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -3874,28 +3874,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 351,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-06-18",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 352,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-06-18",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 353,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-06-19",
     "horaInicio": "19:00",
@@ -3903,10 +3881,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-353.png"
+    "cartaz": "assets/img/agenda/evento-351.png"
   },
   {
-    "id": 354,
+    "id": 352,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-06-21",
     "horaInicio": "17:40",
@@ -3917,7 +3895,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 355,
+    "id": 353,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-06-21",
     "horaInicio": "18:15",
@@ -3928,9 +3906,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 356,
+    "id": 354,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-06-22",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 355,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-06-22",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 356,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-06-23",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -3941,7 +3941,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 357,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-06-22",
+    "data": "2027-06-23",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -3951,28 +3951,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 358,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-06-23",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 359,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-06-23",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 360,
     "titulo": "Dia de S. João Baptista",
     "data": "2027-06-24",
     "horaInicio": "Todo o dia",
@@ -3983,7 +3961,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 361,
+    "id": 359,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-06-24",
     "horaInicio": "09:00",
@@ -3994,7 +3972,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 362,
+    "id": 360,
     "titulo": "Festa de Encerramento",
     "data": "2027-06-24",
     "horaInicio": "16:30",
@@ -4005,7 +3983,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 363,
+    "id": 361,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-06-24",
     "horaInicio": "17:40",
@@ -4016,7 +3994,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 364,
+    "id": 362,
     "titulo": "Missa na Igreja de S. Tiago",
     "data": "2027-06-25",
     "horaInicio": "09:00",
@@ -4027,7 +4005,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 365,
+    "id": 363,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-06-25",
     "horaInicio": "17:40",
@@ -4038,7 +4016,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 366,
+    "id": 364,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-06-26",
     "horaInicio": "19:00",
@@ -4046,10 +4024,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-366.png"
+    "cartaz": "assets/img/agenda/evento-364.png"
   },
   {
-    "id": 367,
+    "id": 365,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-06-28",
     "horaInicio": "17:40",
@@ -4060,7 +4038,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 368,
+    "id": 366,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-06-28",
     "horaInicio": "18:15",
@@ -4071,9 +4049,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 369,
+    "id": 367,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-06-29",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 368,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-06-29",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 369,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-06-30",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -4084,7 +4084,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 370,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-06-29",
+    "data": "2027-06-30",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -4094,8 +4094,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 371,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-06-30",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-07-01",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -4106,7 +4106,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 372,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-06-30",
+    "data": "2027-07-01",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -4116,8 +4116,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 373,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-07-01",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-07-02",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -4128,7 +4128,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 374,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-07-01",
+    "data": "2027-07-02",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -4138,28 +4138,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 375,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-07-02",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 376,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-07-02",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 377,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-07-03",
     "horaInicio": "19:00",
@@ -4167,10 +4145,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-377.png"
+    "cartaz": "assets/img/agenda/evento-375.png"
   },
   {
-    "id": 378,
+    "id": 376,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-07-05",
     "horaInicio": "17:40",
@@ -4181,7 +4159,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 379,
+    "id": 377,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-07-05",
     "horaInicio": "18:15",
@@ -4192,9 +4170,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 380,
+    "id": 378,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-07-06",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 379,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-07-06",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 380,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-07-07",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -4205,7 +4205,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 381,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-07-06",
+    "data": "2027-07-07",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -4215,8 +4215,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 382,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-07-07",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-07-08",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -4227,7 +4227,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 383,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-07-07",
+    "data": "2027-07-08",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -4237,8 +4237,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 384,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-07-08",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-07-09",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -4249,7 +4249,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 385,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-07-08",
+    "data": "2027-07-09",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -4259,28 +4259,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 386,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-07-09",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 387,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-07-09",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 388,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-07-10",
     "horaInicio": "19:00",
@@ -4288,10 +4266,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-388.png"
+    "cartaz": "assets/img/agenda/evento-386.png"
   },
   {
-    "id": 389,
+    "id": 387,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-07-12",
     "horaInicio": "17:40",
@@ -4302,7 +4280,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 390,
+    "id": 388,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-07-12",
     "horaInicio": "18:15",
@@ -4313,9 +4291,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 391,
+    "id": 389,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-07-13",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 390,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-07-13",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 391,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-07-14",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -4326,7 +4326,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 392,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-07-13",
+    "data": "2027-07-14",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -4336,8 +4336,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 393,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-07-14",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-07-15",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -4348,7 +4348,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 394,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-07-14",
+    "data": "2027-07-15",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -4358,8 +4358,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 395,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-07-15",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-07-16",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -4370,7 +4370,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 396,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-07-15",
+    "data": "2027-07-16",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -4380,28 +4380,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 397,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-07-16",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 398,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-07-16",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 399,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-07-17",
     "horaInicio": "19:00",
@@ -4409,10 +4387,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-399.png"
+    "cartaz": "assets/img/agenda/evento-397.png"
   },
   {
-    "id": 400,
+    "id": 398,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-07-19",
     "horaInicio": "17:40",
@@ -4423,7 +4401,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 401,
+    "id": 399,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-07-19",
     "horaInicio": "18:15",
@@ -4434,9 +4412,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 402,
+    "id": 400,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-07-20",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 401,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-07-20",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 402,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-07-21",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -4447,7 +4447,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 403,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-07-20",
+    "data": "2027-07-21",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -4457,8 +4457,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 404,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-07-21",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-07-22",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -4469,7 +4469,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 405,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-07-21",
+    "data": "2027-07-22",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -4479,8 +4479,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 406,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-07-22",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-07-23",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -4491,7 +4491,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 407,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-07-22",
+    "data": "2027-07-23",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -4501,28 +4501,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 408,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-07-23",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 409,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-07-23",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 410,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-07-24",
     "horaInicio": "19:00",
@@ -4530,10 +4508,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-410.png"
+    "cartaz": "assets/img/agenda/evento-408.png"
   },
   {
-    "id": 411,
+    "id": 409,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-07-26",
     "horaInicio": "17:40",
@@ -4544,7 +4522,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 412,
+    "id": 410,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-07-26",
     "horaInicio": "18:15",
@@ -4555,9 +4533,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 413,
+    "id": 411,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-07-27",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 412,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-07-27",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 413,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-07-28",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -4568,7 +4568,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 414,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-07-27",
+    "data": "2027-07-28",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -4578,8 +4578,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 415,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-07-28",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-07-29",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -4590,7 +4590,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 416,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-07-28",
+    "data": "2027-07-29",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -4600,8 +4600,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 417,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-07-29",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-07-30",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -4612,7 +4612,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 418,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-07-29",
+    "data": "2027-07-30",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -4622,28 +4622,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 419,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-07-30",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 420,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-07-30",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 421,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-07-31",
     "horaInicio": "19:00",
@@ -4651,10 +4629,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-421.png"
+    "cartaz": "assets/img/agenda/evento-419.png"
   },
   {
-    "id": 422,
+    "id": 420,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-08-02",
     "horaInicio": "17:40",
@@ -4665,7 +4643,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 423,
+    "id": 421,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-08-02",
     "horaInicio": "18:15",
@@ -4676,9 +4654,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 424,
+    "id": 422,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-08-03",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 423,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-08-03",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 424,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-08-04",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -4689,7 +4689,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 425,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-08-03",
+    "data": "2027-08-04",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -4699,8 +4699,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 426,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-08-04",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-08-05",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -4711,7 +4711,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 427,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-08-04",
+    "data": "2027-08-05",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -4721,8 +4721,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 428,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-08-05",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-08-06",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -4733,7 +4733,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 429,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-08-05",
+    "data": "2027-08-06",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -4743,28 +4743,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 430,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-08-06",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 431,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-08-06",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 432,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-08-07",
     "horaInicio": "19:00",
@@ -4772,10 +4750,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-432.png"
+    "cartaz": "assets/img/agenda/evento-430.png"
   },
   {
-    "id": 433,
+    "id": 431,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-08-09",
     "horaInicio": "17:40",
@@ -4786,7 +4764,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 434,
+    "id": 432,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-08-09",
     "horaInicio": "18:15",
@@ -4797,9 +4775,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 435,
+    "id": 433,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-08-10",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 434,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-08-10",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 435,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-08-11",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -4810,7 +4810,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 436,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-08-10",
+    "data": "2027-08-11",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -4820,8 +4820,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 437,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-08-11",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-08-12",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -4832,7 +4832,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 438,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-08-11",
+    "data": "2027-08-12",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -4842,8 +4842,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 439,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-08-12",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-08-13",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -4854,7 +4854,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 440,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-08-12",
+    "data": "2027-08-13",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -4864,28 +4864,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 441,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-08-13",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 442,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-08-13",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 443,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-08-14",
     "horaInicio": "19:00",
@@ -4893,10 +4871,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-443.png"
+    "cartaz": "assets/img/agenda/evento-441.png"
   },
   {
-    "id": 444,
+    "id": 442,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-08-16",
     "horaInicio": "17:40",
@@ -4907,7 +4885,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 445,
+    "id": 443,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-08-16",
     "horaInicio": "18:15",
@@ -4918,9 +4896,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 446,
+    "id": 444,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-08-17",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 445,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-08-17",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 446,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-08-18",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -4931,7 +4931,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 447,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-08-17",
+    "data": "2027-08-18",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -4941,8 +4941,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 448,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-08-18",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-08-19",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -4953,7 +4953,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 449,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-08-18",
+    "data": "2027-08-19",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -4963,8 +4963,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 450,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-08-19",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-08-20",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -4975,7 +4975,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 451,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-08-19",
+    "data": "2027-08-20",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -4985,28 +4985,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 452,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-08-20",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 453,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-08-20",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 454,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-08-21",
     "horaInicio": "19:00",
@@ -5014,10 +4992,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-454.png"
+    "cartaz": "assets/img/agenda/evento-452.png"
   },
   {
-    "id": 455,
+    "id": 453,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-08-23",
     "horaInicio": "17:40",
@@ -5028,7 +5006,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 456,
+    "id": 454,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-08-23",
     "horaInicio": "18:15",
@@ -5039,9 +5017,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 457,
+    "id": 455,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-08-24",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 456,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-08-24",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 457,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-08-25",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -5052,7 +5052,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 458,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-08-24",
+    "data": "2027-08-25",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -5062,8 +5062,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 459,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-08-25",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-08-26",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -5074,7 +5074,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 460,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-08-25",
+    "data": "2027-08-26",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -5084,8 +5084,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 461,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-08-26",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-08-27",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -5096,7 +5096,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 462,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-08-26",
+    "data": "2027-08-27",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -5106,28 +5106,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 463,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-08-27",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 464,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-08-27",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 465,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-08-28",
     "horaInicio": "19:00",
@@ -5135,10 +5113,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-465.png"
+    "cartaz": "assets/img/agenda/evento-463.png"
   },
   {
-    "id": 466,
+    "id": 464,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-08-30",
     "horaInicio": "17:40",
@@ -5149,7 +5127,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 467,
+    "id": 465,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-08-30",
     "horaInicio": "18:15",
@@ -5160,9 +5138,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 468,
+    "id": 466,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-08-31",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 467,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-08-31",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 468,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-09-01",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -5173,7 +5173,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 469,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-08-31",
+    "data": "2027-09-01",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -5183,8 +5183,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 470,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-09-01",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-09-02",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -5195,7 +5195,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 471,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-09-01",
+    "data": "2027-09-02",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -5205,8 +5205,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 472,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-09-02",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-09-03",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -5217,7 +5217,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 473,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-09-02",
+    "data": "2027-09-03",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -5227,28 +5227,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 474,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-09-03",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 475,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-09-03",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 476,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-09-04",
     "horaInicio": "19:00",
@@ -5256,10 +5234,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-476.png"
+    "cartaz": "assets/img/agenda/evento-474.png"
   },
   {
-    "id": 477,
+    "id": 475,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-09-06",
     "horaInicio": "17:40",
@@ -5270,7 +5248,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 478,
+    "id": 476,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-09-06",
     "horaInicio": "18:15",
@@ -5281,9 +5259,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 479,
+    "id": 477,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-09-07",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 478,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-09-07",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 479,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-09-08",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -5294,7 +5294,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 480,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-09-07",
+    "data": "2027-09-08",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -5304,8 +5304,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 481,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-09-08",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-09-09",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -5316,7 +5316,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 482,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-09-08",
+    "data": "2027-09-09",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -5326,8 +5326,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 483,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-09-09",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-09-10",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -5338,7 +5338,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 484,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-09-09",
+    "data": "2027-09-10",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -5348,28 +5348,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 485,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-09-10",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 486,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-09-10",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 487,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-09-11",
     "horaInicio": "19:00",
@@ -5377,10 +5355,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-487.png"
+    "cartaz": "assets/img/agenda/evento-485.png"
   },
   {
-    "id": 488,
+    "id": 486,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-09-13",
     "horaInicio": "17:40",
@@ -5391,7 +5369,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 489,
+    "id": 487,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-09-13",
     "horaInicio": "18:15",
@@ -5402,9 +5380,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 490,
+    "id": 488,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-09-14",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 489,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-09-14",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 490,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-09-15",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -5415,7 +5415,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 491,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-09-14",
+    "data": "2027-09-15",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -5425,8 +5425,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 492,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-09-15",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-09-16",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -5437,7 +5437,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 493,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-09-15",
+    "data": "2027-09-16",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -5447,8 +5447,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 494,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-09-16",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-09-17",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -5459,7 +5459,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 495,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-09-16",
+    "data": "2027-09-17",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -5469,28 +5469,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 496,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-09-17",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 497,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-09-17",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 498,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-09-18",
     "horaInicio": "19:00",
@@ -5498,10 +5476,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-498.png"
+    "cartaz": "assets/img/agenda/evento-496.png"
   },
   {
-    "id": 499,
+    "id": 497,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-09-20",
     "horaInicio": "17:40",
@@ -5512,7 +5490,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 500,
+    "id": 498,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-09-20",
     "horaInicio": "18:15",
@@ -5523,9 +5501,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 501,
+    "id": 499,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-09-21",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 500,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-09-21",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 501,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-09-22",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -5536,7 +5536,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 502,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-09-21",
+    "data": "2027-09-22",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -5546,8 +5546,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 503,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-09-22",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-09-23",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -5558,7 +5558,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 504,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-09-22",
+    "data": "2027-09-23",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -5568,8 +5568,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 505,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-09-23",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-09-24",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -5580,7 +5580,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 506,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-09-23",
+    "data": "2027-09-24",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -5590,28 +5590,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 507,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-09-24",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 508,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-09-24",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 509,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-09-25",
     "horaInicio": "19:00",
@@ -5619,10 +5597,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-509.png"
+    "cartaz": "assets/img/agenda/evento-507.png"
   },
   {
-    "id": 510,
+    "id": 508,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-09-27",
     "horaInicio": "17:40",
@@ -5633,7 +5611,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 511,
+    "id": 509,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-09-27",
     "horaInicio": "18:15",
@@ -5644,9 +5622,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 512,
+    "id": 510,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-09-28",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 511,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-09-28",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 512,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-09-29",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -5657,7 +5657,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 513,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-09-28",
+    "data": "2027-09-29",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -5667,8 +5667,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 514,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-09-29",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-09-30",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -5679,7 +5679,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 515,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-09-29",
+    "data": "2027-09-30",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -5689,8 +5689,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 516,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-09-30",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-10-01",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -5701,7 +5701,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 517,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-09-30",
+    "data": "2027-10-01",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -5711,28 +5711,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 518,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-10-01",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 519,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-10-01",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 520,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-10-02",
     "horaInicio": "19:00",
@@ -5740,10 +5718,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-520.png"
+    "cartaz": "assets/img/agenda/evento-518.png"
   },
   {
-    "id": 521,
+    "id": 519,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-10-04",
     "horaInicio": "17:40",
@@ -5754,7 +5732,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 522,
+    "id": 520,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-10-04",
     "horaInicio": "18:15",
@@ -5765,9 +5743,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 523,
+    "id": 521,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-10-05",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 522,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-10-05",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 523,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-10-06",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -5778,7 +5778,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 524,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-10-05",
+    "data": "2027-10-06",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -5788,8 +5788,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 525,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-10-06",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-10-07",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -5800,7 +5800,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 526,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-10-06",
+    "data": "2027-10-07",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -5810,8 +5810,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 527,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-10-07",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-10-08",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -5822,7 +5822,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 528,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-10-07",
+    "data": "2027-10-08",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -5832,28 +5832,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 529,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-10-08",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 530,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-10-08",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 531,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-10-09",
     "horaInicio": "19:00",
@@ -5861,10 +5839,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-531.png"
+    "cartaz": "assets/img/agenda/evento-529.png"
   },
   {
-    "id": 532,
+    "id": 530,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-10-11",
     "horaInicio": "17:40",
@@ -5875,7 +5853,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 533,
+    "id": 531,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-10-11",
     "horaInicio": "18:15",
@@ -5886,9 +5864,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 534,
+    "id": 532,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-10-12",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 533,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-10-12",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 534,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-10-13",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -5899,7 +5899,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 535,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-10-12",
+    "data": "2027-10-13",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -5909,8 +5909,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 536,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-10-13",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-10-14",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -5921,7 +5921,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 537,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-10-13",
+    "data": "2027-10-14",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -5931,8 +5931,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 538,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-10-14",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-10-15",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -5943,7 +5943,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 539,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-10-14",
+    "data": "2027-10-15",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -5953,28 +5953,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 540,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-10-15",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 541,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-10-15",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 542,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-10-16",
     "horaInicio": "19:00",
@@ -5982,10 +5960,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-542.png"
+    "cartaz": "assets/img/agenda/evento-540.png"
   },
   {
-    "id": 543,
+    "id": 541,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-10-18",
     "horaInicio": "17:40",
@@ -5996,7 +5974,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 544,
+    "id": 542,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-10-18",
     "horaInicio": "18:15",
@@ -6007,9 +5985,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 545,
+    "id": 543,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-10-19",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 544,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-10-19",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 545,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-10-20",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -6020,7 +6020,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 546,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-10-19",
+    "data": "2027-10-20",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -6030,8 +6030,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 547,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-10-20",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-10-21",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -6042,7 +6042,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 548,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-10-20",
+    "data": "2027-10-21",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -6052,8 +6052,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 549,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-10-21",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-10-22",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -6064,7 +6064,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 550,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-10-21",
+    "data": "2027-10-22",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -6074,28 +6074,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 551,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-10-22",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 552,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-10-22",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 553,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-10-23",
     "horaInicio": "19:00",
@@ -6103,10 +6081,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-553.png"
+    "cartaz": "assets/img/agenda/evento-551.png"
   },
   {
-    "id": 554,
+    "id": 552,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-10-25",
     "horaInicio": "17:40",
@@ -6117,7 +6095,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 555,
+    "id": 553,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-10-25",
     "horaInicio": "18:15",
@@ -6128,9 +6106,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 556,
+    "id": 554,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-10-26",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 555,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-10-26",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 556,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-10-27",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -6141,7 +6141,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 557,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-10-26",
+    "data": "2027-10-27",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -6151,8 +6151,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 558,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-10-27",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-10-28",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -6163,7 +6163,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 559,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-10-27",
+    "data": "2027-10-28",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -6173,8 +6173,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 560,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-10-28",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-10-29",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -6185,7 +6185,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 561,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-10-28",
+    "data": "2027-10-29",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -6195,28 +6195,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 562,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-10-29",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 563,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-10-29",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 564,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-10-30",
     "horaInicio": "19:00",
@@ -6224,10 +6202,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-564.png"
+    "cartaz": "assets/img/agenda/evento-562.png"
   },
   {
-    "id": 565,
+    "id": 563,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-11-01",
     "horaInicio": "17:40",
@@ -6238,7 +6216,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 566,
+    "id": 564,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-11-01",
     "horaInicio": "18:15",
@@ -6249,9 +6227,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 567,
+    "id": 565,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-11-02",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 566,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-11-02",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 567,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-11-03",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -6262,7 +6262,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 568,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-11-02",
+    "data": "2027-11-03",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -6272,8 +6272,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 569,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-11-03",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-11-04",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -6284,7 +6284,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 570,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-11-03",
+    "data": "2027-11-04",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -6294,8 +6294,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 571,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-11-04",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-11-05",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -6306,7 +6306,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 572,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-11-04",
+    "data": "2027-11-05",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -6316,28 +6316,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 573,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-11-05",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 574,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-11-05",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 575,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-11-06",
     "horaInicio": "19:00",
@@ -6345,10 +6323,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-575.png"
+    "cartaz": "assets/img/agenda/evento-573.png"
   },
   {
-    "id": 576,
+    "id": 574,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-11-08",
     "horaInicio": "17:40",
@@ -6359,7 +6337,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 577,
+    "id": 575,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-11-08",
     "horaInicio": "18:15",
@@ -6370,9 +6348,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 578,
+    "id": 576,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-11-09",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 577,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-11-09",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 578,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-11-10",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -6383,7 +6383,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 579,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-11-09",
+    "data": "2027-11-10",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -6393,8 +6393,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 580,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-11-10",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-11-11",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -6405,7 +6405,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 581,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-11-10",
+    "data": "2027-11-11",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -6415,8 +6415,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 582,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-11-11",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-11-12",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -6427,7 +6427,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 583,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-11-11",
+    "data": "2027-11-12",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -6437,28 +6437,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 584,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-11-12",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 585,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-11-12",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 586,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-11-13",
     "horaInicio": "19:00",
@@ -6466,10 +6444,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-586.png"
+    "cartaz": "assets/img/agenda/evento-584.png"
   },
   {
-    "id": 587,
+    "id": 585,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-11-15",
     "horaInicio": "17:40",
@@ -6480,7 +6458,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 588,
+    "id": 586,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-11-15",
     "horaInicio": "18:15",
@@ -6491,9 +6469,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 589,
+    "id": 587,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-11-16",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 588,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-11-16",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 589,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-11-17",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -6504,7 +6504,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 590,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-11-16",
+    "data": "2027-11-17",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -6514,8 +6514,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 591,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-11-17",
+    "titulo": "Missa na Igreja dos Santos Mártires",
+    "data": "2027-11-18",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -6526,7 +6526,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 592,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-11-17",
+    "data": "2027-11-18",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -6536,8 +6536,8 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 593,
-    "titulo": "Missa na Igreja dos Santos Mártires",
-    "data": "2027-11-18",
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-11-19",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -6548,7 +6548,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 594,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-11-18",
+    "data": "2027-11-19",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -6558,28 +6558,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 595,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-11-19",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 596,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-11-19",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 597,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-11-20",
     "horaInicio": "19:00",
@@ -6587,10 +6565,10 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-597.png"
+    "cartaz": "assets/img/agenda/evento-595.png"
   },
   {
-    "id": 598,
+    "id": 596,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-11-22",
     "horaInicio": "17:40",
@@ -6601,7 +6579,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 599,
+    "id": 597,
     "titulo": "Confissões e Adoração - Igreja da Sé",
     "data": "2027-11-22",
     "horaInicio": "18:15",
@@ -6612,9 +6590,31 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 600,
+    "id": 598,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-11-23",
+    "horaInicio": "09:00",
+    "horaFim": "09:30",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 599,
+    "titulo": "Missa na Igreja da Sé",
+    "data": "2027-11-23",
+    "horaInicio": "17:40",
+    "horaFim": "18:10",
+    "categoria": "liturgico",
+    "local": "Paróquia de São João Baptista",
+    "descricao": "",
+    "cartaz": null
+  },
+  {
+    "id": 600,
+    "titulo": "Missa na Igreja de S. Tiago",
+    "data": "2027-11-24",
     "horaInicio": "09:00",
     "horaFim": "09:30",
     "categoria": "liturgico",
@@ -6625,7 +6625,7 @@ const PASCOM_EVENTOS = [
   {
     "id": 601,
     "titulo": "Missa na Igreja da Sé",
-    "data": "2027-11-23",
+    "data": "2027-11-24",
     "horaInicio": "17:40",
     "horaFim": "18:10",
     "categoria": "liturgico",
@@ -6635,28 +6635,6 @@ const PASCOM_EVENTOS = [
   },
   {
     "id": 602,
-    "titulo": "Missa na Igreja de S. Tiago",
-    "data": "2027-11-24",
-    "horaInicio": "09:00",
-    "horaFim": "09:30",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 603,
-    "titulo": "Missa na Igreja da Sé",
-    "data": "2027-11-24",
-    "horaInicio": "17:40",
-    "horaFim": "18:10",
-    "categoria": "liturgico",
-    "local": "Paróquia de São João Baptista",
-    "descricao": "",
-    "cartaz": null
-  },
-  {
-    "id": 604,
     "titulo": "Missa na Igreja dos Santos Mártires",
     "data": "2027-11-25",
     "horaInicio": "09:00",
@@ -6667,7 +6645,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 605,
+    "id": 603,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-11-25",
     "horaInicio": "17:40",
@@ -6678,7 +6656,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 606,
+    "id": 604,
     "titulo": "Missa na Igreja de S. Tiago",
     "data": "2027-11-26",
     "horaInicio": "09:00",
@@ -6689,7 +6667,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 607,
+    "id": 605,
     "titulo": "Missa na Igreja da Sé",
     "data": "2027-11-26",
     "horaInicio": "17:40",
@@ -6700,7 +6678,7 @@ const PASCOM_EVENTOS = [
     "cartaz": null
   },
   {
-    "id": 608,
+    "id": 606,
     "titulo": "Missa na Igreja de S Tiago",
     "data": "2027-11-27",
     "horaInicio": "19:00",
@@ -6708,6 +6686,6 @@ const PASCOM_EVENTOS = [
     "categoria": "liturgico",
     "local": "Paróquia de São João Baptista",
     "descricao": "A animação da Eucaristia é realizada pelo grupo de jovens Convivas Fraternos",
-    "cartaz": "assets/img/agenda/evento-608.png"
+    "cartaz": "assets/img/agenda/evento-606.png"
   }
 ];
